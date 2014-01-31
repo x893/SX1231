@@ -1,0 +1,17 @@
+[Application]
+ApplicationPath=D:\Data\SX1212_API\API\API_code\tutorial\tutorial.elf
+Format=ELF
+CodeOffset=0x0
+DataOffset=0x0
+LoaderTool=C816
+Target=C816
+DebugTool=XE-Prostart2x-Monitor
+[Device]
+Name=XE88LC06A
+[Debug]
+Explore=No
+Startup=1
+StartupSymb=main
+ToolName=XE-Prostart2x-Monitor
+[SimFile]
+path=C:\Ride7\Ride\sim\C816\XE88LC06A.sim

@@ -1,0 +1,495 @@
+RIDE Project File
+File Version=3
+[BN]
+Build=BN750-A032-C816
+[Ref]
+Ref=7
+[Type]
+Type=0
+[Environment]
+Begin Group CompEdit
+EditCodeCoverage=0
+TestMakeDate=1
+Promptrebuild=0
+DebugMessage=1000
+Promptdirtyoptions=0
+Prompttoreloadfiles=1
+Promptsucsorfail=0
+Promptenddebug=1
+Promptsave=1
+End Group CompEdit
+Begin Group Edit
+DocExts=*.pdf;*.htm;*.doc
+DocInChild=1
+InsertSpace=1
+Showinfo=1
+Showtool=1
+Showpath=0
+Promptbeforedelete=0
+Oemtoascii=0
+Decalage=2
+Undonumber=10
+TabStop=4
+End Group Edit
+Begin Group Font
+Height=12
+Name=Courier New
+Default=0
+End Group Font
+Begin Group Colors
+Data=14745599
+Code=15658705
+ColorBackground=1
+Error=255
+String=16711680
+Operator=8421504
+Key=0
+Comment=8421376
+Control=32768
+Numeric=16711680
+Identifier=8388608
+Highlight=1
+End Group Colors
+End Options Environment
+
+[Directories]
+Begin Group Directories
+Source=src
+LibOpti=c:\RIDE\Lib\CCLib
+List=lst
+Object=obj
+Lib=%RIDEDIR%\GNU\C816\LIB;%RIDEDIR%\GNU\LIB\GCC-LIB\C816\EGCS-2.91.02
+Include=%RIDEDIR%\GNU\Templates;%RIDEDIR%\GNU\C816\INCLUDE
+End Group Directories
+End Options Directories
+
+[Targets]
+Number=1
+
+Name=XE8000
+DllName=..\..\..\..\..\..\RIDE\BIN\targetxe.dll
+Begin Group XE8000
+LogFileGen1=0
+DefCRT0=1
+DefIRQ=1
+Rom=0
+Soft1Hard0Lib=0
+Soft1Hard0Call=1
+MicroIndex=4
+LaunchMode=0
+End Group XE8000
+
+
+[Magics]
+Number=0
+
+
+[Nets]
+Nb Nets=0
+
+[Tools]
+Number=9
+
+Path=..\..\..\..\..\..\RIDE\BIN\axev32.dll
+Name=AXE
+SrcExt=*.s
+ObjExt=*.o
+Target Translate=0
+Begin Options AXE
+Begin Group General
+More=
+Warning=0
+Data=0
+Labels=0
+Dwarf2=0
+Debug=1
+End Group General
+End Options AXE
+
+Path=..\..\..\..\..\..\RIDE\BIN\cxev32.dll
+Name=CXE
+SrcExt=*.c;*.h
+ObjExt=*.o
+Target Translate=0
+Begin Options CXE
+Begin Group More
+More=
+End Group More
+Begin Group Warnings
+Warnunused=1
+Warnswitch=1
+Warnshad=1
+Supress=0
+Warnall=0
+Pedantic=0
+End Group Warnings
+Begin Group Optimisations
+Size=4
+Optimlevel=0
+Inlinefunc=0
+Noinlining=0
+Allow=0
+End Group Optimisations
+Begin Group Dialect
+Signedchar=0
+Traditional=0
+Ansi=0
+End Group Dialect
+Begin Group Defines
+Defines=
+End Group Defines
+Begin Group Code
+Packstruct=0
+Volatileg=0
+Volatile=0
+Shortdouble=0
+Shortenum=0
+End Group Code
+Begin Group Debug
+Temp=0
+Dwarf2=0
+Debug=1
+End Group Debug
+End Options CXE
+
+Path=..\..\..\..\..\..\RIDE\BIN\lxev32.dll
+Name=LXE
+SrcExt=*.o
+ObjExt=*.axe
+Target Translate=1
+Begin Options LXE
+Begin Group General
+More=
+Script=crt0.ld
+Startup=crt0.o
+DefScript=1
+DefStartup=1
+DefIRQH=1
+Mathlib=1
+Driverlib=0
+MonSoft=1
+Monlib=0
+Clib=1
+DefWrappers=0
+GenWrappers=0
+GenDataInit=1
+Norom=1
+Huge0Small1=1
+Once=0
+CrossRef=0
+IndCalls=1
+Map=1
+End Group General
+End Options LXE
+
+Path=..\..\..\..\..\..\RIDE\BIN\loaderxe.dll
+Name=XELOADER
+SrcExt=*.axe;*.hex
+ObjExt=*.axe
+Target Translate=3
+Begin Options XELOADER
+Begin Group General
+Voltage=3.0
+Port=COM2
+EraseFlash=1
+PSVer=2
+PortBYes=0
+End Group General
+End Options XELOADER
+
+Path=..\..\..\..\..\..\RIDE\BIN\ccompx80.dll
+Name=CodeCompressorXE
+SrcExt=
+ObjExt=
+Target Translate=2
+Begin Options CodeCompressorXE
+Begin Group More
+More=
+End Group More
+Begin Group Save
+Bank=0
+OutputFilename=
+SaveBIN=1
+SaveHEX=1
+SaveOMF=1
+End Group Save
+Begin Group Peephole
+Valid=1
+Peephole=C:\RIDE\EXAMPLES\XE\PEEPXE.RPS
+End Group Peephole
+Begin Group Factorization
+MaxFactoDeep=?
+MaxFactoSz=?
+MaxFactoNr=?
+ConfirFacto=1
+End Group Factorization
+Begin Group Inlining
+MaxPostBlockNr=?
+ConfirmPostBlock=1
+MaxInlineNr=?
+ConfirmInline=1
+MaxPreBlockNr=?
+ConfirmPreBlock=1
+End Group Inlining
+Begin Group Banking
+Valid=1
+Bank=0
+End Group Banking
+Begin Group General
+ModeDos=0
+StandaloneAnchored=0
+StandaloneAsk=0
+StandaloneDiscard=1
+NewCode=0
+SameCode=1
+LogFile=0
+VerboseLevel=1
+Verbose=1
+ModeExecutable=0
+ModeInteractive=1
+Add2Project=1
+AutoPeep=1
+AutoFacto=1
+AutoInline=1
+ModeAuto=0
+End Group General
+End Options CodeCompressorXE
+
+Path=..\..\..\..\..\..\RIDE\BIN\XELoader.exe
+Name=XELoader_XE88LC07A
+SrcExt=*.axe;*.hex
+ObjExt=*.axe
+Target Translate=0
+Begin Options XELoader_XE88LC07A
+Begin Group Options
+Filter=
+Command line=2  com2  -u V:\Cro\Avidsen\Software\AvidsenHW\WP3bis_xx_06_05\Headset\headset.axe -f
+IsFilter=0
+IsPrompt=0
+End Group Options
+End Options XELoader_XE88LC07A
+
+Path=..\..\..\..\..\..\RIDE\BIN\libmanxe.dll
+Name=LIBMANX80
+SrcExt=
+ObjExt=
+Target Translate=0
+Begin Options LIBMANX80
+End Options LIBMANX80
+
+Path=..\..\..\..\..\..\RIDE\BIN\EM6819_pgm.exe
+Name=EM6819_pgm
+SrcExt=*.axe;*.hex
+ObjExt=*.axe;*.hex
+Target Translate=0
+Begin Options EM6819_pgm
+Begin Group Options
+Filter=
+Command line=E P{NODE}.hex S
+IsFilter=0
+IsPrompt=1
+End Group Options
+End Options EM6819_pgm
+
+Path=..\..\..\..\..\..\RIDE\BIN\EM6869_pgm.exe
+Name=EM6869_pgm
+SrcExt=*.axe;*.hex
+ObjExt=*.axe;*.hex
+Target Translate=0
+Begin Options EM6869_pgm
+Begin Group Options
+Filter=
+Command line=E P{NODE}.hex S
+IsFilter=0
+IsPrompt=1
+End Group Options
+End Options EM6869_pgm
+
+
+[Nodes]
+App Number=1
+Name=tutorial.axe
+Type=0
+Tool Ref=LXE
+Info Code=3413
+Info XData=0
+Info Data=172
+Target Ref=XE8000
+Format Ref=ELF-C816
+Use Local=0
+Begin Group XE8000
+LogFileGen1=0
+DefCRT0=1
+DefIRQ=1
+Rom=0
+Soft1Hard0Lib=0
+Soft1Hard0Call=1
+MicroIndex=4
+LaunchMode=0
+End Group XE8000
+Nb Nodes=5
+Node Begin
+Relative Path=src\sx1212driver.c
+Type=0
+Tool Ref=CXE
+Format Ref=
+Nb Dep=6
+Dependance=d:\data\sx1212_api\api\api_code\old\tutorial\src\SX1212Driver.h
+Dependance=d:\data\sx1212_api\api\api_code\old\tutorial\src\Globals.h
+Dependance=d:\RIDE\GNU\C816\INCLUDE\Types.h
+Dependance=d:\RIDE\GNU\C816\INCLUDE\XE88LC06A.h
+Dependance=d:\data\sx1212_api\api\api_code\old\tutorial\src\Initialisation.h
+Dependance=d:\data\sx1212_api\api\api_code\old\tutorial\src\DFLLDriver.h
+Info Code=1630
+Info Const=0
+Info XData=0
+Info PData=0
+Info Data=79
+Info IData=0
+Info Bit=0
+Use Local=0
+Do Link=1
+Do Translate=1
+Do Load=0
+Nb Nodes=0
+MakeDate=0
+Node End
+Node Begin
+Relative Path=src\main.c
+Type=0
+Tool Ref=CXE
+Format Ref=
+Nb Dep=6
+Dependance=d:\data\sx1212_api\api\api_code\old\tutorial\src\Globals.h
+Dependance=d:\RIDE\GNU\C816\INCLUDE\Types.h
+Dependance=d:\RIDE\GNU\C816\INCLUDE\XE88LC06A.h
+Dependance=d:\data\sx1212_api\api\api_code\old\tutorial\src\Initialisation.h
+Dependance=d:\data\sx1212_api\api\api_code\old\tutorial\src\DFLLDriver.h
+Dependance=d:\data\sx1212_api\api\api_code\old\tutorial\src\SX1212Driver.h
+Info Code=165
+Info Const=0
+Info XData=0
+Info PData=0
+Info Data=77
+Info IData=0
+Info Bit=0
+Use Local=0
+Do Link=1
+Do Translate=1
+Do Load=0
+Nb Nodes=0
+MakeDate=-867249592
+Node End
+Node Begin
+Relative Path=src\initialisation.c
+Type=0
+Tool Ref=CXE
+Format Ref=
+Nb Dep=6
+Dependance=d:\data\sx1212_api\api\api_code\old\tutorial\src\Initialisation.h
+Dependance=d:\data\sx1212_api\api\api_code\old\tutorial\src\Globals.h
+Dependance=d:\RIDE\GNU\C816\INCLUDE\Types.h
+Dependance=d:\RIDE\GNU\C816\INCLUDE\XE88LC06A.h
+Dependance=d:\data\sx1212_api\api\api_code\old\tutorial\src\DFLLDriver.h
+Dependance=d:\data\sx1212_api\api\api_code\old\tutorial\src\SX1212Driver.h
+Info Code=912
+Info Const=0
+Info XData=0
+Info PData=0
+Info Data=0
+Info IData=0
+Info Bit=0
+Use Local=0
+Do Link=1
+Do Translate=1
+Do Load=0
+Nb Nodes=0
+MakeDate=-867249592
+Node End
+Node Begin
+Relative Path=src\dflldriver.c
+Type=0
+Tool Ref=CXE
+Format Ref=
+Nb Dep=6
+Dependance=d:\data\sx1212_api\api\api_code\old\tutorial\src\DFLLDriver.h
+Dependance=d:\data\sx1212_api\api\api_code\old\tutorial\src\Globals.h
+Dependance=d:\RIDE\GNU\C816\INCLUDE\Types.h
+Dependance=d:\RIDE\GNU\C816\INCLUDE\XE88LC06A.h
+Dependance=d:\data\sx1212_api\api\api_code\old\tutorial\src\Initialisation.h
+Dependance=d:\data\sx1212_api\api\api_code\old\tutorial\src\SX1212Driver.h
+Info Code=254
+Info Const=0
+Info XData=0
+Info PData=0
+Info Data=8
+Info IData=0
+Info Bit=0
+Use Local=0
+Do Link=1
+Do Translate=1
+Do Load=0
+Nb Nodes=0
+MakeDate=-867249592
+Node End
+Node Begin
+Relative Path=doc\readme.txt
+Type=0
+Tool Ref=
+Format Ref=
+Nb Dep=0
+Info Code=0
+Info Const=0
+Info XData=0
+Info PData=0
+Info Data=0
+Info IData=0
+Info Bit=0
+Use Local=0
+Do Link=0
+Do Translate=1
+Do Load=0
+Nb Nodes=0
+MakeDate=-599085970
+Node End
+Do Translate=1
+PostLinker Ref=
+
+
+[Desktop Files]
+Nb Desktop Files=3
+d:\data\sx1212_api\api\api_code\old\tutorial\src\sx1212driver.h (2147483647,2147483647-2147483647,2147483647) 371
+
+d:\data\sx1212_api\api\api_code\old\tutorial\src\main.c (22,29-920,296) 99
+
+d:\data\sx1212_api\api\api_code\old\tutorial\src\sx1212driver.c (0,0-898,267) 55
+
+
+[Closed Files]
+Nb Closed Files=0
+
+[Dim Views]
+Nb Dim Views=13
+0 (0,0-0,0)
+1 (0,0-0,0)
+2 (0,0-0,0)
+3 (0,0-0,0)
+4 (176,176-891,655)
+5 (0,0-0,0)
+6 (0,0-0,0)
+7 (0,0-0,0)
+8 (0,0-0,0)
+9 (0,0-0,0)
+10 (0,0-0,0)
+11 (0,0-0,0)
+12 (0,0-0,0)
+
+[DebugTool]
+Debug=XELOADER
+
+[Project Rect]
+(2147483647,2147483647-2147483647,2147483647)
+
+[LastSel]
+LastAOF=d:\data\sx1212_api\api\api_code\old\tutorial\tutorial.axe
+

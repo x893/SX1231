@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6F2FD687-B568-464E-BC09-7EC7D88A89C3}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>SemtechLib</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>SemtechLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Ftdi\FtdiInfo.cs" />
+    <Compile Include="General\Interfaces\INotifyDocumentationChanged.cs" />
+    <Compile Include="General\Interfaces\DocumentationChangedEventArgs.cs" />
+    <Compile Include="General\Interfaces\DocumentationChangedEventHandler.cs" />
+    <Compile Include="Fusionbird\FusionToolkit\FusionTrackBar\TrackDrawModeEditor.cs" />
+    <Compile Include="Controls\HexBoxCtrl\HexCasing.cs" />
+    <Compile Include="Controls\HexBoxCtrl\BytePositionInfo.cs" />
+    <Compile Include="Controls\HexBoxCtrl\HexBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="General\TypeConverters\ObjectConverter.cs" />
+    <Compile Include="General\Events\DecimalEventArg.cs" />
+    <Compile Include="General\Events\DecimalEventHandler.cs" />
+    <Compile Include="General\EditableObject.cs" />
+    <Compile Include="General\BindingRegister.cs" />
+    <Compile Include="Controls\TempCtrl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PushBtn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Angle.cs" />
+    <Compile Include="DS\SimpleObjectConverter.cs" />
+    <Compile Include="TestIListSource2\OrderConverter.cs" />
+    <Compile Include="DS\EditableObject.cs" />
+    <Compile Include="TestIListSource2\Order.cs" />
+    <Compile Include="TestIListSource2\ItemConverter.cs" />
+    <Compile Include="TestIListSource2\Item.cs" />
+    <Compile Include="DS\BindingCollectionBase.cs" />
+    <Compile Include="TestIListSource2\OrderList.cs" />
+    <Compile Include="TestIListSource2\ItemList.cs" />
+    <Compile Include="TestIListSource2\TestSource.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="General\Events\BooleanEventHandler.cs" />
+    <Compile Include="General\Events\ProgressEventArg.cs" />
+    <Compile Include="General\Events\Int32EventArg.cs" />
+    <Compile Include="Controls\Graph\GraphCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DS\DSPropertyDescriptor.cs" />
+    <Compile Include="DS\DSTypeDescriptor.cs" />
+    <Compile Include="DS\DSTypeDescriptorCollection.cs" />
+    <Compile Include="Controls\ToolStripEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\HexBoxCtrl\DataBlock.cs" />
+    <Compile Include="Controls\HexBoxCtrl\FileDataBlock.cs" />
+    <Compile Include="Controls\HexBoxCtrl\IByteProvider.cs" />
+    <Compile Include="Controls\HexBoxCtrl\FileByteProvider.cs" />
+    <Compile Include="Controls\HexBoxCtrl\Design\HexFontEditor.cs" />
+    <Compile Include="General\TypeConverters\UInt16HexConverter.cs" />
+    <Compile Include="General\Events\ByteEventHandler.cs" />
+    <Compile Include="General\Events\ByteArrayEventHandler.cs" />
+    <Compile Include="General\CircularQueue.cs" />
+    <Compile Include="Properties\Resources.cs" />
+    <Compile Include="General\Events\Int32EventHandler.cs" />
+    <Compile Include="Controls\MenuStripEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\GroupBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="General\RegisterCollection.cs" />
+    <Compile Include="General\Events\ErrorEventHandler.cs" />
+    <Compile Include="General\ApplicationSettings.cs" />
+    <Compile Include="Controls\SwitchBtn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fusionbird\FusionToolkit\FusionTrackBar\TrackBarItemState.cs" />
+    <Compile Include="Controls\HexBoxCtrl\DataMap.cs" />
+    <Compile Include="Controls\ToolStripLed.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fusionbird\FusionToolkit\FusionTrackBar\TrackBarOwnerDrawParts.cs" />
+    <Compile Include="General\Events\ProgressEventHandler.cs" />
+    <Compile Include="Ftdi\FtdiIoPort.cs" />
+    <Compile Include="Ftdi\Mpsse.cs" />
+    <Compile Include="Ftdi\MpsseSPI.cs" />
+    <Compile Include="Controls\VProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Fusionbird\FusionToolkit\FusionTrackBar\FusionTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Led.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\HexBoxCtrl\ByteCollection.cs" />
+    <Compile Include="Microsoft\Win32\NativeConstants.cs" />
+    <Compile Include="Controls\NumericUpDownEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="General\Events\ByteEventArg.cs" />
+    <Compile Include="General\Register.cs" />
+    <Compile Include="Fusionbird\FusionToolkit\FusionTrackBar\TrackBarDrawItemEventArgs.cs" />
+    <Compile Include="Controls\HexBoxCtrl\NativeMethods.cs" />
+    <Compile Include="General\TypeConverters\UInt32HexConverter.cs" />
+    <Compile Include="General\TypeConverters\ByteHexConverter.cs" />
+    <Compile Include="General\Events\DoubleEventArg.cs" />
+    <Compile Include="General\Events\ByteArrayEventArg.cs" />
+    <Compile Include="Controls\HexBoxCtrl\DynamicFileByteProvider.cs" />
+    <Compile Include="General\BindingCollectionBase.cs" />
+    <Compile Include="Controls\HexBoxCtrl\MemoryDataBlock.cs" />
+    <Compile Include="Ftdi\FtdiDevice.cs" />
+    <Compile Include="Ftdi\IoPort.cs" />
+    <Compile Include="General\Events\DoubleEventHandler.cs" />
+    <Compile Include="General\Events\ErrorEventArgs.cs" />
+    <Compile Include="General\BindingRegisterList.cs" />
+    <Compile Include="Controls\Jumper.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\HexBoxCtrl\DynamicByteProvider.cs" />
+    <Compile Include="General\PropertySorter.cs" />
+    <Compile Include="General\PropertyOrderAttribute.cs" />
+    <Compile Include="General\PropertyOrderPair.cs" />
+    <Compile Include="Ftdi\MpsseI2C.cs" />
+    <Compile Include="Fusionbird\FusionToolkit\NativeMethods.cs" />
+    <Compile Include="General\Events\BooleanEventArg.cs" />
+    <EmbeddedResource Include="Controls\Graph\GraphCtrl.resx">
+      <DependentUpon>GraphCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\HexBoxCtrl\HexBox.resx">
+      <DependentUpon>HexBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FTD2XX_NET\FTD2XX_NET.csproj">
+      <Project>{c1086caf-f151-439e-a770-5b38e6d8f056}</Project>
+      <Name>FTD2XX_NET</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

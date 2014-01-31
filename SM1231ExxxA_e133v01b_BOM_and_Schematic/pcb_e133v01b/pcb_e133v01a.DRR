@@ -1,0 +1,18 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: pcb_e133v01a.PcbDoc   30.01.2009  17:05:08
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : pcb_e133v01a.TXT
+EIA File   : pcb_e133v01a.DRL
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        0.3mm (11.811mil)        Round          237              484.16 mm (19.06 Inch)
+T2        0.9mm (35.433mil)        Round          20               178.18 mm (7.01 Inch)
+T3        1mm (39.37mil)           Round          19               251.87 mm (9.92 Inch)
+T4        1.5mm (59.055mil)        Round          10               146.94 mm (5.79 Inch)
+---------------------------------------------------------------------------
+Totals                                            286              1061.15 mm (41.78 Inch)
+
+Total Processing Time (hh:mm:ss) : 00:00:01

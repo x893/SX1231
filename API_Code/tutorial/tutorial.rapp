@@ -1,0 +1,141 @@
+
+<ApplicationBuild Config="Standard" Extern=".\tutorial.rapp" Header="tutorial" OutputFile=".\tutorial.elf" Path=".\tutorial.rapp" sate="98" >
+	<NodeC Header="src\sx1212driver.c" OutputFile="obj\sx1212driver.o" Path=".\src\sx1212driver.c" sate="0" Marker="-1" />
+	<NodeC Header="src\main.c" OutputFile="obj\main.o" Path=".\src\main.c" sate="0" Marker="-1" />
+	<NodeC Header="src\initialisation.c" OutputFile="obj\initialisation.o" Path=".\src\initialisation.c" sate="0" Marker="-1" />
+	<NodeC Header="src\dflldriver.c" OutputFile="obj\dflldriver.o" Path=".\src\dflldriver.c" sate="0" Marker="-1" />
+	<NodeText Header="doc\readme.txt" OutputFile="" Path=".\doc\readme.txt" sate="0" Marker="-1" />
+	<Options>
+		<Config Header="Standard" >
+			<Set Header="ApplicationBuild" >
+				<Section Header="General" >
+					<Property Header="TargetFamily" Value="C816" />
+					        
+				</Section>
+				<Section Header="Directories" >
+					<Property Header="LibDir" Value="$(C816_ROOT)\C816\LIB;$(C816_ROOT)\LIB\GCC-LIB\C816\EGCS-2.91.02" />
+					<Property Header="IncDir" Value="$(C816_ROOT)\Templates;$(C816_ROOT)\C816\INCLUDE" />
+					<Property Header="ListDir" Value="lst" />
+					<Property Header="OutDir" Value="obj" />
+					<Property Header="LinkerOutputDir" Value="Application Directory" />
+					        
+				</Section>
+				      
+			</Set>
+			<Set Header="Target" >
+				<Section Header="ProcessorC816" >
+					<Property Header="Processor" Value="XE88LC06A" />
+					<Property Header="LibSoftCalls" Value="Yes" Removable="1" />
+							
+				</Section>
+				<Section Header="ToolSetC816" >
+					<Property Header="BuildToolSetC816" Removable="1" Value="C816\\GNU.Config" />
+					<Property Header="SoftCalls" Value="Yes" />
+					<Property Header="LibSoftCalls" Value="No" />
+					        
+				</Section>
+					
+			</Set>
+			<Set Header="LD" >
+				<Section Header="Linker" >
+					<Property Header="MAPFILE" Value="-Wl,-Map -Xlinker !$(Build.ListingFile)!" />
+					<Property Header="CROSS" Value="" />
+					<Property Header="COMPRESSOR" Value="1" />
+					<Property Header="DefWrappers" Value="0" />
+					<Property Header="GenDataInit" Value="1" />
+					<Property Header="WARNONCE" Value="" />
+					        
+				</Section>
+				<Section Header="Startup" >
+					<Property Header="DEFAULTSTARTUP" Value="Yes" />
+					<Property Header="File" Value="crt0.o" />
+					        
+				</Section>
+				<Section Header="Scripts" >
+					<Property Header="SCRIPTFILES" Value="Yes" />
+					<Property Header="File" Value="crt0.ld" />
+					        
+				</Section>
+				<Section Header="LIB" >
+					<Property Header="LibModel" Value="small" />
+					<Property Header="CLib" Value="1" />
+					<Property Header="MathLib" Value="1" />
+					<Property Header="IRQ" Value="1" />
+					<Property/>
+					<Property Header="Monitor" Value="0" />
+					<Property Header="MonitorUART" Value="1" />
+					        
+				</Section>
+				<Section/>
+				<Section Header="More" >
+					<Property Header="More" Value="" />
+					        
+				</Section>
+				      
+			</Set>
+			<Set Header="AS" >
+				<Section Header="Options" >
+					<Property Header="Debug" Value="-gdwarf2" />
+					<Property Header="LocalLabel" Value="" />
+					<Property Header="Warnings" Value="" />
+					<Property Header="More" Value="" />
+					        
+				</Section>
+				      
+			</Set>
+			<Set Header="GCC" >
+				<Section Header="Dialect" >
+					<Property Header="ANSI" Value="" />
+					<Property Header="Traditional" Value="" />
+					<Property Header="CharSign" Value="-funsigned-char" />
+					        
+				</Section>
+				<Section Header="Defines" >
+					<Property Header="Defines" Value="" />
+					        
+				</Section>
+				<Section Header="DEBUG" >
+					<Property Header="DEBUGINFO" Value="-gdwarf-2" />
+					<Property Header="TEMP" Value="" />
+					        
+				</Section>
+				<Section Header="CODE" >
+					<Property Header="ENUMS" Value="" />
+					<Property Header="DFLOAT" Value="" />
+					<Property Header="VPOINTERS" Value="" />
+					<Property Header="VEXTERNS" Value="" />
+					<Property Header="PACKSTRUCT" Value="" />
+					        
+				</Section>
+				<Section Header="OPTIMIZE" >
+					<Property Header="Optimize" Value="" Removable="1" />
+					<Property Header="IGNOREINLINE" Value="" />
+					<Property Header="INLINEFUNC" Value="" />
+					<Property Header="OptiSize" Value="-mpage0-mvs=4" Removable="1" />
+							
+				</Section>
+				<Section Header="WARNINGS" >
+					<Property Header="ANSISTRICT" Value="" />
+					<Property Header="NOWARNINGS" Value="" />
+					<Property Header="CONSWARNINGS" Value="-Wall" Removable="1" />
+					<Property Header="SWITCHWARNINGS" Value="-Wswitch" />
+					<Property Header="SHADOWARNINGS" Value="-Wshadow" />
+					<Property Header="UNUSEDWARNINGS" Value="-Wunused" />
+							
+				</Section>
+				<Section Header="More" >
+					<Property Header="More" Value="" />
+					        
+				</Section>
+					
+			</Set>
+			<Set Header="CCC816" >
+				<Section Header="Output" >
+					<Property Header="OutType" Value="-o" Removable="1" />
+							
+				</Section>
+					
+			</Set>
+		</Config>
+	</Options>
+</ApplicationBuild>

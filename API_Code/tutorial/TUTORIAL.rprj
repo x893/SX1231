@@ -1,0 +1,4 @@
+
+<Project Header="Project 'TUTORIAL'" Path=".\TUTORIAL.rprj" Project="Yes" sate="96" ActiveApp="tutorial" OutputFile="" >
+	<ApplicationBuild Config="Standard" Extern=".\tutorial.rapp" Header="tutorial" OutputFile=".\tutorial.elf" Path=".\tutorial.rapp" sate="98" />
+</Project>

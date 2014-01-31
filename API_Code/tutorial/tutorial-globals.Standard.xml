@@ -1,0 +1,115 @@
+<aoffile Header="tutorial" Path="D:\Data\SX1212_API\API\API_code\tutorial\tutorial.elf">
+  <Def>
+    <Col Header="DeclFile" Desc="File" />
+    <Col Header="Type" Desc="Type" />
+    <Col Header="Header" Desc="Name" />
+  </Def>
+  <func Header="InitRFChip" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="88" />
+  <func Header="SetRFMode" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="153" />
+  <func Header="WriteRegister" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="264" />
+  <func Header="ReadRegister" Icon="3" Type="func" Desc=":   unsigned int" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="281" />
+  <func Header="SendRfFrame" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="304" />
+  <func Header="ReceiveRfFrame" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="358" />
+  <func Header="SendByte" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="425" />
+  <func Header="ReceiveByte" Icon="3" Type="func" Desc=":   unsigned char" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="540" />
+  <func Header="ReadRssi" Icon="3" Type="func" Desc=":   unsigned int" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="627" />
+  <func Header="Wait" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="644" />
+  <func Header="TxEventsOn" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="673" />
+  <func Header="TxEventsOff" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="692" />
+  <func Header="RxEventsOn" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="707" />
+  <func Header="RxEventsOff" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="726" />
+  <func Header="InvertByte" Icon="3" Type="func" Desc=":   unsigned char" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="740" />
+  <func Header="SpiInOut" Icon="3" Type="func" Desc=":   unsigned char" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="755" />
+  <type Header="U8" Icon="1" Type="type" Desc=": unsigned char" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="84" Pointer="No" />
+  <type Header="_U8" Icon="1" Type="type" Desc=": unsigned char" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="85" Pointer="No" />
+  <type Header="U16" Icon="1" Type="type" Desc=": unsigned int" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="88" Pointer="No" />
+  <type Header="_U16" Icon="1" Type="type" Desc=": unsigned int" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="89" Pointer="No" />
+  <type Header="U32" Icon="1" Type="type" Desc=": unsigned long" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="92" Pointer="No" />
+  <type Header="_U32" Icon="1" Type="type" Desc=": unsigned long" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="93" Pointer="No" />
+  <type Header="S8" Icon="1" Type="type" Desc=": signed char" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="96" Pointer="No" />
+  <type Header="_S8" Icon="1" Type="type" Desc=": signed char" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="97" Pointer="No" />
+  <type Header="S16" Icon="1" Type="type" Desc=": int" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="100" Pointer="No" />
+  <type Header="_S16" Icon="1" Type="type" Desc=": int" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="101" Pointer="No" />
+  <type Header="S32" Icon="1" Type="type" Desc=": long" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="104" Pointer="No" />
+  <type Header="_S32" Icon="1" Type="type" Desc=": long" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="105" Pointer="No" />
+  <type Header="F32" Icon="1" Type="type" Desc=": float" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="108" Pointer="No" />
+  <type Header="_F32" Icon="1" Type="type" Desc=": float" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="109" Pointer="No" />
+  <variable Header="RFState" Icon="2" Type="variable" Desc=":   unsigned char" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="29" Pointer="No" />
+  <variable Header="pRFFrame" Icon="2" Type="variable" Desc=":   unsigned char DATA*" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="30" Pointer="Yes" />
+  <variable Header="RFFramePos" Icon="2" Type="variable" Desc=":   unsigned char" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="31" Pointer="No" />
+  <variable Header="RFFrameSize" Icon="2" Type="variable" Desc=":   unsigned char" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="32" Pointer="No" />
+  <variable Header="ByteCounter" Icon="2" Type="variable" Desc=":   unsigned int" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="33" Pointer="No" />
+  <variable Header="PreMode" Icon="2" Type="variable" Desc=":   unsigned char" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="34" Pointer="No" />
+  <variable Header="SyncSize" Icon="2" Type="variable" Desc=":   unsigned char" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="35" Pointer="No" />
+  <variable Header="SyncValue" Icon="2" Type="variable" Desc=":   unsigned char[4]" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="36" Pointer="No" />
+  <variable Header="RFFrameTimeOut" Icon="2" Type="variable" Desc=":   unsigned long" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="37" Pointer="No" />
+  <variable Header="RegistersCfg" Icon="2" Type="variable" Desc=":   unsigned int[27]" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" DeclLine="40" Pointer="No" />
+  <func Header="OnMaster" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\main.c" DeclLine="34" />
+  <func Header="OnSlave" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\main.c" DeclLine="76" />
+  <func Header="main" Icon="3" Type="func" Desc=":   int" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\main.c" DeclLine="105" />
+  <type Header="U8" Icon="1" Type="type" Desc=": unsigned char" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="84" Pointer="No" />
+  <type Header="_U8" Icon="1" Type="type" Desc=": unsigned char" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="85" Pointer="No" />
+  <type Header="U16" Icon="1" Type="type" Desc=": unsigned int" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="88" Pointer="No" />
+  <type Header="_U16" Icon="1" Type="type" Desc=": unsigned int" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="89" Pointer="No" />
+  <type Header="U32" Icon="1" Type="type" Desc=": unsigned long" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="92" Pointer="No" />
+  <type Header="_U32" Icon="1" Type="type" Desc=": unsigned long" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="93" Pointer="No" />
+  <type Header="S8" Icon="1" Type="type" Desc=": signed char" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="96" Pointer="No" />
+  <type Header="_S8" Icon="1" Type="type" Desc=": signed char" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="97" Pointer="No" />
+  <type Header="S16" Icon="1" Type="type" Desc=": int" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="100" Pointer="No" />
+  <type Header="_S16" Icon="1" Type="type" Desc=": int" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="101" Pointer="No" />
+  <type Header="S32" Icon="1" Type="type" Desc=": long" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="104" Pointer="No" />
+  <type Header="_S32" Icon="1" Type="type" Desc=": long" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="105" Pointer="No" />
+  <type Header="F32" Icon="1" Type="type" Desc=": float" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="108" Pointer="No" />
+  <type Header="_F32" Icon="1" Type="type" Desc=": float" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="109" Pointer="No" />
+  <variable Header="RFbuffer" Icon="2" Type="variable" Desc=":   unsigned char[64]" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\main.c" DeclLine="23" Pointer="No" />
+  <variable Header="RFbufferSize" Icon="2" Type="variable" Desc=":   unsigned char" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\main.c" DeclLine="24" Pointer="No" />
+  <variable Header="EnableMaster" Icon="2" Type="variable" Desc=":   unsigned char" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\main.c" DeclLine="25" Pointer="No" />
+  <variable Header="SendNextPacket" Icon="2" Type="variable" Desc=":   unsigned char" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\main.c" DeclLine="26" Pointer="No" />
+  <func Header="InitMicro" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" DeclLine="26" />
+  <func Header="InitPortA" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" DeclLine="71" />
+  <func Header="InitPortB" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" DeclLine="89" />
+  <func Header="InitCounters" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" DeclLine="103" />
+  <func Header="InitRCOscillator" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" DeclLine="120" />
+  <func Header="InitUART" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" DeclLine="146" />
+  <func Header="InitPortD" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" DeclLine="458" />
+  <type Header="U8" Icon="1" Type="type" Desc=": unsigned char" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="84" Pointer="No" />
+  <type Header="_U8" Icon="1" Type="type" Desc=": unsigned char" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="85" Pointer="No" />
+  <type Header="U16" Icon="1" Type="type" Desc=": unsigned int" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="88" Pointer="No" />
+  <type Header="_U16" Icon="1" Type="type" Desc=": unsigned int" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="89" Pointer="No" />
+  <type Header="U32" Icon="1" Type="type" Desc=": unsigned long" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="92" Pointer="No" />
+  <type Header="_U32" Icon="1" Type="type" Desc=": unsigned long" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="93" Pointer="No" />
+  <type Header="S8" Icon="1" Type="type" Desc=": signed char" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="96" Pointer="No" />
+  <type Header="_S8" Icon="1" Type="type" Desc=": signed char" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="97" Pointer="No" />
+  <type Header="S16" Icon="1" Type="type" Desc=": int" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="100" Pointer="No" />
+  <type Header="_S16" Icon="1" Type="type" Desc=": int" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="101" Pointer="No" />
+  <type Header="S32" Icon="1" Type="type" Desc=": long" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="104" Pointer="No" />
+  <type Header="_S32" Icon="1" Type="type" Desc=": long" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="105" Pointer="No" />
+  <type Header="F32" Icon="1" Type="type" Desc=": float" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="108" Pointer="No" />
+  <type Header="_F32" Icon="1" Type="type" Desc=": float" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="109" Pointer="No" />
+  <func Header="DFLLRun" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" DeclLine="61" />
+  <func Header="FrequencyMeasure" Icon="3" Type="func" Desc=":   unsigned int" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" DeclLine="121" />
+  <func Header="RCSetDelay" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" DeclLine="170" />
+  <func Header="CalibrateRC" Icon="3" Type="func" Desc=":   void" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" DeclLine="186" />
+  <type Header="U8" Icon="1" Type="type" Desc=": unsigned char" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="84" Pointer="No" />
+  <type Header="_U8" Icon="1" Type="type" Desc=": unsigned char" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="85" Pointer="No" />
+  <type Header="U16" Icon="1" Type="type" Desc=": unsigned int" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="88" Pointer="No" />
+  <type Header="_U16" Icon="1" Type="type" Desc=": unsigned int" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="89" Pointer="No" />
+  <type Header="U32" Icon="1" Type="type" Desc=": unsigned long" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="92" Pointer="No" />
+  <type Header="_U32" Icon="1" Type="type" Desc=": unsigned long" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="93" Pointer="No" />
+  <type Header="S8" Icon="1" Type="type" Desc=": signed char" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="96" Pointer="No" />
+  <type Header="_S8" Icon="1" Type="type" Desc=": signed char" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="97" Pointer="No" />
+  <type Header="S16" Icon="1" Type="type" Desc=": int" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="100" Pointer="No" />
+  <type Header="_S16" Icon="1" Type="type" Desc=": int" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="101" Pointer="No" />
+  <type Header="S32" Icon="1" Type="type" Desc=": long" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="104" Pointer="No" />
+  <type Header="_S32" Icon="1" Type="type" Desc=": long" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="105" Pointer="No" />
+  <type Header="F32" Icon="1" Type="type" Desc=": float" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="108" Pointer="No" />
+  <type Header="_F32" Icon="1" Type="type" Desc=": float" DeclFile="C:\Ride7\Ride\GNU\c816-gcc\C816\INCLUDE\Types.h" DeclLine="109" Pointer="No" />
+  <variable Header="StaticRegCntOn" Icon="2" Type="variable" Desc=":   unsigned char" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" DeclLine="39" Pointer="No" />
+  <variable Header="StaticRegCntA" Icon="2" Type="variable" Desc=":   unsigned char" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" DeclLine="39" Pointer="No" />
+  <variable Header="StaticRegCntB" Icon="2" Type="variable" Desc=":   unsigned char" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" DeclLine="39" Pointer="No" />
+  <variable Header="StaticRegCntC" Icon="2" Type="variable" Desc=":   unsigned char" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" DeclLine="40" Pointer="No" />
+  <variable Header="StaticRegCntD" Icon="2" Type="variable" Desc=":   unsigned char" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" DeclLine="40" Pointer="No" />
+  <variable Header="StaticRegCntCtrlCk" Icon="2" Type="variable" Desc=":   unsigned char" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" DeclLine="40" Pointer="No" />
+  <variable Header="StaticRegCntConfig1" Icon="2" Type="variable" Desc=":   unsigned char" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" DeclLine="40" Pointer="No" />
+  <variable Header="StaticRegCntConfig2" Icon="2" Type="variable" Desc=":   unsigned char" DeclFile="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" DeclLine="41" Pointer="No" />
+</aoffile>

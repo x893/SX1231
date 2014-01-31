@@ -1,0 +1,221 @@
+<aoffile Filename="tutorial" dwarf="1">
+  <modulelist>
+    <module Name="C:/DOCUME~1/fkeller/LOCALS~1/Temp/cc001000.i">
+      <function Name="InitRFChip" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="88">
+        <variable Name="i" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="89" Addr="0x0" TI="65" />
+      </function>
+      <function Name="SetRFMode" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="153">
+        <parameter Name="mode" TI="106" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="153" Addr="0x0" Param="Yes" />
+      </function>
+      <function Name="WriteRegister" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="264">
+        <parameter Name="address" TI="106" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="264" Addr="0x0" Param="Yes" />
+        <parameter Name="value" TI="65" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="264" Addr="0x1" Param="Yes" />
+      </function>
+      <function Name="ReadRegister" TI="65" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="281">
+        <parameter Name="address" TI="106" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="281" Addr="0x0" Param="Yes" />
+        <variable Name="value" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="282" Addr="0x1" TI="106" />
+      </function>
+      <function Name="SendRfFrame" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="304">
+        <type Family="Pointer" TI="285" toTI="106" />
+        <parameter Name="buffer" TI="285" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="304" Addr="0x0" Param="Yes" />
+        <parameter Name="size" TI="106" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="304" Addr="0x2" Param="Yes" />
+        <parameter Name="pReturnCode" TI="285" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="304" Addr="0x7" Param="Yes" />
+      </function>
+      <function Name="ReceiveRfFrame" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="358">
+        <parameter Name="buffer" TI="285" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="358" Addr="0x0" Param="Yes" />
+        <parameter Name="size" TI="285" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="358" Addr="0x2" Param="Yes" />
+        <parameter Name="pReturnCode" TI="285" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="358" Addr="0x8" Param="Yes" />
+      </function>
+      <function Name="SendByte" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="425">
+        <parameter Name="b" TI="106" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="425" Addr="0x0" Param="Yes" />
+      </function>
+      <function Name="ReceiveByte" TI="106" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="540">
+        <variable Name="b" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="541" Addr="0x0" TI="106" />
+      </function>
+      <function Name="ReadRssi" TI="65" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="627">
+        <variable Name="value" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="628" Addr="0x0" TI="65" />
+      </function>
+      <function Name="Wait" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="644">
+        <parameter Name="cntVal" TI="65" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="644" Addr="0x0" Param="Yes" />
+      </function>
+      <function Name="TxEventsOn" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="673">
+      </function>
+      <function Name="TxEventsOff" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="692">
+      </function>
+      <function Name="RxEventsOn" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="707">
+      </function>
+      <function Name="RxEventsOff" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="726">
+      </function>
+      <function Name="InvertByte" TI="106" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="740">
+        <parameter Name="b" TI="106" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="740" Addr="0x0" Param="Yes" />
+      </function>
+      <function Name="SpiInOut" TI="106" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="755">
+        <parameter Name="outputByte" TI="106" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="755" Addr="0x0" Param="Yes" />
+        <variable Name="bitCounter" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="756" Addr="0x1" TI="106" />
+        <variable Name="inputByte" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="757" Addr="0x2" TI="106" />
+      </function>
+      <type Family="Base" Name="unsigned char" ID="687" />
+      <type Family="typedef" Name="U8" Line="84" ID="677" toTI="687" />
+      <type Family="typedef" Name="_U8" Line="85" ID="694" toTI="687" />
+      <type Family="Base" Name="short unsigned int" ID="716" />
+      <type Family="typedef" Name="U16" Line="88" ID="705" toTI="716" />
+      <type Family="typedef" Name="_U16" Line="89" ID="723" toTI="716" />
+      <type Family="Base" Name="long unsigned int" ID="745" />
+      <type Family="typedef" Name="U32" Line="92" ID="734" toTI="745" />
+      <type Family="typedef" Name="_U32" Line="93" ID="752" toTI="745" />
+      <type Family="Base" Name="signed char" ID="773" />
+      <type Family="typedef" Name="S8" Line="96" ID="763" toTI="773" />
+      <type Family="typedef" Name="_S8" Line="97" ID="780" toTI="773" />
+      <type Family="Base" Name="short int" ID="802" />
+      <type Family="typedef" Name="S16" Line="100" ID="791" toTI="802" />
+      <type Family="typedef" Name="_S16" Line="101" ID="809" toTI="802" />
+      <type Family="Base" Name="long int" ID="831" />
+      <type Family="typedef" Name="S32" Line="104" ID="820" toTI="831" />
+      <type Family="typedef" Name="_S32" Line="105" ID="838" toTI="831" />
+      <type Family="Base" Name="double" ID="860" />
+      <type Family="typedef" Name="F32" Line="108" ID="849" toTI="860" />
+      <type Family="typedef" Name="_F32" Line="109" ID="867" toTI="860" />
+      <variable Name="RFState" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="29" Addr="0x99" TI="694" />
+      <variable Name="pRFFrame" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="30" Addr="0x88" TI="285" />
+      <variable Name="RFFramePos" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="31" Addr="0x8A" TI="694" />
+      <variable Name="RFFrameSize" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="32" Addr="0x8B" TI="694" />
+      <variable Name="ByteCounter" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="33" Addr="0x9A" TI="723" />
+      <variable Name="PreMode" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="34" Addr="0x9C" TI="694" />
+      <variable Name="SyncSize" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="35" Addr="0x9D" TI="694" />
+      <type Family="array" ID="1157" toTI="694" />
+      <type Family="Base" Name="unsigned int" ID="1173" />
+      <variable Name="SyncValue" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="36" Addr="0x8C" TI="1157" />
+      <variable Name="RFFrameTimeOut" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="37" Addr="0x9E" TI="752" />
+      <type Family="array" ID="1210" toTI="723" />
+      <variable Name="RegistersCfg" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\sx1212driver.c" Line="40" Addr="0x140" TI="1210" />
+    </module>
+    <module Name="C:/DOCUME~1/fkeller/LOCALS~1/Temp/cc001000.i">
+      <function Name="OnMaster" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\main.c" Line="34">
+        <variable Name="ReturnCode" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\main.c" Line="35" Addr="0x2" TI="1310" />
+      </function>
+      <function Name="OnSlave" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\main.c" Line="76">
+        <variable Name="ReturnCode" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\main.c" Line="77" Addr="0x2" TI="1310" />
+      </function>
+      <type Family="Base" Name="int" ID="1370" />
+      <function Name="main" TI="1370" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\main.c" Line="105">
+      </function>
+      <type Family="Base" Name="unsigned char" ID="1387" />
+      <type Family="typedef" Name="U8" Line="84" ID="1377" toTI="1387" />
+      <type Family="typedef" Name="_U8" Line="85" ID="1394" toTI="1387" />
+      <type Family="Base" Name="short unsigned int" ID="1416" />
+      <type Family="typedef" Name="U16" Line="88" ID="1405" toTI="1416" />
+      <type Family="typedef" Name="_U16" Line="89" ID="1423" toTI="1416" />
+      <type Family="Base" Name="long unsigned int" ID="1445" />
+      <type Family="typedef" Name="U32" Line="92" ID="1434" toTI="1445" />
+      <type Family="typedef" Name="_U32" Line="93" ID="1452" toTI="1445" />
+      <type Family="Base" Name="signed char" ID="1473" />
+      <type Family="typedef" Name="S8" Line="96" ID="1463" toTI="1473" />
+      <type Family="typedef" Name="_S8" Line="97" ID="1480" toTI="1473" />
+      <type Family="Base" Name="short int" ID="1502" />
+      <type Family="typedef" Name="S16" Line="100" ID="1491" toTI="1502" />
+      <type Family="typedef" Name="_S16" Line="101" ID="1509" toTI="1502" />
+      <type Family="Base" Name="long int" ID="1531" />
+      <type Family="typedef" Name="S32" Line="104" ID="1520" toTI="1531" />
+      <type Family="typedef" Name="_S32" Line="105" ID="1538" toTI="1531" />
+      <type Family="Base" Name="double" ID="1560" />
+      <type Family="typedef" Name="F32" Line="108" ID="1549" toTI="1560" />
+      <type Family="typedef" Name="_F32" Line="109" ID="1567" toTI="1560" />
+      <type Family="array" ID="1596" toTI="1394" />
+      <type Family="Base" Name="unsigned int" ID="1612" />
+      <variable Name="RFbuffer" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\main.c" Line="23" Addr="0x100" TI="1596" />
+      <variable Name="RFbufferSize" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\main.c" Line="24" Addr="0x90" TI="1591" />
+      <variable Name="EnableMaster" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\main.c" Line="25" Addr="0xA2" TI="1591" />
+      <variable Name="SendNextPacket" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\main.c" Line="26" Addr="0xA3" TI="1591" />
+    </module>
+    <module Name="C:/DOCUME~1/fkeller/LOCALS~1/Temp/cc001000.i">
+      <function Name="InitMicro" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" Line="26">
+      </function>
+      <function Name="InitPortA" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" Line="71">
+      </function>
+      <function Name="InitPortB" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" Line="89">
+      </function>
+      <function Name="InitCounters" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" Line="103">
+      </function>
+      <function Name="InitRCOscillator" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" Line="120">
+        <type Family="Base" Name="long unsigned int" ID="1811" />
+        <parameter Name="Frequency" TI="1811" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" Line="120" Addr="0xF0000" Param="Yes" />
+      </function>
+      <function Name="InitUART" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" Line="146">
+        <parameter Name="baudrate" TI="1908" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" Line="146" Addr="0xF0000" Param="Yes" />
+        <parameter Name="dataLen" TI="1915" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" Line="146" Addr="0xF0018" Param="Yes" />
+        <parameter Name="parity" TI="1915" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" Line="146" Addr="0xF0019" Param="Yes" />
+        <parameter Name="parityEn" TI="1915" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" Line="146" Addr="0xF001A" Param="Yes" />
+        <parameter Name="rcFactor" TI="1915" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" Line="146" Addr="0xF001B" Param="Yes" />
+      </function>
+      <function Name="InitPortD" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\initialisation.c" Line="458">
+      </function>
+      <type Family="Base" Name="unsigned char" ID="1948" />
+      <type Family="typedef" Name="U8" Line="84" ID="1938" toTI="1948" />
+      <type Family="typedef" Name="_U8" Line="85" ID="1955" toTI="1948" />
+      <type Family="Base" Name="short unsigned int" ID="1977" />
+      <type Family="typedef" Name="U16" Line="88" ID="1966" toTI="1977" />
+      <type Family="typedef" Name="_U16" Line="89" ID="1984" toTI="1977" />
+      <type Family="typedef" Name="U32" Line="92" ID="1995" toTI="1811" />
+      <type Family="typedef" Name="_U32" Line="93" ID="2006" toTI="1811" />
+      <type Family="Base" Name="signed char" ID="2027" />
+      <type Family="typedef" Name="S8" Line="96" ID="2017" toTI="2027" />
+      <type Family="typedef" Name="_S8" Line="97" ID="2034" toTI="2027" />
+      <type Family="Base" Name="short int" ID="2056" />
+      <type Family="typedef" Name="S16" Line="100" ID="2045" toTI="2056" />
+      <type Family="typedef" Name="_S16" Line="101" ID="2063" toTI="2056" />
+      <type Family="Base" Name="long int" ID="2085" />
+      <type Family="typedef" Name="S32" Line="104" ID="2074" toTI="2085" />
+      <type Family="typedef" Name="_S32" Line="105" ID="2092" toTI="2085" />
+      <type Family="Base" Name="double" ID="2114" />
+      <type Family="typedef" Name="F32" Line="108" ID="2103" toTI="2114" />
+      <type Family="typedef" Name="_F32" Line="109" ID="2121" toTI="2114" />
+    </module>
+    <module Name="C:/DOCUME~1/fkeller/LOCALS~1/Temp/cc001000.i">
+      <function Name="DFLLRun" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="61">
+        <parameter Name="Frequency" TI="2546" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="61" Addr="0xF0000" Param="Yes" />
+        <variable Name="RegEvnEn_old" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="62" Addr="0xF0004" TI="2553" />
+        <variable Name="NbRCtoReach" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="63" Addr="0xF0005" TI="2560" />
+        <variable Name="SaveStatReg" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="64" Addr="0xF0007" TI="2553" />
+      </function>
+      <function Name="FrequencyMeasure" TI="2560" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="121">
+      </function>
+      <function Name="RCSetDelay" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="170">
+      </function>
+      <function Name="CalibrateRC" TI="0" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="186">
+        <parameter Name="NbRCtoReach" TI="2560" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="186" Addr="0x40000" Param="Yes" />
+        <variable Name="NewCounter" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="187" Addr="0x40002" TI="2560" />
+        <variable Name="Diff" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="188" Addr="0x40004" TI="2560" />
+        <variable Name="BitPos" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="189" Addr="0x40006" TI="2560" />
+      </function>
+      <type Family="Base" Name="unsigned char" ID="2687" />
+      <type Family="typedef" Name="U8" Line="84" ID="2677" toTI="2687" />
+      <type Family="typedef" Name="_U8" Line="85" ID="2694" toTI="2687" />
+      <type Family="Base" Name="short unsigned int" ID="2716" />
+      <type Family="typedef" Name="U16" Line="88" ID="2705" toTI="2716" />
+      <type Family="typedef" Name="_U16" Line="89" ID="2723" toTI="2716" />
+      <type Family="Base" Name="long unsigned int" ID="2745" />
+      <type Family="typedef" Name="U32" Line="92" ID="2734" toTI="2745" />
+      <type Family="typedef" Name="_U32" Line="93" ID="2752" toTI="2745" />
+      <type Family="Base" Name="signed char" ID="2773" />
+      <type Family="typedef" Name="S8" Line="96" ID="2763" toTI="2773" />
+      <type Family="typedef" Name="_S8" Line="97" ID="2780" toTI="2773" />
+      <type Family="Base" Name="short int" ID="2802" />
+      <type Family="typedef" Name="S16" Line="100" ID="2791" toTI="2802" />
+      <type Family="typedef" Name="_S16" Line="101" ID="2809" toTI="2802" />
+      <type Family="Base" Name="long int" ID="2831" />
+      <type Family="typedef" Name="S32" Line="104" ID="2820" toTI="2831" />
+      <type Family="typedef" Name="_S32" Line="105" ID="2838" toTI="2831" />
+      <type Family="Base" Name="double" ID="2860" />
+      <type Family="typedef" Name="F32" Line="108" ID="2849" toTI="2860" />
+      <type Family="typedef" Name="_F32" Line="109" ID="2867" toTI="2860" />
+      <variable Name="StaticRegCntOn" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="39" Addr="0x91" TI="2694" />
+      <variable Name="StaticRegCntA" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="39" Addr="0x92" TI="2694" />
+      <variable Name="StaticRegCntB" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="39" Addr="0x93" TI="2694" />
+      <variable Name="StaticRegCntC" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="40" Addr="0x94" TI="2694" />
+      <variable Name="StaticRegCntD" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="40" Addr="0x95" TI="2694" />
+      <variable Name="StaticRegCntCtrlCk" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="40" Addr="0x96" TI="2694" />
+      <variable Name="StaticRegCntConfig1" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="40" Addr="0x97" TI="2694" />
+      <variable Name="StaticRegCntConfig2" FileName="D:\Data\SX1212_API\API\API_code\tutorial\src\dflldriver.c" Line="41" Addr="0x98" TI="2694" />
+    </module>
+  </modulelist>
+</aoffile>
