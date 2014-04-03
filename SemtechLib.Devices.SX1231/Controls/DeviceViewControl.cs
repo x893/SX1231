@@ -552,7 +552,7 @@ namespace SemtechLib.Devices.SX1231.Controls
             tabCommon.Location = new Point(4, 0x16);
             tabCommon.Name = "tabCommon";
             tabCommon.Padding = new Padding(3);
-            tabCommon.Size = new Size(0x31f, 0x1ed);
+            tabCommon.Size = new Size(799, 493);
             tabCommon.TabIndex = 0;
             tabCommon.Text = "Common";
             tabCommon.UseVisualStyleBackColor = true;

@@ -13,6 +13,7 @@ namespace SemtechLib.Ftdi
 		public class IoChangedEventArgs : EventArgs
 		{
 			private bool _state;
+
 			public IoChangedEventArgs(bool state)
 			{
 				_state = state;
@@ -26,6 +27,7 @@ namespace SemtechLib.Ftdi
 
 		public delegate void IoChangedEventHandler(object sender, FtdiIoPort.IoChangedEventArgs e);
 
+		public event EventHandler Opened;
 		public event EventHandler Closed;
 
 		public abstract event IoChangedEventHandler Io0Changed;
@@ -36,7 +38,6 @@ namespace SemtechLib.Ftdi
 		public abstract event IoChangedEventHandler Io5Changed;
 		public abstract event IoChangedEventHandler Io6Changed;
 		public abstract event IoChangedEventHandler Io7Changed;
-		public event EventHandler Opened;
 
 		private string device = "";
 		private FTDI.FT_DEVICE_INFO_NODE[] deviceList;

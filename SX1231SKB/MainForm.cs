@@ -241,10 +241,9 @@ namespace SX1231SKB
 			frmTest = null;
 		}
 
-		private void frmTest_FormClosed(object sender, FormClosedEventArgs e)
-		{
-		}
+		private void frmTest_FormClosed(object sender, FormClosedEventArgs e) { }
 
+		#region InitializeComponent()
 		private void InitializeComponent()
 		{
 			this.components = new System.ComponentModel.Container();
@@ -868,6 +867,7 @@ namespace SX1231SKB
 			this.ResumeLayout(false);
 
 		}
+		#endregion
 
 		private bool IsFormLocatedInScreen(Form frm, Screen[] screens)
 		{
@@ -875,14 +875,14 @@ namespace SX1231SKB
 			bool flag = false;
 			for (int i = 0; i <= upperBound; i++)
 			{
-				if (((frm.Left < screens[i].WorkingArea.Left) || (frm.Top < screens[i].WorkingArea.Top)) || ((frm.Left > screens[i].WorkingArea.Right) || (frm.Top > screens[i].WorkingArea.Bottom)))
-				{
+				if (frm.Left < screens[i].WorkingArea.Left
+				|| frm.Top < screens[i].WorkingArea.Top
+				|| frm.Left > screens[i].WorkingArea.Right
+				|| frm.Top > screens[i].WorkingArea.Bottom
+					)
 					flag = false;
-				}
 				else
-				{
 					return true;
-				}
 			}
 			return flag;
 		}
@@ -914,9 +914,7 @@ namespace SX1231SKB
 					saveToolStripMenuItem.Text = "Save Config \"" + configFileName + "\"";
 				}
 				else
-				{
 					isConfigFileOpen = false;
-				}
 			}
 			catch (Exception exception)
 			{
@@ -1555,7 +1553,11 @@ namespace SX1231SKB
 			{
 				if (tsBtnOpenDevice.Text == "Connect")
 				{
-					if (!sx1231.Open("SX1231SKB-915") && !sx1231.Open("SX1231SKB") && !sx1231.Open("Semtech USB bridge"))
+					if (!sx1231.Open("Dual RS232")
+					&& !sx1231.Open("SX1231SKB-915")
+					&& !sx1231.Open("SX1231SKB")
+					&& !sx1231.Open("Semtech USB bridge")
+						)
 						throw new Exception("Unable to open SX1231 " + sx1231.DeviceName + " device");
 				}
 				else if (sx1231 != null)
