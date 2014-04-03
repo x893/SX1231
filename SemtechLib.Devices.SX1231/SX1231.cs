@@ -17,6 +17,12 @@ namespace SemtechLib.Devices.SX1231
 {
 	public class SX1231 : INotifyPropertyChanged, IDisposable
 	{
+		private const byte PA3_CS = 0x8;
+		private const byte PA5_RESET = 0x20;
+		private const byte PB6_LED1 = 0x40;
+		private const byte PB7_LED2 = 0x80;
+		private const byte PB_LEDS = 0xC0;
+
 		public delegate void ErrorEventHandler(object sender, SemtechLib.General.Events.ErrorEventArgs e);
 		public delegate void LimitCheckStatusChangedEventHandler(object sender, LimitCheckStatusEventArg e);
 		public delegate void PacketHandlerReceivedEventHandler(object sender, PacketStatusEventArg e);
@@ -198,7 +204,7 @@ namespace SemtechLib.Devices.SX1231
 			ftdi.Opened += new EventHandler(ftdi_Opened);
 			ftdi.Closed += new EventHandler(ftdi_Closed);
 
-			ftdi.PortB.Io0Changed += new FtdiIoPort.IoChangedEventHandler(sx131_PB_Dio0Changed);
+			ftdi.PortB.Io0Changed += new FtdiIoPort.IoChangedEventHandler(sx131_PB0_RXTX_Changed);
 			ftdi.PortB.Io1Changed += new FtdiIoPort.IoChangedEventHandler(sx131_PB_Dio1or5Changed);
 			ftdi.PortB.Io2Changed += new FtdiIoPort.IoChangedEventHandler(sx131_PB_Dio2Changed);
 			ftdi.PortB.Io3Changed += new FtdiIoPort.IoChangedEventHandler(sx131_PB_Dio3Changed);
@@ -209,6 +215,28 @@ namespace SemtechLib.Devices.SX1231
 
 			PopulateRegisters();
 		}
+
+		private void sx131_PB0_RXTX_Changed(object sender, FtdiIoPort.IoChangedEventArgs e)
+		{
+			lock (syncThread)
+				if (isPacketModeRunning && (e.State || firstTransmit))
+				{
+					firstTransmit = false;
+					if (Mode == OperatingModeEnum.Tx)
+					{
+						OnPacketHandlerTransmitted();
+						PacketHandlerTransmit();
+					}
+					else if (Mode == OperatingModeEnum.Rx)
+						PacketHandlerReceive();
+				}
+		}
+
+		private void sx131_PB_Dio1or5Changed(object sender, FtdiIoPort.IoChangedEventArgs e) { }
+		private void sx131_PB_Dio4Changed(object sender, FtdiIoPort.IoChangedEventArgs e) { }
+		private void sx131_PB_Dio2Changed(object sender, FtdiIoPort.IoChangedEventArgs e) { }
+		private void sx131_PA_Dio7Changed(object sender, FtdiIoPort.IoChangedEventArgs e) { }
+		private void sx131_PB_Dio3Changed(object sender, FtdiIoPort.IoChangedEventArgs e) { }
 
 		private void BitRateFdevCheck(decimal bitRate, decimal fdev)
 		{
@@ -332,16 +360,20 @@ namespace SemtechLib.Devices.SX1231
 		{
 			if (!frequencyRfCheckDisable)
 			{
-				if ((((value < 290000000M) || ((value > 340000000M) && (value < 424000000M))) || ((value > 510000000M) && (value < 862000000M))) || (value > 1020000000M))
+				if ((value >= 290000000M && value <= 340000000M)
+				|| (value >= 424000000M && value <= 510000000M)
+				|| (value >= 862000000M && value <= 1020000000M)
+					)
+					OnFrequencyRfLimitStatusChanged(LimitCheckStatusEnum.OK, "");
+				else
 				{
-					string[] strArray2 = new string[3];
-					strArray2[0] = string.Concat(new string[] { "[", 0x11490c80.ToString(), ", ", 0x1443fd00.ToString(), "]" });
-					strArray2[1] = string.Concat(new string[] { "[", 0x1945ba00.ToString(), ", ", 0x1e65fb80.ToString(), "]" });
-					strArray2[2] = string.Concat(new string[] { "[", 0x33611380.ToString(), ", ", 0x3ccbf700.ToString(), "]" });
+					string[] strArray2 = new string[] {
+						string.Concat(new string[] { "[", 290000000M.ToString(), ", ", 340000000M.ToString(), "]" }),
+						string.Concat(new string[] { "[", 424000000M.ToString(), ", ", 510000000M.ToString(), "]" }),
+						string.Concat(new string[] { "[", 862000000M.ToString(), ", ", 1020000000M.ToString(), "]" })
+					};
 					OnFrequencyRfLimitStatusChanged(LimitCheckStatusEnum.OUT_OF_RANGE, "The RF frequency is out of range.\nThe valid ranges are:\n" + strArray2[0] + "\n" + strArray2[1] + "\n" + strArray2[2]);
 				}
-				else
-					OnFrequencyRfLimitStatusChanged(LimitCheckStatusEnum.OK, "");
 			}
 		}
 
@@ -969,12 +1001,12 @@ namespace SemtechLib.Devices.SX1231
 		public bool Read(byte address, ref byte data)
 		{
 			Mpsse portA = ftdi.PortA;
-			portA.PortValue = (byte)(portA.PortValue & 0xF7);
+			portA.PortValue = (byte)(portA.PortValue & ~PA3_CS);
 			portA.ScanOut(8, new byte[] { (byte)(address & 0x7F) }, true);
 			portA.ScanIn(8, true);
 
-			portA.PortValue = (byte)(portA.PortValue | 8);
-			portA.TxBufferAdd((byte)0x87);
+			portA.PortValue = (byte)(portA.PortValue | PA3_CS);
+			portA.TxBufferAdd(0x87);
 
 			bool flag = portA.SendBytes();
 			byte[] rxBuffer = new byte[1];
@@ -990,13 +1022,13 @@ namespace SemtechLib.Devices.SX1231
 		{
 			Mpsse portA = ftdi.PortA;
 
-			portA.PortValue = (byte)(portA.PortValue & 0xF7);
+			portA.PortValue = (byte)(portA.PortValue & ~PA3_CS);
 			portA.ScanOut(8, new byte[] { (byte)(address & 0x7F) }, true);
 			for (int i = 0; i < data.Length; i++)
 				portA.ScanIn(8, true);
 
-			portA.PortValue = (byte)(portA.PortValue | 0x08);
-			portA.TxBufferAdd((byte)0x87);
+			portA.PortValue = (byte)(portA.PortValue | PA3_CS);
+			portA.TxBufferAdd(0x87);
 			bool flag = portA.SendBytes();
 			byte[] rxBuffer = new byte[1];
 			if (flag && portA.ReadBytes(out rxBuffer, (uint)(data.Length * 8)))
@@ -1210,6 +1242,10 @@ namespace SemtechLib.Devices.SX1231
 			}
 		}
 
+		#region Reset() 
+		/// <summary>
+		/// Reset module
+		/// </summary>
 		public void Reset()
 		{
 			object sync;
@@ -1223,18 +1259,17 @@ namespace SemtechLib.Devices.SX1231
 				tempCalDone = false;
 				PacketHandlerStop();
 
-				byte num = 0x20;
 				Mpsse portA = ftdi.PortA;
-				portA.PortDir = (byte)(portA.PortDir | num);
-				portA.PortValue = (byte)(portA.PortValue | num);
+				portA.PortDir = (byte)(portA.PortDir | PA5_RESET);
+				portA.PortValue = (byte)(portA.PortValue | PA5_RESET);
 
 				if (!portA.SendBytes())
 					throw new Exception("Unable to send bytes over USB device");
 
 				Thread.Sleep(1);
 
-				portA.PortDir = (byte)(portA.PortDir & ~num);
-				portA.PortValue = (byte)(portA.PortValue & ~num);
+				portA.PortDir = (byte)(portA.PortDir & ~PA5_RESET);
+				portA.PortValue = (byte)(portA.PortValue & ~PA5_RESET);
 
 				if (!portA.SendBytes())
 					throw new Exception("Unable to send bytes over USB device");
@@ -1261,6 +1296,7 @@ namespace SemtechLib.Devices.SX1231
 				System.Threading.Monitor.Exit(sync);
 			}
 		}
+		#endregion
 
 		public void Save(ref FileStream stream)
 		{
@@ -2372,31 +2408,22 @@ namespace SemtechLib.Devices.SX1231
 			if (!test)
 			{
 				IoPort portB = ftdi.PortB;
+				portB.PortValue = (byte)(portB.PortValue & ~PB_LEDS);
 				switch (mode)
 				{
 					case OperatingModeEnum.Tx:
+						if (!isPacketModeRunning)
 						{
-							portB.PortValue = (byte)(portB.PortValue & 0x3F);
-							if (!isPacketModeRunning)
-							{
-								portB.PortValue = (byte)(portB.PortValue | 0xc0);
-								break;
-							}
-							portB.PortValue = (byte)(portB.PortValue | 0x40);
+							portB.PortValue = (byte)(portB.PortValue | PB_LEDS);
 							break;
 						}
+						portB.PortValue = (byte)(portB.PortValue | PB6_LED1);
+						break;
 					case OperatingModeEnum.Rx:
-						{
-							portB.PortValue = (byte)(portB.PortValue & 0x3f);
-							portB.PortValue = (byte)(portB.PortValue | 0x80);
-							ftdi.PortB.SendBytes();
-							break;
-						}
+						portB.PortValue = (byte)(portB.PortValue | PB7_LED2);
+						break;
 					default:
-						{
-							portB.PortValue = (byte)(portB.PortValue & 0x3f);
-							break;
-						}
+						break;
 				}
 				ftdi.PortB.SendBytes();
 			}
@@ -2964,7 +2991,7 @@ namespace SemtechLib.Devices.SX1231
 						data = 0;
 						ReadRegister(m_registers["RegTemp1"], ref data);
 					}
-					while ((((byte)(data & 4)) == 4) && (num2-- >= 0));
+					while (((data & 4) == 4) && num2-- >= 0);
 					ReadRegister(m_registers["RegTemp2"]);
 				}
 			}
@@ -2975,9 +3002,7 @@ namespace SemtechLib.Devices.SX1231
 			try
 			{
 				lock (syncThread)
-				{
 					m_registers["RegRxTimeout2"].Value = (uint)Math.Round((decimal)((value / 1000M) / (16M / BitRate)), MidpointRounding.AwayFromZero);
-				}
 			}
 			catch (Exception exception)
 			{
@@ -2990,9 +3015,7 @@ namespace SemtechLib.Devices.SX1231
 			try
 			{
 				lock (syncThread)
-				{
 					m_registers["RegRxTimeout1"].Value = (uint)Math.Round((decimal)((value / 1000M) / (16M / BitRate)), MidpointRounding.AwayFromZero);
-				}
 			}
 			catch (Exception exception)
 			{
@@ -3056,62 +3079,29 @@ namespace SemtechLib.Devices.SX1231
 			*/
 		}
 
-		private void sx131_PB_Dio0Changed(object sender, FtdiIoPort.IoChangedEventArgs e)
-		{
-			lock (syncThread)
-				if (isPacketModeRunning && (e.State || firstTransmit))
-				{
-					firstTransmit = false;
-					if (Mode == OperatingModeEnum.Tx)
-					{
-						OnPacketHandlerTransmitted();
-						PacketHandlerTransmit();
-					}
-					else if (Mode == OperatingModeEnum.Rx)
-						PacketHandlerReceive();
-				}
-		}
-
-		private void sx131_PB_Dio1or5Changed(object sender, FtdiIoPort.IoChangedEventArgs e) { }
-		private void sx131_PB_Dio4Changed(object sender, FtdiIoPort.IoChangedEventArgs e) { }
-		private void sx131_PB_Dio2Changed(object sender, FtdiIoPort.IoChangedEventArgs e) { }
-		private void sx131_PA_Dio7Changed(object sender, FtdiIoPort.IoChangedEventArgs e) { }
-		private void sx131_PB_Dio3Changed(object sender, FtdiIoPort.IoChangedEventArgs e) { }
-
 		private void SyncValueCheck(byte[] value)
 		{
 			int num = 0;
 			if (value == null)
-			{
 				num++;
-			}
 			else if (value[0] == 0)
-			{
 				num++;
-			}
 			if (num != 0)
-			{
 				OnSyncValueLimitChanged(LimitCheckStatusEnum.ERROR, "First sync word byte must be different of 0!");
-			}
 			else
-			{
 				OnSyncValueLimitChanged(LimitCheckStatusEnum.OK, "");
-			}
 		}
 
 		public bool TransmitRfData(byte[] buffer)
 		{
-			bool flag2;
-			object obj2;
-			System.Threading.Monitor.Enter(obj2 = syncThread);
+			System.Threading.Monitor.Enter(syncThread);
+			bool flag = false;
 			try
 			{
-				bool flag = false;
 				SetOperatingMode(OperatingModeEnum.Sleep, true);
 				Thread.Sleep(60);
 				flag = WriteFifo(buffer);
 				SetOperatingMode(OperatingModeEnum.Tx, true);
-				flag2 = flag;
 			}
 			catch (Exception exception)
 			{
@@ -3119,18 +3109,16 @@ namespace SemtechLib.Devices.SX1231
 			}
 			finally
 			{
-				System.Threading.Monitor.Exit(obj2);
+				System.Threading.Monitor.Exit(syncThread);
 			}
-			return flag2;
+			return flag;
 		}
 
 		private void UpdateAesKey()
 		{
 			int address = (int)m_registers["RegAesKey1"].Address;
 			for (int i = 0; i < m_packet.AesKey.Length; i++)
-			{
 				m_packet.AesKey[i] = (byte)m_registers[address + i].Value;
-			}
 			OnPropertyChanged("AesKey");
 		}
 
@@ -3230,7 +3218,11 @@ namespace SemtechLib.Devices.SX1231
 				case "RegFrfMsb":
 				case "RegFrfMid":
 				case "RegFrfLsb":
-					FrequencyRf = (((m_registers["RegFrfMsb"].Value << 0x10) | (m_registers["RegFrfMid"].Value << 8)) | m_registers["RegFrfLsb"].Value) * FrequencyStep;
+					FrequencyRf = (
+						(m_registers["RegFrfMsb"].Value << 0x10) |
+						(m_registers["RegFrfMid"].Value << 8) |
+						m_registers["RegFrfLsb"].Value
+						) * FrequencyStep;
 					return;
 
 				case "RegOsc1":
@@ -3243,7 +3235,7 @@ namespace SemtechLib.Devices.SX1231
 					if (Version != "2.1")
 					{
 						AfcLowBetaOn = ((reg.Value >> 5) & 1) == 1;
-						if (!(Version == "2.3"))
+						if (Version != "2.3")
 							return;
 						SetDagcOn(DagcOn);
 					}
@@ -3713,10 +3705,10 @@ namespace SemtechLib.Devices.SX1231
 		public bool Write(byte address, byte data)
 		{
 			Mpsse portA = ftdi.PortA;
-			portA.PortValue = (byte)(portA.PortValue & 0xF7);
+			portA.PortValue = (byte)(portA.PortValue & ~PA3_CS);
 			portA.ScanOut(8, new byte[] { (byte)(address | 0x80) }, true);
 			portA.ScanOut(8, new byte[] { data }, true);
-			portA.PortValue = (byte)(portA.PortValue | 8);
+			portA.PortValue = (byte)(portA.PortValue | PA3_CS);
 			portA.TxBufferAdd(0x87);
 			return portA.SendBytes();
 		}
@@ -3724,11 +3716,11 @@ namespace SemtechLib.Devices.SX1231
 		public bool Write(byte address, byte[] data)
 		{
 			Mpsse portA = ftdi.PortA;
-			portA.PortValue = (byte)(portA.PortValue & 0xF7);
+			portA.PortValue = (byte)(portA.PortValue & ~PA3_CS);
 			portA.ScanOut(8, new byte[] { (byte)(address | 0x80) }, true);
 			for (int i = 0; i < data.Length; i++)
 				portA.ScanOut(8, new byte[] { data[i] }, true);
-			portA.PortValue = (byte)(portA.PortValue | 8);
+			portA.PortValue = (byte)(portA.PortValue | PA3_CS);
 			portA.TxBufferAdd(0x87);
 			return portA.SendBytes();
 		}
@@ -4965,7 +4957,7 @@ namespace SemtechLib.Devices.SX1231
 					{
 						case RfPaSwitchSelEnum.RF_IO_RFIO:
 							{
-								portA.PortAcValue = (byte)(portA.PortAcValue & 0xfe);
+								portA.PortAcValue = (byte)(portA.PortAcValue & ~1);
 								break;
 							}
 						case RfPaSwitchSelEnum.RF_IO_PA_BOOST:

@@ -290,6 +290,8 @@ namespace SX1231SKB
 			this.sfConfigFileSaveDlg = new System.Windows.Forms.SaveFileDialog();
 			this.tipMainForm = new System.Windows.Forms.ToolTip(this.components);
 			this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
+			this.tsHelpToolbar = new SemtechLib.Controls.ToolStripEx();
+			this.tsBtnShowHelp = new System.Windows.Forms.ToolStripButton();
 			this.tsActionToolbar = new SemtechLib.Controls.ToolStripEx();
 			this.tsBtnReset = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -299,8 +301,6 @@ namespace SX1231SKB
 			this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
 			this.tsBtnMonitorOn = new System.Windows.Forms.ToolStripButton();
 			this.tsBtnMonitorOff = new System.Windows.Forms.ToolStripButton();
-			this.tsHelpToolbar = new SemtechLib.Controls.ToolStripEx();
-			this.tsBtnShowHelp = new System.Windows.Forms.ToolStripButton();
 			this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
 			this.sx1231ViewControl = new SemtechLib.Devices.SX1231.Controls.DeviceViewControl();
 			this.ssMainStatus.SuspendLayout();
@@ -310,8 +310,8 @@ namespace SX1231SKB
 			this.toolStripContainer1.ContentPanel.SuspendLayout();
 			this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
 			this.toolStripContainer1.SuspendLayout();
-			this.tsActionToolbar.SuspendLayout();
 			this.tsHelpToolbar.SuspendLayout();
+			this.tsActionToolbar.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// ssMainStatus
@@ -385,6 +385,17 @@ namespace SX1231SKB
 			this.msMainMenu.TabIndex = 0;
 			this.msMainMenu.Text = "File";
 			// 
+			// actionToolStripMenuItem
+			// 
+			this.actionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.resetToolStripMenuItem,
+            this.refreshToolStripMenuItem,
+            this.showRegistersToolStripMenuItem,
+            this.monitorToolStripMenuItem});
+			this.actionToolStripMenuItem.Name = "actionToolStripMenuItem";
+			this.actionToolStripMenuItem.Size = new System.Drawing.Size(56, 21);
+			this.actionToolStripMenuItem.Text = "&Action";
+			// 
 			// fileToolStripMenuItem
 			// 
 			this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -450,17 +461,6 @@ namespace SX1231SKB
 			this.exitToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
 			this.exitToolStripMenuItem.Text = "&Exit";
 			this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-			// 
-			// actionToolStripMenuItem
-			// 
-			this.actionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.resetToolStripMenuItem,
-            this.refreshToolStripMenuItem,
-            this.showRegistersToolStripMenuItem,
-            this.monitorToolStripMenuItem});
-			this.actionToolStripMenuItem.Name = "actionToolStripMenuItem";
-			this.actionToolStripMenuItem.Size = new System.Drawing.Size(56, 21);
-			this.actionToolStripMenuItem.Text = "&Action";
 			// 
 			// resetToolStripMenuItem
 			// 
@@ -689,13 +689,29 @@ namespace SX1231SKB
 			this.toolStripContainer1.TabIndex = 4;
 			this.toolStripContainer1.Text = "toolStripContainer1";
 			// 
-			// toolStripContainer1.TopToolStripPanel
+			// tsHelpToolbar
 			// 
-			this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.tsMainToolbar);
-			this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.tsHelpToolbar);
-			this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.tsActionToolbar);
-			this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.msMainMenu);
-			this.toolStripContainer1.TopToolStripPanel.MaximumSize = new System.Drawing.Size(0, 50);
+			this.tsHelpToolbar.ClickThrough = true;
+			this.tsHelpToolbar.Dock = System.Windows.Forms.DockStyle.None;
+			this.tsHelpToolbar.Enabled = false;
+			this.tsHelpToolbar.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+			this.tsHelpToolbar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsBtnShowHelp});
+			this.tsHelpToolbar.Location = new System.Drawing.Point(81, 0);
+			this.tsHelpToolbar.Name = "tsHelpToolbar";
+			this.tsHelpToolbar.Size = new System.Drawing.Size(26, 25);
+			this.tsHelpToolbar.SuppressHighlighting = false;
+			this.tsHelpToolbar.TabIndex = 3;
+			// 
+			// tsBtnShowHelp
+			// 
+			this.tsBtnShowHelp.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+			this.tsBtnShowHelp.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnShowHelp.Image")));
+			this.tsBtnShowHelp.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.tsBtnShowHelp.Name = "tsBtnShowHelp";
+			this.tsBtnShowHelp.Size = new System.Drawing.Size(23, 22);
+			this.tsBtnShowHelp.Text = "Help";
+			this.tsBtnShowHelp.Click += new System.EventHandler(this.showHelpToolStripMenuItem_Click);
 			// 
 			// tsActionToolbar
 			// 
@@ -720,6 +736,14 @@ namespace SX1231SKB
 			this.tsActionToolbar.SuppressHighlighting = false;
 			this.tsActionToolbar.TabIndex = 2;
 			this.tsActionToolbar.Text = "Action";
+			// 
+			// toolStripContainer1.TopToolStripPanel
+			// 
+			this.toolStripContainer1.TopToolStripPanel.MaximumSize = new System.Drawing.Size(0, 50);
+			this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.msMainMenu);
+			this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.tsMainToolbar);
+			this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.tsHelpToolbar);
+			this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.tsActionToolbar);
 			// 
 			// tsBtnReset
 			// 
@@ -788,30 +812,6 @@ namespace SX1231SKB
 			this.tsBtnMonitorOff.ToolTipText = "Disables the SX1231 monitor mode";
 			this.tsBtnMonitorOff.Click += new System.EventHandler(this.monitorToolStripMenuItem_Click);
 			// 
-			// tsHelpToolbar
-			// 
-			this.tsHelpToolbar.ClickThrough = true;
-			this.tsHelpToolbar.Dock = System.Windows.Forms.DockStyle.None;
-			this.tsHelpToolbar.Enabled = false;
-			this.tsHelpToolbar.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-			this.tsHelpToolbar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsBtnShowHelp});
-			this.tsHelpToolbar.Location = new System.Drawing.Point(81, 0);
-			this.tsHelpToolbar.Name = "tsHelpToolbar";
-			this.tsHelpToolbar.Size = new System.Drawing.Size(26, 25);
-			this.tsHelpToolbar.SuppressHighlighting = false;
-			this.tsHelpToolbar.TabIndex = 3;
-			// 
-			// tsBtnShowHelp
-			// 
-			this.tsBtnShowHelp.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-			this.tsBtnShowHelp.Image = ((System.Drawing.Image)(resources.GetObject("tsBtnShowHelp.Image")));
-			this.tsBtnShowHelp.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.tsBtnShowHelp.Name = "tsBtnShowHelp";
-			this.tsBtnShowHelp.Size = new System.Drawing.Size(23, 22);
-			this.tsBtnShowHelp.Text = "Help";
-			this.tsBtnShowHelp.Click += new System.EventHandler(this.showHelpToolStripMenuItem_Click);
-			// 
 			// toolStripLabel1
 			// 
 			this.toolStripLabel1.Name = "toolStripLabel1";
@@ -860,10 +860,10 @@ namespace SX1231SKB
 			this.toolStripContainer1.TopToolStripPanel.PerformLayout();
 			this.toolStripContainer1.ResumeLayout(false);
 			this.toolStripContainer1.PerformLayout();
-			this.tsActionToolbar.ResumeLayout(false);
-			this.tsActionToolbar.PerformLayout();
 			this.tsHelpToolbar.ResumeLayout(false);
 			this.tsHelpToolbar.PerformLayout();
+			this.tsActionToolbar.ResumeLayout(false);
+			this.tsActionToolbar.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
