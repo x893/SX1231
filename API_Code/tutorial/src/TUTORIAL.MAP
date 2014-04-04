@@ -1,0 +1,716 @@
+Archive member included because of file (symbol)
+
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\crt0.o (_interrupt)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o) (Irq_RfifRx)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_uartrx.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o) (Handle_Irq_UartRx)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_cmpd.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o) (Handle_Irq_Cmpd)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_cntc.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o) (Handle_Irq_CntC)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_128hz.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o) (Handle_Irq_128Hz)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_uarttx.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o) (Handle_Irq_UartTx)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o) (Irq_UsrtCond1)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa4.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o) (Handle_Irq_Pa4)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa0.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o) (Handle_Irq_Pa0)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa1.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o) (Handle_Irq_Pa1)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_1hz.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o) (Handle_Irq_1Hz)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa5.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o) (Handle_Irq_Pa5)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_usrtcond1.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o) (Handle_Irq_UsrtCond1)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_usrtcond2.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o) (Handle_Irq_UsrtCond2)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_vld.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o) (Handle_Irq_Vld)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o) (Irq_Pa7)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_cntb.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o) (Handle_Irq_CntB)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_cntd.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o) (Handle_Irq_CntD)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa2.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o) (Handle_Irq_Pa2)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa3.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o) (Handle_Irq_Pa3)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa6.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o) (Handle_Irq_Pa6)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa7.o)
+                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o) (Handle_Irq_Pa7)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libc_huge_rom_sc_lhc.a(d:/repository/xestuff/mklibs/./obj/hrsh/abs.o)
+                              DFLLDriver.O (abs)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libc_huge_rom_sc_lhc.a(d:/repository/xestuff/mklibs/./obj/hrsh/memcmp.o)
+                              Main.O (memcmp)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libc_huge_rom_sc_lhc.a(d:/repository/xestuff/mklibs/./obj/hrsh/strcmp.o)
+                              Main.O (strcmp)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libc_huge_rom_sc_lhc.a(d:/repository/xestuff/mklibs/./obj/hrsh/strcpy.o)
+                              Main.O (strcpy)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libc_huge_rom_sc_lhc.a(d:/repository/xestuff/mklibs/./obj/hrsh/strlen.o)
+                              Main.O (strlen)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(addsf3.o)
+                              XE1203Driver.O (addsf3)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(divsf3.o)
+                              XE1203Driver.O (divsf3)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(fix_truncsfhi2.o)
+                              XE1203Driver.O (fix_truncsfhi2)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(fix_truncsfsi2.o)
+                              XE1203Driver.O (fix_truncsfsi2)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(fixuns_truncsfhi2.o)
+                              XE1203Driver.O (fixuns_truncsfhi2)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(floathisf2.o)
+                              XE1203Driver.O (floathisf2)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(floatsisf2.o)
+                              XE1203Driver.O (floatsisf2)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(mulhi3.o)
+                              XE1203Driver.O (mulhi3)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(mulsf3.o)
+                              XE1203Driver.O (mulsf3)
+D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(mulsi3.o)
+                              Initialisation.O (mulsi3)
+
+Allocating common symbols
+Common symbol       size              file
+
+RFbuffer            0x40              Main.O
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+prog_rom         0x00100000         0x00008000
+registers        0x00000000         0x00000080
+data_ram_int0    0x00000080         0x00000080
+data_ram_int     0x00000100         0x00000180
+error_no_drom    0x00010000         0x00000000
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD D:\Phyton\Proj-xe\1_01_09\GCC\LIB\crt0.o
+LOAD Main.O
+LOAD Initialisation.O
+LOAD DFLLDriver.O
+LOAD XE1203Driver.O
+LOAD DataInit.O
+LOAD D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a
+LOAD D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libc_huge_rom_sc_lhc.a
+LOAD D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libm_huge_rom_sc_lhc.a
+LOAD D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a
+                0x00000280                _estack = 0x280
+
+.text           0x00100000     0x3438
+                0x00100000                _stext = .
+ *(.text)
+ .text          0x00100000       0x84 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\crt0.o
+                0x00100000                _start
+ .text          0x00100084      0x2b0 Main.O
+                0x00100084                OnMaster
+                0x00100300                main
+                0x001001d8                OnSlave
+ .text          0x00100334      0x90c Initialisation.O
+                0x00100384                InitPortB
+                0x00100334                InitMicro
+                0x0010039c                InitCounters
+                0x0010036c                InitPortA
+                0x00100c30                InitPortD
+                0x00100410                InitUART
+                0x001003bc                InitRCOscillator
+ .text          0x00100c40      0x2d8 DFLLDriver.O
+                0x00100d80                RCSetDelay
+                0x00100d24                FrequencyMeasure
+                0x00100c40                DFLLRun
+                0x00100d94                CalibrateRC
+ .text          0x00100f18     0x1698 XE1203Driver.O
+                0x001023cc                EnableTimeOut
+                0x00101264                SetRFMode
+                0x00100f18                InitRFChip
+                0x00102460                Handle_Irq_RfifRx
+                0x001020a8                InitFei
+                0x00101ffc                WriteLO
+                0x00101948                SendRfFrame
+                0x001015a8                SetModeRFIF
+                0x00101f7c                ReadLO
+                0x00102594                Handle_Irq_RfifTx
+                0x00101804                ReadRegister
+                0x0010231c                Wait
+                0x00101680                WriteRegister
+                0x00101cbc                AutoFreqControl
+                0x00102598                Handle_Irq_CntA
+                0x00102448                InvertByte
+                0x001022f4                ReadRssi
+                0x001022d4                InitRssi
+                0x00101b84                ReceiveRfFrame
+                0x00102260                ReadFei
+ .text          0x001025b0      0x184 DataInit.O
+                0x001025c4                DataInit
+ .text          0x00102734       0xf8 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+                0x00102734                __int0_h
+                0x00102734                __int1_h
+                0x00102734                __int2_h
+                0x00102734                _interrupt
+                0x001027f0                ret_int
+ .text          0x0010282c       0x68 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+                0x0010285c                Irq_CntC
+                0x00102880                Irq_UartRx
+                0x00102874                Irq_UartTx
+                0x0010282c                Irq_RfifRx
+                0x00102838                Irq_128Hz
+                0x00102868                Irq_Cmpd
+                0x00102850                Irq_CntA
+                0x00102844                Irq_RfifTx
+ .text          0x00102894        0x4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_uartrx.o)
+                0x00102894                Handle_Irq_UartRx
+ .text          0x00102898        0x4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_cmpd.o)
+                0x00102898                Handle_Irq_Cmpd
+ .text          0x0010289c        0x4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_cntc.o)
+                0x0010289c                Handle_Irq_CntC
+ .text          0x001028a0        0x4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_128hz.o)
+                0x001028a0                Handle_Irq_128Hz
+ .text          0x001028a4        0x4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_uarttx.o)
+                0x001028a4                Handle_Irq_UartTx
+ .text          0x001028a8       0x6c D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+                0x001028b4                Irq_UsrtCond1
+                0x001028d0                Irq_Pa4
+                0x001028dc                Irq_1Hz
+                0x001028e8                Irq_Vld
+                0x001028a8                Irq_UsrtCond2
+                0x001028f4                Irq_Pa1
+                0x00102900                Irq_Pa0
+                0x001028c4                Irq_Pa5
+ .text          0x00102914        0x4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa4.o)
+                0x00102914                Handle_Irq_Pa4
+ .text          0x00102918        0x4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa0.o)
+                0x00102918                Handle_Irq_Pa0
+ .text          0x0010291c        0x4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa1.o)
+                0x0010291c                Handle_Irq_Pa1
+ .text          0x00102920        0x4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_1hz.o)
+                0x00102920                Handle_Irq_1Hz
+ .text          0x00102924        0x4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa5.o)
+                0x00102924                Handle_Irq_Pa5
+ .text          0x00102928        0x4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_usrtcond1.o)
+                0x00102928                Handle_Irq_UsrtCond1
+ .text          0x0010292c        0x4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_usrtcond2.o)
+                0x0010292c                Handle_Irq_UsrtCond2
+ .text          0x00102930        0x4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_vld.o)
+                0x00102930                Handle_Irq_Vld
+ .text          0x00102934       0x50 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o)
+                0x0010294c                Irq_CntB
+                0x00102940                Irq_Pa6
+                0x00102970                Irq_Pa2
+                0x00102958                Irq_CntD
+                0x00102964                Irq_Pa3
+                0x00102934                Irq_Pa7
+ .text          0x00102984        0x4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_cntb.o)
+                0x00102984                Handle_Irq_CntB
+ .text          0x00102988        0x4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_cntd.o)
+                0x00102988                Handle_Irq_CntD
+ .text          0x0010298c        0x4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa2.o)
+                0x0010298c                Handle_Irq_Pa2
+ .text          0x00102990        0x4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa3.o)
+                0x00102990                Handle_Irq_Pa3
+ .text          0x00102994        0x4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa6.o)
+                0x00102994                Handle_Irq_Pa6
+ .text          0x00102998        0x4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa7.o)
+                0x00102998                Handle_Irq_Pa7
+ .text          0x0010299c       0x14 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libc_huge_rom_sc_lhc.a(d:/repository/xestuff/mklibs/./obj/hrsh/abs.o)
+                0x0010299c                abs
+ .text          0x001029b0       0x9c D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libc_huge_rom_sc_lhc.a(d:/repository/xestuff/mklibs/./obj/hrsh/memcmp.o)
+                0x001029b0                memcmp
+ .text          0x00102a4c       0x70 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libc_huge_rom_sc_lhc.a(d:/repository/xestuff/mklibs/./obj/hrsh/strcmp.o)
+                0x00102a4c                strcmp
+ .text          0x00102abc       0x58 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libc_huge_rom_sc_lhc.a(d:/repository/xestuff/mklibs/./obj/hrsh/strcpy.o)
+                0x00102abc                strcpy
+ .text          0x00102b14       0x3c D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libc_huge_rom_sc_lhc.a(d:/repository/xestuff/mklibs/./obj/hrsh/strlen.o)
+                0x00102b14                strlen
+ .text          0x00102b50      0x220 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(addsf3.o)
+                0x00102b50                addsf3
+ .text          0x00102d70      0x15c D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(divsf3.o)
+                0x00102d70                divsf3
+ .text          0x00102ecc       0xa4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(fix_truncsfhi2.o)
+                0x00102ecc                fix_truncsfhi2
+ .text          0x00102f70      0x114 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(fix_truncsfsi2.o)
+                0x00102f70                fix_truncsfsi2
+ .text          0x00103084       0x7c D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(fixuns_truncsfhi2.o)
+                0x00103084                fixuns_truncsfhi2
+ .text          0x00103100       0x64 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(floathisf2.o)
+                0x00103100                floathisf2
+ .text          0x00103164       0xc4 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(floatsisf2.o)
+                0x00103164                floatsisf2
+ .text          0x00103228       0x20 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(mulhi3.o)
+                0x00103228                mulhi3
+ .text          0x00103248      0x158 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(mulsf3.o)
+                0x00103248                mulsf3
+ .text          0x001033a0       0x98 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(mulsi3.o)
+                0x001033a0                mulsi3
+                0x00103438                _etext = .
+                0x00103438                _eprom = .
+
+.bss            0x00000100       0x40
+                0x00000100                _sbss = .
+ *(.bss)
+ *(COMMON)
+ COMMON         0x00000100       0x40 Main.O
+                                  0x0 (size before relaxing)
+                0x00000100                RFbuffer
+                0x00000140                _heapBottom = .
+                0x00000140                _ebss = .
+
+.page0_data     0x00000080       0x10
+                0x00000080                _spage0data = .
+ *(.page0_data)
+ .page0_data    0x00000080        0x2 Main.O
+                0x00000081                SendNextPacket
+                0x00000080                EnableMaster
+ .page0_data    0x00000082        0xe XE1203Driver.O
+                0x00000086                EnableSyncByte
+                0x00000090                _epage0data = .
+
+.page0_bss      0x00000090       0x1a
+                0x00000090                _spage0bss = .
+ *(.page0_bss)
+ .page0_bss     0x00000090        0x8 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\crt0.o
+                0x00000090                __spill
+ .page0_bss     0x00000098        0x1 Main.O
+                0x00000098                RFbufferSize
+ .page0_bss     0x00000099        0x8 DFLLDriver.O
+ .page0_bss     0x000000a1        0x9 XE1203Driver.O
+                0x000000aa                _epage0bss = .
+
+.data           0x00000140       0x2a
+                0x00000140                _sdata = .
+ *(.data)
+ .data          0x00000140       0x2a XE1203Driver.O
+                0x00000140                RegistersCfg
+                0x0000016a                _edata = .
+
+.rodata         0x0000016a        0xa
+                0x0000016a                _srodata = .
+ *(.rodata)
+ .rodata        0x0000016a        0xa Main.O
+                0x00000174                _rodata = .
+
+.shbss          0x00000174        0x0
+                0x00000174                _sshbss = .
+ *(.shbss)
+                0x00000174                _eshbss = .
+
+.stab           0x00000000     0x396c
+ *(.stab)
+ .stab          0x00000000      0x510 Main.O
+ .stab          0x00000510      0xb94 Initialisation.O
+ .stab          0x000010a4      0x804 DFLLDriver.O
+ .stab          0x000018a8     0x20c4 XE1203Driver.O
+
+.stabstr        0x0000396c     0x2b15
+ *(.stabstr)
+ .stabstr       0x0000396c      0x600 Main.O
+ .stabstr       0x00003f6c      0x8f4 Initialisation.O
+ .stabstr       0x00004860      0x7ac DFLLDriver.O
+ .stabstr       0x0000500c     0x1475 XE1203Driver.O
+                0x00000000                Reg00 = 0x0
+                0x00000001                Reg01 = 0x1
+                0x00000002                Reg02 = 0x2
+                0x00000003                Reg03 = 0x3
+                0x00000004                Reg04 = 0x4
+                0x00000005                Reg05 = 0x5
+                0x00000006                Reg06 = 0x6
+                0x00000007                Reg07 = 0x7
+                0x00000010                RegSysCtrl = 0x10
+                0x00000010                _RegSysCtrl = 0x10
+                0x00000011                RegSysReset = 0x11
+                0x00000011                _RegSysReset = 0x11
+                0x00000012                RegSysClock = 0x12
+                0x00000012                _RegSysClock = 0x12
+                0x00000013                RegSysMisc = 0x13
+                0x00000013                _RegSysMisc = 0x13
+                0x00000014                RegSysWD = 0x14
+                0x00000014                _RegSysWD = 0x14
+                0x00000014                _RegSysWD_1 = 0x14
+                0x00000014                _RegSysWD_2 = 0x14
+                0x00000015                RegSysPre0 = 0x15
+                0x00000015                _RegSysPre0 = 0x15
+                0x0000001b                RegSysRcTrim1 = 0x1b
+                0x0000001b                _RegSysRcTrim1 = 0x1b
+                0x0000001c                RegSysRcTrim2 = 0x1c
+                0x0000001c                _RegSysRcTrim2 = 0x1c
+                0x00000020                RegPAIn = 0x20
+                0x00000020                _RegPAIn = 0x20
+                0x00000021                RegPADebounce = 0x21
+                0x00000021                _RegPADebounce = 0x21
+                0x00000022                RegPAEdge = 0x22
+                0x00000022                _RegPAEdge = 0x22
+                0x00000023                RegPAPullup = 0x23
+                0x00000023                _RegPAPullup = 0x23
+                0x00000024                RegPARes0 = 0x24
+                0x00000024                _RegPARes0 = 0x24
+                0x00000025                RegPARes1 = 0x25
+                0x00000025                _RegPARes1 = 0x25
+                0x00000026                RegPACtrl = 0x26
+                0x00000026                _RegPACtrl = 0x26
+                0x00000027                RegPASnapToRail = 0x27
+                0x00000027                _RegPASnapToRail = 0x27
+                0x00000028                RegPBOut = 0x28
+                0x00000028                _RegPBOut = 0x28
+                0x00000029                RegPBIn = 0x29
+                0x00000029                _RegPBIn = 0x29
+                0x0000002a                RegPBDir = 0x2a
+                0x0000002a                _RegPBDir = 0x2a
+                0x0000002b                RegPBOpen = 0x2b
+                0x0000002b                _RegPBOpen = 0x2b
+                0x0000002c                RegPBPullup = 0x2c
+                0x0000002c                _RegPBPullup = 0x2c
+                0x0000002d                RegPBAna = 0x2d
+                0x0000002d                _RegPBAna = 0x2d
+                0x00000030                RegPDOut = 0x30
+                0x00000030                _RegPDOut = 0x30
+                0x00000031                RegPDIn = 0x31
+                0x00000031                _RegPDIn = 0x31
+                0x00000032                RegPDDir = 0x32
+                0x00000032                _RegPDDir = 0x32
+                0x00000033                RegPDPullup = 0x33
+                0x00000033                _RegPDPullup = 0x33
+                0x00000038                RegEEP = 0x38
+                0x00000039                RegEEP1 = 0x39
+                0x0000003a                RegEEP2 = 0x3a
+                0x0000003b                RegEEP3 = 0x3b
+                0x0000003c                RegEvn = 0x3c
+                0x0000003c                _RegEvn = 0x3c
+                0x0000003d                RegEvnEn = 0x3d
+                0x0000003d                _RegEvnEn = 0x3d
+                0x0000003e                RegEvnPriority = 0x3e
+                0x0000003f                RegEvnEvn = 0x3f
+                0x0000003f                _RegEvnEvn = 0x3f
+                0x00000040                RegIrqHig = 0x40
+                0x00000040                _RegIrqHig = 0x40
+                0x00000040                _RegIrqHig_1 = 0x40
+                0x00000041                RegIrqMid = 0x41
+                0x00000041                _RegIrqMid = 0x41
+                0x00000042                RegIrqLow = 0x42
+                0x00000042                _RegIrqLow = 0x42
+                0x00000043                RegIrqEnHig = 0x43
+                0x00000043                _RegIrqEnHig = 0x43
+                0x00000043                _RegIrqEnHig_1 = 0x43
+                0x00000044                RegIrqEnMid = 0x44
+                0x00000044                _RegIrqEnMid = 0x44
+                0x00000045                RegIrqEnLow = 0x45
+                0x00000045                _RegIrqEnLow = 0x45
+                0x00000046                RegIrqPriority = 0x46
+                0x00000047                RegIrqIrq = 0x47
+                0x00000047                _RegIrqIrq = 0x47
+                0x00000048                RegUsrtS1 = 0x48
+                0x00000048                _RegUsrtS1 = 0x48
+                0x00000049                RegUsrtS0 = 0x49
+                0x00000049                _RegUsrtS0 = 0x49
+                0x0000004c                RegUsrtCtrl = 0x4c
+                0x0000004c                _RegUsrtCtrl = 0x4c
+                0x0000004a                RegUsrtCond1 = 0x4a
+                0x0000004a                _RegUsrtCond1 = 0x4a
+                0x0000004b                RegUsrtCond2 = 0x4b
+                0x0000004b                _RegUsrtCond2 = 0x4b
+                0x0000004d                RegUsrtBufferS1 = 0x4d
+                0x0000004d                _RegUsrtBufferS1 = 0x4d
+                0x0000004e                RegUsrtEdgeS0 = 0x4e
+                0x0000004e                _RegUsrtEdgeS0 = 0x4e
+                0x00000050                RegUartCtrl = 0x50
+                0x00000050                _RegUartCtrl = 0x50
+                0x00000050                _RegUartCtrl_1 = 0x50
+                0x00000051                RegUartCmd = 0x51
+                0x00000051                _RegUartCmd = 0x51
+                0x00000051                _RegUartCmd_1 = 0x51
+                0x00000052                RegUartTx = 0x52
+                0x00000053                RegUartTxSta = 0x53
+                0x00000053                _RegUartTxSta = 0x53
+                0x00000054                RegUartRx = 0x54
+                0x00000055                RegUartRxSta = 0x55
+                0x00000055                _RegUartRxSta = 0x55
+                0x00000058                RegCntA = 0x58
+                0x00000059                RegCntB = 0x59
+                0x0000005a                RegCntC = 0x5a
+                0x0000005b                RegCntD = 0x5b
+                0x0000005c                RegCntCtrlCk = 0x5c
+                0x0000005c                _RegCntCtrlCk = 0x5c
+                0x0000005c                _RegCntCtrlCk_1 = 0x5c
+                0x0000005d                RegCntConfig1 = 0x5d
+                0x0000005d                _RegCntConfig1 = 0x5d
+                0x0000005e                RegCntConfig2 = 0x5e
+                0x0000005e                _RegCntConfig2 = 0x5e
+                0x0000005e                _RegCntConfig2_1 = 0x5e
+                0x0000005f                RegCntOn = 0x5f
+                0x0000005f                _RegCntOn = 0x5f
+                0x00000060                RegRfifCmd1 = 0x60
+                0x00000060                _RegRfifCmd1 = 0x60
+                0x00000061                RegRfifCmd2 = 0x61
+                0x00000061                _RegRfifCmd2 = 0x61
+                0x00000062                RegRfifCmd3 = 0x62
+                0x00000062                _RegRfifCmd3 = 0x62
+                0x00000063                RegRfifTx = 0x63
+                0x00000064                RegRfifTxSta = 0x64
+                0x00000064                _RegRfifTxSta = 0x64
+                0x00000065                RegRfifRx = 0x65
+                0x00000066                RegRfifRxSta = 0x66
+                0x00000066                _RegRfifRxSta = 0x66
+                0x00000067                RegRfifRxSPat = 0x67
+                0x00000072                RegCmpdStat = 0x72
+                0x00000072                _RegCmpdStat = 0x72
+                0x00000073                RegCmpdCtrl = 0x73
+                0x00000073                _RegCmpdCtrl = 0x73
+                0x0000007e                RegVldCtrl = 0x7e
+                0x0000007e                _RegVldCtrl = 0x7e
+                0x0000007e                _RegVldCtrl_1 = 0x7e
+                0x0000007f                RegVldStat = 0x7f
+                0x0000007f                _RegVldStat = 0x7f
+OUTPUT(TUTORIAL.HEX ihex)
+
+Cross Reference Table
+
+Symbol                                            File
+AutoFreqControl                                   XE1203Driver.O
+CalibrateRC                                       DFLLDriver.O
+DFLLRun                                           DFLLDriver.O
+                                                  Initialisation.O
+DataInit                                          DataInit.O
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\crt0.o
+EnableMaster                                      Main.O
+EnableSyncByte                                    XE1203Driver.O
+EnableTimeOut                                     XE1203Driver.O
+FrequencyMeasure                                  DFLLDriver.O
+Handle_Irq_128Hz                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_128hz.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+Handle_Irq_1Hz                                    D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_1hz.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+Handle_Irq_Cmpd                                   D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_cmpd.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+Handle_Irq_CntA                                   XE1203Driver.O
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+Handle_Irq_CntB                                   D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_cntb.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o)
+Handle_Irq_CntC                                   D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_cntc.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+Handle_Irq_CntD                                   D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_cntd.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o)
+Handle_Irq_Pa0                                    D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa0.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+Handle_Irq_Pa1                                    D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa1.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+Handle_Irq_Pa2                                    D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa2.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o)
+Handle_Irq_Pa3                                    D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa3.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o)
+Handle_Irq_Pa4                                    D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa4.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+Handle_Irq_Pa5                                    D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa5.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+Handle_Irq_Pa6                                    D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa6.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o)
+Handle_Irq_Pa7                                    D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_pa7.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o)
+Handle_Irq_RfifRx                                 XE1203Driver.O
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+Handle_Irq_RfifTx                                 XE1203Driver.O
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+Handle_Irq_UartRx                                 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_uartrx.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+Handle_Irq_UartTx                                 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_uarttx.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+Handle_Irq_UsrtCond1                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_usrtcond1.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+Handle_Irq_UsrtCond2                              D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_usrtcond2.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+Handle_Irq_Vld                                    D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqhandler_vld.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+InitCounters                                      Initialisation.O
+InitFei                                           XE1203Driver.O
+InitMicro                                         Initialisation.O
+                                                  Main.O
+InitPortA                                         Initialisation.O
+InitPortB                                         Initialisation.O
+InitPortD                                         Initialisation.O
+InitRCOscillator                                  Initialisation.O
+InitRFChip                                        XE1203Driver.O
+                                                  Main.O
+InitRssi                                          XE1203Driver.O
+InitUART                                          Initialisation.O
+InvertByte                                        XE1203Driver.O
+Irq_128Hz                                         D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_1Hz                                           D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_Cmpd                                          D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_CntA                                          D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_CntB                                          D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_CntC                                          D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_CntD                                          D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_Pa0                                           D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_Pa1                                           D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_Pa2                                           D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_Pa3                                           D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_Pa4                                           D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_Pa5                                           D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_Pa6                                           D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_Pa7                                           D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_RfifRx                                        D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_RfifTx                                        D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_UartRx                                        D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_UartTx                                        D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_UsrtCond1                                     D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_UsrtCond2                                     D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+Irq_Vld                                           D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+OnMaster                                          Main.O
+OnSlave                                           Main.O
+RCSetDelay                                        DFLLDriver.O
+RFbuffer                                          Main.O
+RFbufferSize                                      Main.O
+ReadFei                                           XE1203Driver.O
+ReadLO                                            XE1203Driver.O
+ReadRegister                                      XE1203Driver.O
+ReadRssi                                          XE1203Driver.O
+ReceiveRfFrame                                    XE1203Driver.O
+                                                  Main.O
+RegCntA                                           XE1203Driver.O
+                                                  DFLLDriver.O
+                                                  Initialisation.O
+RegCntB                                           XE1203Driver.O
+                                                  DFLLDriver.O
+                                                  Initialisation.O
+RegCntC                                           DFLLDriver.O
+                                                  Initialisation.O
+RegCntConfig1                                     XE1203Driver.O
+                                                  DFLLDriver.O
+                                                  Initialisation.O
+RegCntConfig2                                     DFLLDriver.O
+                                                  Initialisation.O
+RegCntCtrlCk                                      XE1203Driver.O
+                                                  DFLLDriver.O
+                                                  Initialisation.O
+RegCntD                                           DFLLDriver.O
+                                                  Initialisation.O
+RegCntOn                                          XE1203Driver.O
+                                                  DFLLDriver.O
+RegEvn                                            XE1203Driver.O
+                                                  DFLLDriver.O
+RegEvnEn                                          XE1203Driver.O
+                                                  DFLLDriver.O
+RegIrqEnHig                                       XE1203Driver.O
+RegIrqHig                                         D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+RegIrqLow                                         D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o)
+RegIrqMid                                         D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+RegIrqPriority                                    D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+RegPADebounce                                     Initialisation.O
+RegPAEdge                                         Initialisation.O
+RegPAPullup                                       Initialisation.O
+RegPARes0                                         Initialisation.O
+RegPARes1                                         Initialisation.O
+RegPBAna                                          Initialisation.O
+RegPBDir                                          Initialisation.O
+RegPBOpen                                         Initialisation.O
+RegPBOut                                          XE1203Driver.O
+                                                  Initialisation.O
+                                                  Main.O
+RegPBPullup                                       Initialisation.O
+RegPDDir                                          XE1203Driver.O
+                                                  Initialisation.O
+RegPDIn                                           XE1203Driver.O
+RegPDOut                                          XE1203Driver.O
+                                                  Initialisation.O
+RegPDPullup                                       Initialisation.O
+RegRfifCmd1                                       XE1203Driver.O
+RegRfifCmd2                                       XE1203Driver.O
+RegRfifCmd3                                       XE1203Driver.O
+RegRfifRx                                         XE1203Driver.O
+RegRfifRxSta                                      XE1203Driver.O
+RegRfifTx                                         XE1203Driver.O
+RegRfifTxSta                                      XE1203Driver.O
+RegSysClock                                       Initialisation.O
+RegSysRcTrim1                                     DFLLDriver.O
+RegSysRcTrim2                                     DFLLDriver.O
+RegUartCmd                                        Initialisation.O
+RegUartCtrl                                       Initialisation.O
+RegUsrtCtrl                                       D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+RegistersCfg                                      XE1203Driver.O
+SendNextPacket                                    Main.O
+SendRfFrame                                       XE1203Driver.O
+                                                  Main.O
+SetModeRFIF                                       XE1203Driver.O
+SetRFMode                                         XE1203Driver.O
+Wait                                              XE1203Driver.O
+WriteLO                                           XE1203Driver.O
+WriteRegister                                     XE1203Driver.O
+_DataInit                                         D:\Phyton\Proj-xe\1_01_09\GCC\LIB\crt0.o
+__int0_h                                          D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+__int1_h                                          D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+__int2_h                                          D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+__spill                                           D:\Phyton\Proj-xe\1_01_09\GCC\LIB\crt0.o
+_ebss                                             D:\Phyton\Proj-xe\1_01_09\GCC\LIB\crt0.o
+_epage0bss                                        D:\Phyton\Proj-xe\1_01_09\GCC\LIB\crt0.o
+_estack                                           D:\Phyton\Proj-xe\1_01_09\GCC\LIB\crt0.o
+_interrupt                                        D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\crt0.o
+_sbss                                             D:\Phyton\Proj-xe\1_01_09\GCC\LIB\crt0.o
+_sdata                                            DataInit.O
+_spage0bss                                        D:\Phyton\Proj-xe\1_01_09\GCC\LIB\crt0.o
+_spage0data                                       DataInit.O
+_start                                            D:\Phyton\Proj-xe\1_01_09\GCC\LIB\crt0.o
+abs                                               D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libc_huge_rom_sc_lhc.a(d:/repository/xestuff/mklibs/./obj/hrsh/abs.o)
+                                                  DFLLDriver.O
+addsf3                                            D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(addsf3.o)
+                                                  XE1203Driver.O
+divsf3                                            D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(divsf3.o)
+                                                  XE1203Driver.O
+fix_truncsfhi2                                    D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(fix_truncsfhi2.o)
+                                                  XE1203Driver.O
+fix_truncsfsi2                                    D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(fix_truncsfsi2.o)
+                                                  XE1203Driver.O
+fixuns_truncsfhi2                                 D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(fixuns_truncsfhi2.o)
+                                                  XE1203Driver.O
+floathisf2                                        D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(floathisf2.o)
+                                                  XE1203Driver.O
+floatsisf2                                        D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(floatsisf2.o)
+                                                  XE1203Driver.O
+main                                              Main.O
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\crt0.o
+memcmp                                            D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libc_huge_rom_sc_lhc.a(d:/repository/xestuff/mklibs/./obj/hrsh/memcmp.o)
+                                                  Main.O
+mulhi3                                            D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(mulhi3.o)
+                                                  XE1203Driver.O
+mulsf3                                            D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(mulsf3.o)
+                                                  XE1203Driver.O
+mulsi3                                            D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libgcc_hc.a(mulsi3.o)
+                                                  Initialisation.O
+ret_int                                           D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqcomon_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave2_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave1_06.o)
+                                                  D:\Phyton\Proj-xe\1_01_09\GCC\LIB\IRQHandler\IRQHandler06_hc.a(d:/repository/xestuff/mkttmplates/./obj/irqsave0_06.o)
+strcmp                                            D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libc_huge_rom_sc_lhc.a(d:/repository/xestuff/mklibs/./obj/hrsh/strcmp.o)
+                                                  Main.O
+strcpy                                            D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libc_huge_rom_sc_lhc.a(d:/repository/xestuff/mklibs/./obj/hrsh/strcpy.o)
+                                                  Main.O
+strlen                                            D:\Phyton\Proj-xe\1_01_09\GCC\LIB\libc_huge_rom_sc_lhc.a(d:/repository/xestuff/mklibs/./obj/hrsh/strlen.o)
+                                                  Main.O
