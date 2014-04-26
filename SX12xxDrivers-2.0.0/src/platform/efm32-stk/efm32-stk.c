@@ -14,6 +14,7 @@ void BoardInit( void )
 	CHIP_Init();
 
 	BSP_LedsInit();
+	BSP_LedsSet(0xF);	// On all LEDs
 
 	CMU_OscillatorEnable(cmuOsc_HFXO, true, true);
 	CMU_ClockSelectSet(cmuClock_HF,cmuSelect_HFXO);
@@ -27,6 +28,7 @@ void BoardInit( void )
 	{ 	/* Capture error */ 
 		while (1);
 	}
+	BSP_LedsInit();
 }
 
 void Delay ( uint16_t delay )
