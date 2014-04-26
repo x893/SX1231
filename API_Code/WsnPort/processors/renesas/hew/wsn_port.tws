@@ -1,0 +1,30 @@
+[HIMDBVersion]
+2.0
+[DATABASE_VERSION]
+"1.2" 
+[CURRENT_PROJECT]
+"wsn_r8c1b" 
+[GENERAL_DATA]
+"ECXLABEL_LAST_FINDS_DATA" "" 
+[BREAKPOINTS]
+[OPEN_WORKSPACE_FILES]
+"C:\src\wsn_port\processors\renesas\hew\wsn_port\ncrt0.a30" 
+"C:\src\wsn_port\processors\renesas\r8c1b\cpu.c" 
+"C:\src\wsn_port\processors\renesas\r8c1b\spi.c" 
+"C:\src\wsn_port\processors\renesas\r8c1b\timers.c" 
+"C:\src\wsn_port\transceivers\sx1211\sx1211driver.c" 
+"C:\src\wsn_port\transceivers\sx1231\sx1231.c" 
+"C:\src\wsn_port\wsn_fhss\FHSSapi.c" 
+"C:\src\wsn_port\wsn_fhss\wsn.c" 
+[WORKSPACE_FILE_STATES]
+"C:\src\wsn_port\processors\renesas\hew\wsn_port\ncrt0.a30" 0 0 734 262 0 0 
+"C:\src\wsn_port\processors\renesas\r8c1b\cpu.c" 44 58 660 207 0 6 
+"C:\src\wsn_port\processors\renesas\r8c1b\spi.c" 0 0 734 368 0 5 
+"C:\src\wsn_port\processors\renesas\r8c1b\timers.c" 0 0 734 368 0 4 
+"C:\src\wsn_port\transceivers\sx1211\sx1211driver.c" -4 -30 990 624 1 7 
+"C:\src\wsn_port\transceivers\sx1231\sx1231.c" 66 87 660 207 0 3 
+"C:\src\wsn_port\wsn_fhss\FHSSapi.c" 0 0 990 624 0 2 
+"C:\src\wsn_port\wsn_fhss\wsn.c" 0 0 734 368 0 1 
+[LOADED_PROJECTS]
+"wsn_r8c1b" 
+[END]

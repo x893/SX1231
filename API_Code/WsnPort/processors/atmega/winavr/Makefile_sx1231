@@ -1,0 +1,98 @@
+###############################################################################
+# Makefile for the project WSN_SX1231
+###############################################################################
+
+## General Flags
+PROJECT = WSN_SX1231
+#MCU = atmega644p
+MCU = atmega644
+TARGET = $(PROJECT).elf
+CC = avr-gcc.exe
+
+## Options common to compile, link and assembly rules
+COMMON = -mmcu=$(MCU)
+
+## Compile options common for all C compilation units.
+CFLAGS = -DREADBACK_VERIFY -D_CPU_SLEEP_ $(COMMON)
+CFLAGS += -Wall -gdwarf-2 -D$(MCU) -DF_CPU=8000000UL -O1 -funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums
+CFLAGS += -MD -MP -MT $(*F).o -MF dep/$(@F).d 
+
+## Assembly specific flags
+ASMFLAGS = $(COMMON)
+ASMFLAGS += $(CFLAGS)
+ASMFLAGS += -x assembler-with-cpp -Wa,-gdwarf2
+
+## Linker flags
+LDFLAGS = $(COMMON)
+LDFLAGS += -Wl,-Map=$(PROJECT).map,--cref
+
+
+## Intel Hex file production flags
+HEX_FLASH_FLAGS = -R .eeprom
+
+HEX_EEPROM_FLAGS = -j .eeprom
+HEX_EEPROM_FLAGS += --set-section-flags=.eeprom="alloc,load"
+HEX_EEPROM_FLAGS += --change-section-lma .eeprom=0 --no-change-warnings
+
+WSN_DIR = ../../../wsn_fhss
+XCVR_DIR = ../../../transceivers
+SX1231_DIR = $(XCVR_DIR)/sx1231
+INCLUDES = -I.. -I$(WSN_DIR) -I$(XCVR_DIR) -I$(SX1231_DIR)
+
+## Objects that must be built in order to link
+OBJECTS =	\
+	../cpu.o	\
+	../timers.o	\
+	../spi.o	\
+	../uart.o	\
+	$(WSN_DIR)/FHSSapi.o	\
+	$(SX1231_DIR)/SX1231.o	\
+	$(WSN_DIR)/wsn.o
+
+## Objects explicitly added by the user
+LINKONLYOBJECTS = 
+
+## Build
+all: $(TARGET) $(PROJECT).hex $(PROJECT).eep size
+
+## Compile
+$(OBJECTS): %.o : %.c
+	$(CC) -DSX1231 -DISM_900 $(INCLUDES) $(CFLAGS) -c $< -o $@
+
+
+##Link
+$(TARGET): $(OBJECTS)
+	 $(CC) $(LDFLAGS) $(OBJECTS) $(LINKONLYOBJECTS) $(LIBDIRS) $(LIBS) -o $(TARGET)
+
+%.hex: %.elf
+	avr-objcopy -O ihex $(HEX_FLASH_FLAGS)  $< $@
+
+%.eep: %.elf
+	-avr-objcopy $(HEX_EEPROM_FLAGS) -O ihex $< $@ || exit 0
+
+%.lss: %.elf
+	avr-objdump -h -S $< > $@
+
+size: ${TARGET}
+	@echo
+	@avr-size -C --mcu=${MCU} $<
+
+# dependencies:
+$(WSN_DIR)/wsn.o: $(XCVR_DIR)/transceiver.h $(WSN_DIR)/WSN.h 
+$(WSN_DIR)/WSN.h: $(WSN_DIR)/platform.h $(WSN_DIR)/FHSSapi.h
+$(WSN_DIR)/FHSSapi.o: $(XCVR_DIR)/transceiver.h $(WSN_DIR)/FHSSapi.h $(WSN_DIR)/WSN.h
+$(WSN_DIR)/sx1231.o: $(SX1231_DIR)/SX1231.h $(WSN_DIR)/FHSSapi.h
+$(WSN_DIR)/SX1231.h: $(WSN_DIR)/platform.h
+$(WSN_DIR)/platform.h: ../types.h ../cpu.h ../timers.h ../io_port_mapping.h
+
+## Clean target
+.PHONY: clean
+clean:
+	-rm -rf dep/* $(OBJECTS) $(PROJECT).elf $(PROJECT).hex $(PROJECT).eep $(PROJECT).map
+
+## Other dependencies
+#-include $(shell mkdir dep 2>/dev/null) $(wildcard dep/*)
+
+
+# $ avarice.exe --mkII --erase --program --file WSN_xxx.elf --part atmega644 --jtag /dev/ttyS0 :4242
+

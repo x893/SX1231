@@ -1,0 +1,109 @@
+;***************************************************************************
+; C Compiler for R8C/Tiny, M16C/60,30,20,10
+; Copyright(C) 1999(2000-2006). Renesas Technology Corp.
+; and Renesas Solutions Corp., All rights reserved.
+;
+; ncrt0.a30 : Startup Program for R8C/Tiny
+;       
+; $Date: 2006/11/22 04:13:59 $
+; $Revision: 1.1.4.1 $
+;***************************************************************************
+
+;---------------------------------------------------------------------
+; include files
+;---------------------------------------------------------------------
+		.list		OFF
+		.include	nc_define.inc
+		.include	sect30.inc
+		.list		ON
+
+;=====================================================================
+; Interrupt section start
+;---------------------------------------------------------------------
+		.insf		start,S,0
+		.glb		start
+		.section	interrupt
+start:
+;---------------------------------------------------------------------
+; after reset,this program will start
+;---------------------------------------------------------------------
+		ldc			#istack_top,isp		;set istack pointer
+		mov.b		#02h,0ah
+		mov.b		#00h,04h			;set processer mode 
+		mov.b		#00h,0ah
+.if __STACKSIZE__ != 0
+		ldc			#0080h,flg
+		ldc			#stack_top,sp		;set stack pointer 
+.else
+		ldc			#0000h,flg
+.endif
+		ldc			#data_SE_top,sb		;set sb register 
+		ldintb		#__VECTOR_ADR__
+
+;=====================================================================
+; NEAR area initialize.
+;---------------------------------------------------------------------
+; bss zero clear
+;---------------------------------------------------------------------
+		N_BZERO		bss_SE_top,bss_SE
+		N_BZERO		bss_SO_top,bss_SO
+		N_BZERO		bss_NE_top,bss_NE
+		N_BZERO		bss_NO_top,bss_NO
+
+;---------------------------------------------------------------------
+; initialize data section
+;---------------------------------------------------------------------
+		N_BCOPY		data_SEI_top,data_SE_top,data_SE
+		N_BCOPY		data_SOI_top,data_SO_top,data_SO
+		N_BCOPY		data_NEI_top,data_NE_top,data_NE
+		N_BCOPY		data_NOI_top,data_NO_top,data_NO
+
+;=====================================================================
+; heap area initialize
+;---------------------------------------------------------------------
+.if __HEAPSIZE__ != 0
+		.glb		__mnext
+		.glb		__msize
+		mov.w		#(heap_top&0FFFFH), __mnext
+		mov.w		#(__HEAPSIZE__&0FFFFH), __msize
+.endif
+
+;=====================================================================
+; Initialize standard I/O
+;---------------------------------------------------------------------
+.if __STANDARD_IO__ == 1
+		.glb		__init
+		.call		__init,G
+		jsr.a		__init
+.endif
+
+;=====================================================================
+; Call main() function
+;---------------------------------------------------------------------
+		ldc			#0h,fb				; for debuger
+
+		.glb		_main
+		jsr.a		_main
+
+;=====================================================================
+; exit() function
+;---------------------------------------------------------------------
+		.glb		_exit
+		.glb		$exit
+_exit:									; End program
+$exit:
+		jmp			_exit
+		.einsf
+;=====================================================================
+; dummy interrupt function
+;---------------------------------------------------------------------
+		.glb		dummy_int
+dummy_int:
+		reit
+
+		.end
+;***************************************************************************
+;	C Compiler for R8C/Tiny, M16C/60,30,20,10
+; Copyright(C) 1999(2000-2006). Renesas Technology Corp.
+; and Renesas Solutions Corp., All rights reserved.
+;***************************************************************************

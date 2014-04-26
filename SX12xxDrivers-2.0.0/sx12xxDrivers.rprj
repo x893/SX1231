@@ -1,0 +1,4 @@
+
+<Project Header="Project 'sx12xxDrivers'" Path=".\sx12xxDrivers.rprj" Project="Yes" OutputFile="" sate="96" ActiveApp="sx12xxDrivers" >
+	<ApplicationBuild Header="sx12xxDrivers" Extern=".\sx12xxDrivers.rapp" Path=".\sx12xxDrivers.rapp" OutputFile=".\obj\sx12xxDrivers.elf" sate="98" Config="sx12xxEiger-f10x" />
+</Project>

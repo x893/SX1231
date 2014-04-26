@@ -1,0 +1,605 @@
+
+<ApplicationBuild Header="sx12xxDrivers" Extern=".\sx12xxDrivers.rapp" Path=".\sx12xxDrivers.rapp" OutputFile=".\obj\sx12xxDrivers.elf" sate="98" Config="sx12xxEiger-f10x" >
+	<NodeC Path=".\src\main.c" Header="main.c" Marker="-1" OutputFile=".\obj\main.o" sate="0" >
+		<Options/>
+																																																																					
+	</NodeC>
+	<Group Header="radio" Marker="-1" OutputFile="" sate="96" >
+		<NodeC Path=".\src\radio\radio.c" Header="radio.c" Marker="-1" OutputFile=".\obj\radio.o" sate="0" />
+		<NodeC Path=".\src\radio\sx1232.c" Header="sx1232.c" Marker="-1" OutputFile=".\obj\sx1232.o" sate="0" />
+		<NodeC Path=".\src\radio\sx1232-Misc.c" Header="sx1232-Misc.c" Marker="-1" OutputFile=".\obj\sx1232-Misc.o" sate="0" />
+		<NodeC Path=".\src\radio\sx1272.c" Header="sx1272.c" Marker="-1" OutputFile=".\obj\sx1272.o" sate="0" />
+		<NodeC Path=".\src\radio\sx1272-Fsk.c" Header="sx1272-Fsk.c" Marker="-1" OutputFile=".\obj\sx1272-Fsk.o" sate="0" />
+		<NodeC Path=".\src\radio\sx1272-FskMisc.c" Header="sx1272-FskMisc.c" Marker="-1" OutputFile=".\obj\sx1272-FskMisc.o" sate="0" />
+		<NodeC Path=".\src\radio\sx1272-LoRa.c" Header="sx1272-LoRa.c" Marker="-1" OutputFile=".\obj\sx1272-LoRa.o" sate="0" />
+		<NodeC Path=".\src\radio\sx1272-LoRaMisc.c" Header="sx1272-LoRaMisc.c" Marker="-1" OutputFile=".\obj\sx1272-LoRaMisc.o" sate="0" />
+		<NodeC Path=".\src\radio\sx1276.c" Header="sx1276.c" Marker="-1" OutputFile=".\obj\sx1276.o" sate="0" />
+		<NodeC Path=".\src\radio\sx1276-Fsk.c" Header="sx1276-Fsk.c" Marker="-1" OutputFile=".\obj\sx1276-Fsk.o" sate="0" />
+		<NodeC Path=".\src\radio\sx1276-FskMisc.c" Header="sx1276-FskMisc.c" Marker="-1" OutputFile=".\obj\sx1276-FskMisc.o" sate="0" />
+		<NodeC Path=".\src\radio\sx1276-LoRa.c" Header="sx1276-LoRa.c" Marker="-1" OutputFile=".\obj\sx1276-LoRa.o" sate="0" />
+		<NodeC Path=".\src\radio\sx1276-LoRaMisc.c" Header="sx1276-LoRaMisc.c" Marker="-1" OutputFile=".\obj\sx1276-LoRaMisc.o" sate="0" />
+																																																
+	</Group>
+	<Group Header="sx12xxEiger" Marker="-1" OutputFile="" sate="0" >
+		<NodeC Path=".\src\platform\sx12xxEiger\fifo.c" Header="fifo.c" Marker="-1" OutputFile=".\obj\fifo.o" sate="0" />
+		<NodeC Path=".\src\platform\sx12xxEiger\i2c.c" Header="i2c.c" Marker="-1" OutputFile=".\obj\i2c.o" sate="0" />
+		<NodeC Path=".\src\platform\sx12xxEiger\ioe.c" Header="ioe.c" Marker="-1" OutputFile=".\obj\ioe.o" sate="0" />
+		<NodeC Path=".\src\platform\sx12xxEiger\led.c" Header="led.c" Marker="-1" OutputFile=".\obj\led.o" sate="0" />
+		<NodeC Path=".\src\platform\sx12xxEiger\spi.c" Header="spi.c" Marker="-1" OutputFile=".\obj\spi.o" sate="0" />
+		<NodeC Path=".\src\platform\sx12xxEiger\stm32fxxx_it.c" Header="stm32fxxx_it.c" Marker="-1" OutputFile=".\obj\stm32fxxx_it.o" sate="0" />
+		<NodeC Path=".\src\platform\sx12xxEiger\sx12xxEiger.c" Header="sx12xxEiger.c" Marker="-1" OutputFile=".\obj\sx12xxEiger.o" sate="0" />
+		<NodeC Path=".\src\platform\sx12xxEiger\sx1232-Hal.c" Header="sx1232-Hal.c" Marker="-1" OutputFile=".\obj\sx1232-Hal.o" sate="0" />
+		<NodeC Path=".\src\platform\sx12xxEiger\sx1272-Hal.c" Header="sx1272-Hal.c" Marker="-1" OutputFile=".\obj\sx1272-Hal.o" sate="0" />
+		<NodeC Path=".\src\platform\sx12xxEiger\sx1276-Hal.c" Header="sx1276-Hal.c" Marker="-1" OutputFile=".\obj\sx1276-Hal.o" sate="0" />
+		<NodeC Path=".\src\platform\sx12xxEiger\sx1509.c" Header="sx1509.c" Marker="-1" OutputFile=".\obj\sx1509.o" sate="0" />
+		<NodeC Path=".\src\platform\sx12xxEiger\uart.c" Header="uart.c" Marker="-1" OutputFile=".\obj\uart.o" sate="0" />
+		<Group Header="stm32libs-f10x" Marker="-1" OutputFile="" sate="0" >
+			<NodeC Path=".\src\platform\stm32libs\stm32f10x\src\misc.c" Header="misc.c" Marker="-1" OutputFile=".\obj\misc.o" sate="0" />
+			<NodeASM Path=".\src\platform\stm32libs\stm32f10x\src\startup_stm32f10x_xl.s" Header="startup_stm32f10x_xl.s" Marker="-1" OutputFile=".\obj\startup_stm32f10x_xl.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f10x\src\stm32f10x_adc.c" Header="stm32f10x_adc.c" Marker="-1" OutputFile=".\obj\stm32f10x_adc.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f10x\src\stm32f10x_bkp.c" Header="stm32f10x_bkp.c" Marker="-1" OutputFile=".\obj\stm32f10x_bkp.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f10x\src\stm32f10x_dma.c" Header="stm32f10x_dma.c" Marker="-1" OutputFile=".\obj\stm32f10x_dma.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f10x\src\stm32f10x_exti.c" Header="stm32f10x_exti.c" Marker="-1" OutputFile=".\obj\stm32f10x_exti.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f10x\src\stm32f10x_flash.c" Header="stm32f10x_flash.c" Marker="-1" OutputFile=".\obj\stm32f10x_flash.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f10x\src\stm32f10x_fsmc.c" Header="stm32f10x_fsmc.c" Marker="-1" OutputFile=".\obj\stm32f10x_fsmc.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f10x\src\stm32f10x_gpio.c" Header="stm32f10x_gpio.c" Marker="-1" OutputFile=".\obj\stm32f10x_gpio.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f10x\src\stm32f10x_i2c.c" Header="stm32f10x_i2c.c" Marker="-1" OutputFile=".\obj\stm32f10x_i2c.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f10x\src\stm32f10x_pwr.c" Header="stm32f10x_pwr.c" Marker="-1" OutputFile=".\obj\stm32f10x_pwr.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f10x\src\stm32f10x_rcc.c" Header="stm32f10x_rcc.c" Marker="-1" OutputFile=".\obj\stm32f10x_rcc.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f10x\src\stm32f10x_rtc.c" Header="stm32f10x_rtc.c" Marker="-1" OutputFile=".\obj\stm32f10x_rtc.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f10x\src\stm32f10x_sdio.c" Header="stm32f10x_sdio.c" Marker="-1" OutputFile=".\obj\stm32f10x_sdio.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f10x\src\stm32f10x_spi.c" Header="stm32f10x_spi.c" Marker="-1" OutputFile=".\obj\stm32f10x_spi.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f10x\src\stm32f10x_tim.c" Header="stm32f10x_tim.c" Marker="-1" OutputFile=".\obj\stm32f10x_tim.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\CMSIS\CM3\system_stm32f10x.c" Header="system_stm32f10x.c" Marker="-1" OutputFile=".\obj\system_stm32f10x.o" sate="0" />
+			<Options>
+				<Config Header="sx12xxEiger-f4xx" >
+					<Set Header="Group" >
+						<Section Header="Build" >
+							<Property Header="Exclude" Value="Yes" Removable="1" />
+							<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																																																																																																																																																																												
+						</Section>
+																																																																																																																																																																												
+					</Set>
+																																																																																																																																							
+				</Config>
+																																																																																																									
+			</Options>
+																																																																																
+		</Group>
+		<Group Header="stm32libs-f4xx" Marker="0" OutputFile="" sate="0" >
+			<NodeC Path=".\src\platform\stm32libs\stm32f4xx\src\misc.c" Header="misc.c" Marker="-1" OutputFile=".\obj\misc.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f4xx\src\stm32f4xx_adc.c" Header="stm32f4xx_adc.c" Marker="-1" OutputFile=".\obj\stm32f4xx_adc.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f4xx\src\stm32f4xx_dma.c" Header="stm32f4xx_dma.c" Marker="-1" OutputFile=".\obj\stm32f4xx_dma.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f4xx\src\stm32f4xx_exti.c" Header="stm32f4xx_exti.c" Marker="-1" OutputFile=".\obj\stm32f4xx_exti.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f4xx\src\stm32f4xx_flash.c" Header="stm32f4xx_flash.c" Marker="-1" OutputFile=".\obj\stm32f4xx_flash.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f4xx\src\stm32f4xx_fsmc.c" Header="stm32f4xx_fsmc.c" Marker="-1" OutputFile=".\obj\stm32f4xx_fsmc.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f4xx\src\stm32f4xx_gpio.c" Header="stm32f4xx_gpio.c" Marker="-1" OutputFile=".\obj\stm32f4xx_gpio.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f4xx\src\stm32f4xx_i2c.c" Header="stm32f4xx_i2c.c" Marker="-1" OutputFile=".\obj\stm32f4xx_i2c.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f4xx\src\stm32f4xx_pwr.c" Header="stm32f4xx_pwr.c" Marker="-1" OutputFile=".\obj\stm32f4xx_pwr.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f4xx\src\stm32f4xx_rcc.c" Header="stm32f4xx_rcc.c" Marker="-1" OutputFile=".\obj\stm32f4xx_rcc.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f4xx\src\stm32f4xx_rtc.c" Header="stm32f4xx_rtc.c" Marker="-1" OutputFile=".\obj\stm32f4xx_rtc.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f4xx\src\stm32f4xx_sdio.c" Header="stm32f4xx_sdio.c" Marker="-1" OutputFile=".\obj\stm32f4xx_sdio.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f4xx\src\stm32f4xx_spi.c" Header="stm32f4xx_spi.c" Marker="-1" OutputFile=".\obj\stm32f4xx_spi.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f4xx\src\stm32f4xx_tim.c" Header="stm32f4xx_tim.c" Marker="-1" OutputFile=".\obj\stm32f4xx_tim.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32f4xx\src\stm32f4xx_syscfg.c" Header="stm32f4xx_syscfg.c" Marker="-1" OutputFile=".\obj\stm32f4xx_syscfg.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\CMSIS\CM4F\system_stm32f4xx.c" Header="system_stm32f4xx.c" Marker="-1" OutputFile=".\obj\system_stm32f4xx.o" sate="0" />
+			<Options>
+				<Config Header="sx12xxEiger-f10x" >
+					<Set Header="Group" >
+						<Section Header="Build" >
+							<Property Header="Exclude" Value="Yes" Removable="1" />
+							<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																																																																																																																																																																												
+						</Section>
+																																																																																																																																																																												
+					</Set>
+																																																																																																																																							
+				</Config>
+																																																																																																									
+			</Options>
+																																																																																
+		</Group>
+		<Group Header="Usb" Marker="-1" OutputFile="" sate="0" >
+			<Group Header="stm32f10x" Marker="-1" OutputFile="" sate="96" >
+				<NodeC Path=".\src\platform\stm32libs\STM32_USB-FS-Device_Driver\src\usb_core.c" Header="usb_core.c" Marker="0" OutputFile=".\obj\usb_core.o" sate="0" >
+					<Options>
+						<Config Header="sx12xxEiger-f10x" >
+							<Set Header="GCC" >
+								<Section Header="OPTIMIZE" >
+									<Property Header="Optimize" Value="-Os" Removable="1" />
+																																																																																																																																																																																																																																																																										
+								</Section>
+																																																																																																																																																																																																																																										
+							</Set>
+																																																																																																																																																																																																			
+						</Config>
+																																																																																																																																																																					
+					</Options>
+																																																																																																																																							
+				</NodeC>
+				<NodeC Path=".\src\platform\stm32libs\STM32_USB-FS-Device_Driver\src\usb_init.c" Header="usb_init.c" Marker="0" OutputFile=".\obj\usb_init.o" sate="0" >
+					<Options>
+						<Config Header="sx12xxEiger-f10x" >
+							<Set Header="GCC" >
+								<Section Header="OPTIMIZE" >
+									<Property Header="Optimize" Value="-Os" Removable="1" />
+																																																																																																																																																																																																																																																																										
+								</Section>
+																																																																																																																																																																																																																																										
+							</Set>
+																																																																																																																																																																																																			
+						</Config>
+																																																																																																																																																																					
+					</Options>
+																																																																																																																																							
+				</NodeC>
+				<NodeC Path=".\src\platform\stm32libs\STM32_USB-FS-Device_Driver\src\usb_int.c" Header="usb_int.c" Marker="0" OutputFile=".\obj\usb_int.o" sate="0" >
+					<Options>
+						<Config Header="sx12xxEiger-f10x" >
+							<Set Header="GCC" >
+								<Section Header="OPTIMIZE" >
+									<Property Header="Optimize" Value="-Os" Removable="1" />
+																																																																																																																																																																																																																																																																										
+								</Section>
+																																																																																																																																																																																																																																										
+							</Set>
+																																																																																																																																																																																																			
+						</Config>
+																																																																																																																																																																					
+					</Options>
+																																																																																																																																							
+				</NodeC>
+				<NodeC Path=".\src\platform\stm32libs\STM32_USB-FS-Device_Driver\src\usb_mem.c" Header="usb_mem.c" Marker="0" OutputFile=".\obj\usb_mem.o" sate="0" >
+					<Options>
+						<Config Header="sx12xxEiger-f10x" >
+							<Set Header="GCC" >
+								<Section Header="OPTIMIZE" >
+									<Property Header="Optimize" Value="-Os" Removable="1" />
+																																																																																																																																																																																																																																																																										
+								</Section>
+																																																																																																																																																																																																																																										
+							</Set>
+																																																																																																																																																																																																			
+						</Config>
+																																																																																																																																																																					
+					</Options>
+																																																																																																																																							
+				</NodeC>
+				<NodeC Path=".\src\platform\stm32libs\STM32_USB-FS-Device_Driver\src\usb_regs.c" Header="usb_regs.c" Marker="0" OutputFile=".\obj\usb_regs.o" sate="0" >
+					<Options>
+						<Config Header="sx12xxEiger-f10x" >
+							<Set Header="GCC" >
+								<Section Header="OPTIMIZE" >
+									<Property Header="Optimize" Value="-Os" Removable="1" />
+																																																																																																																																																																																																																																																																										
+								</Section>
+																																																																																																																																																																																																																																										
+							</Set>
+																																																																																																																																																																																																			
+						</Config>
+																																																																																																																																																																					
+					</Options>
+																																																																																																																																							
+				</NodeC>
+				<NodeC Path=".\src\platform\stm32libs\STM32_USB-FS-Device_Driver\src\usb_sil.c" Header="usb_sil.c" Marker="0" OutputFile=".\obj\usb_sil.o" sate="0" >
+					<Options>
+						<Config Header="sx12xxEiger-f10x" >
+							<Set Header="GCC" >
+								<Section Header="OPTIMIZE" >
+									<Property Header="Optimize" Value="-Os" Removable="1" />
+																																																																																																																																																																																																																																																																										
+								</Section>
+																																																																																																																																																																																																																																										
+							</Set>
+																																																																																																																																																																																																			
+						</Config>
+																																																																																																																																																																					
+					</Options>
+																																																																																																																																							
+				</NodeC>
+				<NodeC Path=".\src\platform\sx12xxEiger\Usb\stm32f10x\src\usb_desc.c" Header="usb_desc.c" Marker="0" OutputFile=".\obj\usb_desc.o" sate="0" >
+					<Options>
+						<Config Header="sx12xxEiger-f10x" >
+							<Set Header="GCC" >
+								<Section Header="OPTIMIZE" >
+									<Property Header="Optimize" Value="-Os" Removable="1" />
+																																																																																																																																																																																																																																																																										
+								</Section>
+																																																																																																																																																																																																																																										
+							</Set>
+																																																																																																																																																																																																			
+						</Config>
+																																																																																																																																																																					
+					</Options>
+																																																																																																																																							
+				</NodeC>
+				<NodeC Path=".\src\platform\sx12xxEiger\Usb\stm32f10x\src\usb_endp.c" Header="usb_endp.c" Marker="0" OutputFile=".\obj\usb_endp.o" sate="0" >
+					<Options>
+						<Config Header="sx12xxEiger-f10x" >
+							<Set Header="GCC" >
+								<Section Header="OPTIMIZE" >
+									<Property Header="Optimize" Value="-Os" Removable="1" />
+																																																																																																																																																																																																																																																																										
+								</Section>
+																																																																																																																																																																																																																																										
+							</Set>
+																																																																																																																																																																																																			
+						</Config>
+																																																																																																																																																																					
+					</Options>
+																																																																																																																																							
+				</NodeC>
+				<NodeC Path=".\src\platform\sx12xxEiger\Usb\stm32f10x\src\usb_istr.c" Header="usb_istr.c" Marker="0" OutputFile=".\obj\usb_istr.o" sate="0" >
+					<Options>
+						<Config Header="sx12xxEiger-f10x" >
+							<Set Header="GCC" >
+								<Section Header="OPTIMIZE" >
+									<Property Header="Optimize" Value="-Os" Removable="1" />
+																																																																																																																																																																																																																																																																										
+								</Section>
+																																																																																																																																																																																																																																										
+							</Set>
+																																																																																																																																																																																																			
+						</Config>
+																																																																																																																																																																					
+					</Options>
+																																																																																																																																							
+				</NodeC>
+				<NodeC Path=".\src\platform\sx12xxEiger\Usb\stm32f10x\src\usb_prop.c" Header="usb_prop.c" Marker="0" OutputFile=".\obj\usb_prop.o" sate="0" >
+					<Options>
+						<Config Header="sx12xxEiger-f10x" >
+							<Set Header="GCC" >
+								<Section Header="OPTIMIZE" >
+									<Property Header="Optimize" Value="-Os" Removable="1" />
+																																																																																																																																																																																																																																																																										
+								</Section>
+																																																																																																																																																																																																																																										
+							</Set>
+																																																																																																																																																																																																			
+						</Config>
+																																																																																																																																																																					
+					</Options>
+																																																																																																																																							
+				</NodeC>
+				<NodeC Path=".\src\platform\sx12xxEiger\Usb\stm32f10x\src\usb_pwr.c" Header="usb_pwr.c" Marker="0" OutputFile=".\obj\usb_pwr.o" sate="0" >
+					<Options>
+						<Config Header="sx12xxEiger-f10x" >
+							<Set Header="GCC" >
+								<Section Header="OPTIMIZE" >
+									<Property Header="Optimize" Value="-Os" Removable="1" />
+																																																																																																																																																																																																																																																																										
+								</Section>
+																																																																																																																																																																																																																																										
+							</Set>
+																																																																																																																																																																																																			
+						</Config>
+																																																																																																																																																																					
+					</Options>
+																																																																																																																																							
+				</NodeC>
+				<NodeC Path=".\src\platform\sx12xxEiger\Usb\stm32f10x\src\usb_bsp.c" Header="usb_bsp.c" Marker="0" OutputFile=".\obj\usb_bsp.o" sate="0" >
+					<Options>
+						<Config Header="sx12xxEiger-f10x" >
+							<Set Header="GCC" >
+								<Section Header="OPTIMIZE" >
+									<Property Header="Optimize" Value="-Os" Removable="1" />
+																																																																																																																																																																																																																																																																										
+								</Section>
+																																																																																																																																																																																																																																										
+							</Set>
+																																																																																																																																																																																																			
+						</Config>
+																																																																																																																																																																					
+					</Options>
+																																																																																																																																							
+				</NodeC>
+				<Options>
+					<Config Header="sx12xxEiger-f4xx" >
+						<Set Header="Group" >
+							<Section Header="Build" >
+								<Property Header="Exclude" Value="Yes" Removable="1" />
+								<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																																																																																																																																																																																																											
+							</Section>
+																																																																																																																																																																																																											
+						</Set>
+																																																																																																																																																																					
+					</Config>
+																																																																																																																																							
+				</Options>
+																																																																																																																
+			</Group>
+			<Group Header="stm32f4xx" Marker="0" OutputFile="" sate="0" >
+				<NodeC Path=".\src\platform\sx12xxEiger\Usb\stm32f4xx\src\usb_bsp.c" Header="usb_bsp.c" Marker="-1" OutputFile=".\obj\usb_bsp.o" sate="0" />
+				<NodeC Path=".\src\platform\sx12xxEiger\Usb\stm32f4xx\src\usbd_cdc_vcp.c" Header="usbd_cdc_vcp.c" Marker="-1" OutputFile=".\obj\usbd_cdc_vcp.o" sate="0" />
+				<NodeC Path=".\src\platform\sx12xxEiger\Usb\stm32f4xx\src\usbd_desc.c" Header="usbd_desc.c" Marker="-1" OutputFile=".\obj\usbd_desc.o" sate="0" />
+				<NodeC Path=".\src\platform\sx12xxEiger\Usb\stm32f4xx\src\usbd_usr.c" Header="usbd_usr.c" Marker="-1" OutputFile=".\obj\usbd_usr.o" sate="0" />
+				<NodeC Path=".\src\platform\stm32libs\STM32_USB_Device_Library\Class\cdc\src\usbd_cdc_core.c" Header="usbd_cdc_core.c" Marker="-1" OutputFile=".\obj\usbd_cdc_core.o" sate="0" />
+				<NodeC Path=".\src\platform\stm32libs\STM32_USB_Device_Library\Core\src\usbd_core.c" Header="usbd_core.c" Marker="-1" OutputFile=".\obj\usbd_core.o" sate="0" />
+				<NodeC Path=".\src\platform\stm32libs\STM32_USB_Device_Library\Core\src\usbd_ioreq.c" Header="usbd_ioreq.c" Marker="-1" OutputFile=".\obj\usbd_ioreq.o" sate="0" />
+				<NodeC Path=".\src\platform\stm32libs\STM32_USB_Device_Library\Core\src\usbd_req.c" Header="usbd_req.c" Marker="-1" OutputFile=".\obj\usbd_req.o" sate="0" />
+				<NodeC Path=".\src\platform\stm32libs\STM32_USB_OTG_Driver\src\usb_core.c" Header="usb_core.c" Marker="-1" OutputFile=".\obj\usb_core.o" sate="0" />
+				<NodeC Path=".\src\platform\stm32libs\STM32_USB_OTG_Driver\src\usb_dcd.c" Header="usb_dcd.c" Marker="-1" OutputFile=".\obj\usb_dcd.o" sate="0" />
+				<NodeC Path=".\src\platform\stm32libs\STM32_USB_OTG_Driver\src\usb_dcd_int.c" Header="usb_dcd_int.c" Marker="-1" OutputFile=".\obj\usb_dcd_int.o" sate="0" />
+				<Options>
+					<Config Header="sx12xxEiger-f10x" >
+						<Set Header="Group" >
+							<Section Header="Build" >
+								<Property Header="Exclude" Value="Yes" Removable="1" />
+								<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																																																																																																																																																																																																											
+							</Section>
+																																																																																																																																																																																																											
+						</Set>
+																																																																																																																																																																					
+					</Config>
+																																																																																																																																							
+				</Options>
+																																																																																																																
+			</Group>
+																																																																																																				
+		</Group>
+		<Options>
+			<Config Header="Bleeper" >
+				<Set Header="Group" >
+					<Section Header="Build" >
+						<Property Header="Exclude" Value="Yes" Removable="1" />
+						<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																																																																																																												
+					</Section>
+																																																																																																																		
+				</Set>
+																																																																																				
+			</Config>
+																																																												
+		</Options>
+																																																																								
+	</Group>
+	<Configs>
+		<Config Header="sx12xxEiger-f10x" />
+		<Config Header="sx12xxEiger-f4xx" />
+		<Config Header="Bleeper" />
+																																																																					
+	</Configs>
+	<Group Header="Bleeper" Marker="0" OutputFile="" sate="96" >
+		<NodeC Path=".\src\platform\bleeper\bleeper.c" Header="bleeper.c" Marker="-1" OutputFile=".\obj\bleeper.o" sate="0" />
+		<NodeC Path=".\src\platform\bleeper\fifo.c" Header="fifo.c" Marker="-1" OutputFile=".\obj\fifo.o" sate="0" />
+		<NodeC Path=".\src\platform\bleeper\i2c.c" Header="i2c.c" Marker="-1" OutputFile=".\obj\i2c.o" sate="0" />
+		<NodeC Path=".\src\platform\bleeper\led.c" Header="led.c" Marker="-1" OutputFile=".\obj\led.o" sate="0" />
+		<NodeC Path=".\src\platform\bleeper\spi.c" Header="spi.c" Marker="-1" OutputFile=".\obj\spi.o" sate="0" />
+		<NodeC Path=".\src\platform\bleeper\stm32l1xx_it.c" Header="stm32l1xx_it.c" Marker="-1" OutputFile=".\obj\stm32l1xx_it.o" sate="0" />
+		<NodeC Path=".\src\platform\bleeper\sx1272-Hal.c" Header="sx1272-Hal.c" Marker="-1" OutputFile=".\obj\sx1272-Hal.o" sate="0" />
+		<Group Header="stm32libs-l1xx" Marker="-1" OutputFile="" sate="0" >
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\misc.c" Header="misc.c" Marker="-1" OutputFile=".\obj\misc.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_adc.c" Header="stm32l1xx_adc.c" Marker="-1" OutputFile=".\obj\stm32l1xx_adc.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_aes.c" Header="stm32l1xx_aes.c" Marker="-1" OutputFile=".\obj\stm32l1xx_aes.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_aes_util.c" Header="stm32l1xx_aes_util.c" Marker="-1" OutputFile=".\obj\stm32l1xx_aes_util.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_comp.c" Header="stm32l1xx_comp.c" Marker="-1" OutputFile=".\obj\stm32l1xx_comp.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_crc.c" Header="stm32l1xx_crc.c" Marker="-1" OutputFile=".\obj\stm32l1xx_crc.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_dac.c" Header="stm32l1xx_dac.c" Marker="-1" OutputFile=".\obj\stm32l1xx_dac.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_dbgmcu.c" Header="stm32l1xx_dbgmcu.c" Marker="-1" OutputFile=".\obj\stm32l1xx_dbgmcu.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_dma.c" Header="stm32l1xx_dma.c" Marker="-1" OutputFile=".\obj\stm32l1xx_dma.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_exti.c" Header="stm32l1xx_exti.c" Marker="-1" OutputFile=".\obj\stm32l1xx_exti.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_flash.c" Header="stm32l1xx_flash.c" Marker="-1" OutputFile=".\obj\stm32l1xx_flash.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_flash_ramfunc.c" Header="stm32l1xx_flash_ramfunc.c" Marker="-1" OutputFile=".\obj\stm32l1xx_flash_ramfunc.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_fsmc.c" Header="stm32l1xx_fsmc.c" Marker="-1" OutputFile=".\obj\stm32l1xx_fsmc.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_gpio.c" Header="stm32l1xx_gpio.c" Marker="-1" OutputFile=".\obj\stm32l1xx_gpio.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_i2c.c" Header="stm32l1xx_i2c.c" Marker="-1" OutputFile=".\obj\stm32l1xx_i2c.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_iwdg.c" Header="stm32l1xx_iwdg.c" Marker="-1" OutputFile=".\obj\stm32l1xx_iwdg.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_lcd.c" Header="stm32l1xx_lcd.c" Marker="-1" OutputFile=".\obj\stm32l1xx_lcd.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_opamp.c" Header="stm32l1xx_opamp.c" Marker="-1" OutputFile=".\obj\stm32l1xx_opamp.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_pwr.c" Header="stm32l1xx_pwr.c" Marker="-1" OutputFile=".\obj\stm32l1xx_pwr.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_rcc.c" Header="stm32l1xx_rcc.c" Marker="-1" OutputFile=".\obj\stm32l1xx_rcc.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_rtc.c" Header="stm32l1xx_rtc.c" Marker="-1" OutputFile=".\obj\stm32l1xx_rtc.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_sdio.c" Header="stm32l1xx_sdio.c" Marker="-1" OutputFile=".\obj\stm32l1xx_sdio.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_spi.c" Header="stm32l1xx_spi.c" Marker="-1" OutputFile=".\obj\stm32l1xx_spi.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_syscfg.c" Header="stm32l1xx_syscfg.c" Marker="-1" OutputFile=".\obj\stm32l1xx_syscfg.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_tim.c" Header="stm32l1xx_tim.c" Marker="-1" OutputFile=".\obj\stm32l1xx_tim.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_usart.c" Header="stm32l1xx_usart.c" Marker="-1" OutputFile=".\obj\stm32l1xx_usart.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\stm32l1xx\src\stm32l1xx_wwdg.c" Header="stm32l1xx_wwdg.c" Marker="-1" OutputFile=".\obj\stm32l1xx_wwdg.o" sate="0" />
+			<NodeC Path=".\src\platform\stm32libs\CMSIS\CM3\system_stm32l1xx.c" Header="system_stm32l1xx.c" Marker="-1" OutputFile=".\obj\system_stm32l1xx.o" sate="0" />
+			<NodeASM Path=".\src\platform\bleeper\startup_stm32l1xx_hd.s" Header="startup_stm32l1xx_hd.s" Marker="-1" OutputFile=".\obj\startup_stm32l1xx_hd.o" sate="0" />
+																																																												
+		</Group>
+		<Options>
+			<Config Header="sx12xxEiger-f4xx" >
+				<Set Header="Group" >
+					<Section Header="Build" >
+						<Property Header="Exclude" Value="Yes" Removable="1" />
+						<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																																																																																						
+					</Section>
+																																																																																																
+				</Set>
+																																																																						
+			</Config>
+			<Config Header="sx12xxEiger-f10x" >
+				<Set Header="Group" >
+					<Section Header="Build" >
+						<Property Header="Exclude" Value="Yes" Removable="1" />
+						<Property Header="LinkExclude" Value="Yes" Removable="1" />
+																																																																																																																						
+					</Section>
+																																																																																																
+				</Set>
+																																																																						
+			</Config>
+																																																		
+		</Options>
+																																				
+	</Group>
+	<Options>
+		<Config Header="Standard" >
+			<Set Header="ApplicationBuild" >
+				<Section Header="General" >
+					<Property Header="TargetFamily" Value="ARM" />
+																																																																																																																																																																																																																																								
+				</Section>
+				<Section Header="Directories" >
+					<Property Header="OutDir" Value="$(ApplicationDir)\obj" Removable="1" />
+					<Property Header="ListDir" Value="$(ApplicationDir)\lst" Removable="1" />
+					<Property Header="IncDir" Value="$(ApplicationDir)\src;$(ApplicationDir)\src\platform\sx12xxEiger;$(ApplicationDir)\src\radio;$(ApplicationDir)\src\platform\stm32libs\CMSIS\CM3;$(ApplicationDir)\src\platform\stm32libs\stm32f10x\inc;$(ApplicationDir)\src\platform\sx12xxEiger\Usb\stm32f4xx\inc;$(ApplicationDir)\src\platform\stm32libs\STM32_USB-FS-Device_Driver\inc;$(RkitLib)\ARM\include;." Removable="1" />
+																																																																																																																																																																																																																						
+				</Section>
+																																																																																																																																																																						
+			</Set>
+			<Set Header="Target" >
+				<Section Header="ProcessorARM" >
+					<Property Header="Processor" Value="STM32F103VGT6" />
+																																																																																																																																																																																																																						
+				</Section>
+				<Section Header="ToolSetARM" >
+					<Property Header="BuildToolSetARM" Value="ARM\GNU.config" />
+																																																																																																																																																																																																																																								
+				</Section>
+																																																																																																																																																																						
+			</Set>
+			<Set Header="GCC" >
+				<Section Header="Defines" >
+					<Property Header="Defines" Value="GCC_ARMCM3;STM32F10X_HD" Removable="1" />
+																																																																																																																																																																																																																						
+				</Section>
+				<Section Header="OPTIMIZE" >
+					<Property Header="Optimize" Value="-O1" Removable="1" />
+																																																																																																																																																																																																																						
+				</Section>
+																																																																																																																																																																						
+			</Set>
+			<Set Header="RLINK_CORTEX" >
+				<Section Header="Advanced" >
+					<Property Header="Crystal" Value="12.000" />
+																																																																																																																																																																																																																						
+				</Section>
+																																																																																																																																																																						
+			</Set>
+																																																																																																																			
+		</Config>
+		<Config Header="sx12xxEiger-f4xx" >
+			<Set Header="ApplicationBuild" >
+				<Section Header="Directories" >
+					<Property Header="IncDir" Value="$(ApplicationDir)\src;$(ApplicationDir)\src\platform;$(ApplicationDir)\src\platform\sx12xxEiger;$(ApplicationDir)\src\radio;$(ApplicationDir)\src\platform\stm32libs\CMSIS\CM4F;$(ApplicationDir)\src\platform\stm32libs\stm32f4xx\inc;$(ApplicationDir)\src\platform\sx12xxEiger\Usb\stm32f4xx\inc;$(ApplicationDir)\src\platform\stm32libs\STM32_USB_Device_Library\Class\cdc\inc;$(ApplicationDir)\src\platform\stm32libs\STM32_USB_Device_Library\Core\inc;$(ApplicationDir)\src\platform\stm32libs\STM32_USB_OTG_Driver\inc;$(RkitLib)\ARM\include;." Removable="1" />
+																																																																																																																																																																																											
+				</Section>
+																																																																																																																																																	
+			</Set>
+			<Set Header="Target" >
+				<Section Header="ProcessorARM" >
+					<Property Header="Processor" Value="STM32F407VG" />
+																																																																																																																																																																																																																						
+				</Section>
+																																																																																																																																																																						
+			</Set>
+			<Set Header="GCC" >
+				<Section Header="Defines" >
+					<Property Header="Defines" Value="GCC_ARMCM4F;STM32F4XX;USE_USB_OTG_HS;USE_ULPI_PHY;PLATFORM=SX12xxEiger" Removable="1" />
+																
+				</Section>
+				<Section Header="OPTIMIZE" >
+					<Property Header="Optimize" Value="-O1" Removable="1" />
+																																																																																																																																																																																																													
+				</Section>
+				<Section Header="WARNINGS" >
+					<Property Header="CONSWARNINGS" Value="" Removable="1" />
+					<Property Header="SWITCHWARNINGS" Value="" Removable="1" />
+					<Property Header="SHADOWARNINGS" Value="" Removable="1" />
+					<Property Header="UNUSEDWARNINGS" Value="" Removable="1" />
+																																																																																																																																																																																		
+				</Section>
+												
+			</Set>
+			<Set Header="RLINK_CORTEX" >
+				<Section Header="Advanced" >
+					<Property Header="Crystal" Value="12.000" />
+																																																																																																																																																																																																																						
+				</Section>
+																																																																																																																																																																						
+			</Set>
+					
+		</Config>
+		<Config Header="sx12xxEiger-f10x" >
+			<Set Header="GCC" >
+				<Section Header="OPTIMIZE" >
+					<Property Header="Optimize" Value="-O1" Removable="1" />
+																																																																																																																																																																																																																						
+				</Section>
+				<Section Header="Defines" >
+					<Property Header="Defines" Value="GCC_ARMCM3;USE_STDPERIPH_DRIVER;STM32F10X_XL;PLATFORM=SX12xxEiger" Removable="1" />
+																
+				</Section>
+												
+			</Set>
+			<Set Header="ApplicationBuild" >
+				<Section Header="Directories" >
+					<Property Header="IncDir" Value="$(ApplicationDir)\src;$(ApplicationDir)\src\platform;$(ApplicationDir)\src\platform\sx12xxEiger;$(ApplicationDir)\src\radio;$(ApplicationDir)\src\platform\stm32libs\CMSIS\CM3;$(ApplicationDir)\src\platform\stm32libs\stm32f10x\inc;$(ApplicationDir)\src\platform\sx12xxEiger\Usb\stm32f10x\inc;$(ApplicationDir)\src\platform\stm32libs\STM32_USB-FS-Device_Driver\inc;$(RkitLib)\ARM\include;." Removable="1" />
+																																																																																																																																														
+				</Section>
+																																																																																																														
+			</Set>
+			<Set Header="Target" >
+				<Section Header="DebugARM" >
+					<Property Header="Explore" Value="Yes" Removable="1" />
+																																																																																																																																														
+				</Section>
+																																																																																																														
+			</Set>
+			<Set Header="LD" >
+				<Section Header="Startup" >
+					<Property Header="DEFAULTSTARTUP" Value="No" Removable="1" />
+					<Property Header="File" Value="" Removable="1" />
+																																																																																																																																														
+				</Section>
+																																																																																																														
+			</Set>
+					
+		</Config>
+		<Config Header="Bleeper" >
+			<Set Header="Target" >
+				<Section Header="ProcessorARM" >
+					<Property Header="Processor" Value="STM32L151RD" />
+																																																																																																																			
+				</Section>
+				<Section Header="DebugARM" >
+					<Property Header="Explore" Value="Yes" Removable="1" />
+																																																																																																																			
+				</Section>
+																																																																																									
+			</Set>
+			<Set Header="ApplicationBuild" >
+				<Section Header="Directories" >
+					<Property Header="IncDir" Value="$(ApplicationDir)\src;$(ApplicationDir)\src\platform;$(ApplicationDir)\src\platform\bleeper;$(ApplicationDir)\src\radio;$(ApplicationDir)\src\platform\stm32libs\CMSIS\CM3;$(ApplicationDir)\src\platform\stm32libs\stm32l1xx\inc;$(RkitLib)\ARM\include;." Removable="1" />
+																																																																																																										
+				</Section>
+																																																																																		
+			</Set>
+			<Set Header="LD" >
+				<Section Header="Startup" >
+					<Property Header="DEFAULTSTARTUP" Value="No" Removable="1" />
+					<Property Header="File" Value="" Removable="1" />
+																																																																																																										
+				</Section>
+				<Section Header="Scripts" >
+					<Property Header="File" Value="" Removable="1" />
+																																																																																																																			
+				</Section>
+																																																																																		
+			</Set>
+			<Set Header="RLINK_CORTEX" >
+				<Section Header="Advanced" >
+					<Property Header="Crystal" Value="12.000" />
+																																																																																																																			
+				</Section>
+																																																																																									
+			</Set>
+			<Set Header="GCC" >
+				<Section Header="Defines" >
+					<Property Header="Defines" Value="GCC_ARMCM3;STM32L1XX_HD;USE_STDPERIPH_DRIVER;PLATFORM=Bleeper" Removable="1" />
+																
+				</Section>
+												
+			</Set>
+					
+		</Config>
+			
+	</Options>
+</ApplicationBuild>

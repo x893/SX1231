@@ -1,0 +1,40 @@
+# MPLAB IDE generated this makefile for use with Microsoft `nmake'.
+# Project: wsn.mcp
+# Date: Fri Apr 17 15:37:42 2009
+
+AS = mpasmwin.exe
+CC = mcc18.exe
+LD = mplink.exe
+AR = mplib.exe
+RM = del
+
+"wsn.cof" : "FHSSapi.o" "sx1211driver.o" "wsn.o" "timers.o" "uart.o" "spi.o" "cpu.o" "sx1211_interrupts.o"
+	"C:\Program Files\Microchip\MPASM Suite\MPLink.exe" /l"C:\MCC18\lib" "..\..\..\..\..\..\MCC18\lkr\18f87j11i_e.lkr" "FHSSapi.o" "sx1211driver.o" "wsn.o" "timers.o" "uart.o" "spi.o" "cpu.o" "sx1211_interrupts.o" /u_CRUNTIME /u_EXTENDEDMODE /u_DEBUG /u_DEBUGDATASTART=0xef4 /u_DEBUGDATALEN=0xc /z__MPLAB_BUILD=1 /z__MPLAB_DEBUG=1 /z__MPLAB_DEBUGGER_ICD2=1 /z__ICD2RAM=1 /o"wsn.cof" /M"wsn.map" /W
+
+"FHSSapi.o" : "..\..\..\..\wsn_fhss\FHSSapi.c" "..\..\..\..\..\..\MCC18\h\string.h" "..\..\..\..\..\..\MCC18\h\stddef.h" "..\..\..\..\wsn_fhss\SX1211Driver.h" "..\..\..\..\wsn_fhss\platform.h" "..\types.h" "..\cpu.h" "..\..\..\..\..\..\MCC18\h\stdlib.h" "..\timers.h" "..\io_port_mapping.h" "..\..\..\..\..\..\MCC18\h\p18f87j11.h" "..\..\..\..\wsn_fhss\WSN.h" "..\..\..\..\wsn_fhss\FHSSapi.h"
+	$(CC) -p=18F87J11 /i"../../../../wsn_fhss" -I".." "C:\src\wsn_port\wsn_fhss\FHSSapi.c" -fo="FHSSapi.o" -D__DEBUG --extended -DTIMER_TEST -mL -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+"sx1211driver.o" : "..\..\..\..\wsn_fhss\sx1211driver.c" "..\..\..\..\..\..\MCC18\h\stdlib.h" "..\..\..\..\..\..\MCC18\h\string.h" "..\..\..\..\..\..\MCC18\h\stddef.h" "..\..\..\..\wsn_fhss\SX1211driver.h" "..\..\..\..\wsn_fhss\platform.h" "..\types.h" "..\cpu.h" "..\timers.h" "..\io_port_mapping.h" "..\..\..\..\..\..\MCC18\h\p18f87j11.h" "..\..\..\..\wsn_fhss\FHSSapi.h"
+	$(CC) -p=18F87J11 /i"../../../../wsn_fhss" -I".." "C:\src\wsn_port\wsn_fhss\sx1211driver.c" -fo="sx1211driver.o" -D__DEBUG --extended -DTIMER_TEST -mL -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+"wsn.o" : "..\..\..\..\wsn_fhss\wsn.c" "..\..\..\..\..\..\MCC18\h\string.h" "..\..\..\..\..\..\MCC18\h\stddef.h" "..\..\..\..\wsn_fhss\SX1211Driver.h" "..\..\..\..\wsn_fhss\platform.h" "..\types.h" "..\cpu.h" "..\..\..\..\..\..\MCC18\h\stdlib.h" "..\timers.h" "..\io_port_mapping.h" "..\..\..\..\..\..\MCC18\h\p18f87j11.h" "..\..\..\..\wsn_fhss\FHSSapi.h" "..\..\..\..\wsn_fhss\WSN.h"
+	$(CC) -p=18F87J11 /i"../../../../wsn_fhss" -I".." "C:\src\wsn_port\wsn_fhss\wsn.c" -fo="wsn.o" -D__DEBUG --extended -DTIMER_TEST -mL -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+"timers.o" : "..\timers.c" "..\..\..\..\wsn_fhss\platform.h" "..\types.h" "..\cpu.h" "..\..\..\..\..\..\MCC18\h\stdlib.h" "..\timers.h" "..\io_port_mapping.h" "..\..\..\..\..\..\MCC18\h\p18f87j11.h" "..\..\..\..\wsn_fhss\SX1211driver.h"
+	$(CC) -p=18F87J11 /i"../../../../wsn_fhss" -I".." "C:\src\wsn_port\processors\microchip\pic18f87j11\timers.c" -fo="timers.o" -D__DEBUG --extended -DTIMER_TEST -mL -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+"uart.o" : "..\uart.c" "..\..\..\..\wsn_fhss\platform.h" "..\types.h" "..\cpu.h" "..\..\..\..\..\..\MCC18\h\stdlib.h" "..\timers.h" "..\io_port_mapping.h" "..\..\..\..\..\..\MCC18\h\p18f87j11.h" "..\..\..\..\..\..\MCC18\h\string.h" "..\..\..\..\..\..\MCC18\h\stddef.h"
+	$(CC) -p=18F87J11 /i"../../../../wsn_fhss" -I".." "C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c" -fo="uart.o" -D__DEBUG --extended -DTIMER_TEST -mL -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+"spi.o" : "..\spi.c" "..\..\..\..\wsn_fhss\platform.h" "..\types.h" "..\cpu.h" "..\..\..\..\..\..\MCC18\h\stdlib.h" "..\timers.h" "..\io_port_mapping.h" "..\..\..\..\..\..\MCC18\h\p18f87j11.h"
+	$(CC) -p=18F87J11 /i"../../../../wsn_fhss" -I".." "C:\src\wsn_port\processors\microchip\pic18f87j11\spi.c" -fo="spi.o" -D__DEBUG --extended -DTIMER_TEST -mL -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+"cpu.o" : "..\cpu.c" "..\..\..\..\wsn_fhss\platform.h" "..\types.h" "..\cpu.h" "..\..\..\..\..\..\MCC18\h\stdlib.h" "..\timers.h" "..\io_port_mapping.h" "..\..\..\..\..\..\MCC18\h\p18f87j11.h"
+	$(CC) -p=18F87J11 /i"../../../../wsn_fhss" -I".." "C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c" -fo="cpu.o" -D__DEBUG --extended -DTIMER_TEST -mL -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+"sx1211_interrupts.o" : "..\sx1211_interrupts.c" "..\..\..\..\wsn_fhss\platform.h" "..\types.h" "..\cpu.h" "..\..\..\..\..\..\MCC18\h\stdlib.h" "..\timers.h" "..\io_port_mapping.h" "..\..\..\..\..\..\MCC18\h\p18f87j11.h"
+	$(CC) -p=18F87J11 /i"../../../../wsn_fhss" -I".." "C:\src\wsn_port\processors\microchip\pic18f87j11\sx1211_interrupts.c" -fo="sx1211_interrupts.o" -D__DEBUG --extended -DTIMER_TEST -mL -Ou- -Ot- -Ob- -Op- -Or- -Od- -Opa-
+
+"clean" : 
+	$(RM) "FHSSapi.o" "sx1211driver.o" "wsn.o" "timers.o" "uart.o" "spi.o" "cpu.o" "sx1211_interrupts.o" "wsn.cof" "wsn.hex"
+

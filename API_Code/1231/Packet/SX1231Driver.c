@@ -287,7 +287,7 @@ void SendRfFrame(_U8 *buffer, _U8 size, _U8 *pReturnCode)
 
 	SetRFMode(RF_TRANSMITTER); //   => Tx starts since FIFO is not empty
 
-	do{
+	do {
 	} while (!(RegPAIn & DIO0)); // Wait for Packet sent
 
 	SetRFMode(RF_SLEEP);

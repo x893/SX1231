@@ -1,0 +1,1448 @@
+MPLINK 4.20, Linker
+Linker Map File - Created Mon Dec 21 14:43:07 2009
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+               _entry_scn       code   0x000000    program   0x000006
+           .romdata_lcd.o    romdata   0x000006    program   0x000002
+               highVector       code   0x000008    program   0x000006
+       .romdata_FHSSapi.o    romdata   0x00000e    program   0x000006
+           .code___init.o       code   0x000014    program   0x000002
+        .romdata___init.o    romdata   0x000016    program   0x000000
+        .idata___init.o_i    romdata   0x000016    program   0x000000
+    .romdata_interrupts.o    romdata   0x000016    program   0x000000
+    .idata_interrupts.o_i    romdata   0x000016    program   0x000000
+        .romdata_timers.o    romdata   0x000016    program   0x000000
+        .idata_timers.o_i    romdata   0x000016    program   0x000000
+          .romdata_uart.o    romdata   0x000016    program   0x000000
+          .idata_uart.o_i    romdata   0x000016    program   0x000000
+           .idata_lcd.o_i    romdata   0x000016    program   0x000000
+           .romdata_cpu.o    romdata   0x000016    program   0x000000
+           .idata_cpu.o_i    romdata   0x000016    program   0x000000
+           .romdata_spi.o    romdata   0x000016    program   0x000000
+       .idata_c018i_e.o_i    romdata   0x000016    program   0x000000
+       .romdata_c018i_e.o    romdata   0x000016    program   0x000000
+          .code_c018i_e.o       code   0x000016    program   0x000000
+           .idata_spi.o_i    romdata   0x000016    program   0x000000
+       .idata_FHSSapi.o_i    romdata   0x000016    program   0x000000
+               lowhVector       code   0x000018    program   0x000006
+                   .cinit    romdata   0x00001e    program   0x00001a
+              .code_wsn.o       code   0x000038    program   0x000aca
+              .code_lcd.o       code   0x000b02    program   0x0006ca
+           .code_sx1231.o       code   0x0011cc    program   0x00051a
+          .code_FHSSapi.o       code   0x0016e6    program   0x0004b6
+             .code_uart.o       code   0x001b9c    program   0x00021c
+                   STDLIB       code   0x001db8    program   0x0001aa
+       .code_interrupts.o       code   0x001f62    program   0x000128
+                   STRING       code   0x00208a    program   0x00010a
+             .stringtable    romdata   0x002194    program   0x0000da
+           .code_timers.o       code   0x00226e    program   0x0000d0
+               _cinit_scn       code   0x00233e    program   0x00009e
+        .romdata_sx1231.o    romdata   0x0023dc    program   0x000096
+              .code_cpu.o       code   0x002472    program   0x000074
+              .code_spi.o       code   0x0024e6    program   0x000032
+             _startup_scn       code   0x002518    program   0x00001a
+           .romdata_wsn.o    romdata   0x002532    program   0x000016
+                    .code       code   0x002548    program   0x00000e
+           .idata_wsn.o_i    romdata   0x002556    program   0x000003
+        .idata_sx1231.o_i    romdata   0x002559    program   0x0000e8
+      .config_1fff8_cpu.o    romdata   0x01fff8    program   0x000001
+      .config_1fff9_cpu.o    romdata   0x01fff9    program   0x000001
+      .config_1fffa_cpu.o    romdata   0x01fffa    program   0x000001
+      .config_1fffc_cpu.o    romdata   0x01fffc    program   0x000001
+             .udata_lcd.o      udata   0x000000       data   0x00004a
+         .udata_c018i_e.o      udata   0x00004a       data   0x00000a
+             .udata_wsn.o      udata   0x000054       data   0x000008
+                MATH_DATA      udata   0x00005c       data   0x000004
+            .udata_uart.o      udata   0x000060       data   0x000064
+          .idata_sx1231.o      idata   0x000100       data   0x0000e8
+             .udata_cpu.o      udata   0x0001e8       data   0x000004
+          .udata_sx1231.o      udata   0x0001ec       data   0x000003
+                 .tmpdata      udata   0x0001ef       data   0x000003
+             .idata_wsn.o      idata   0x0001f2       data   0x000003
+               LowISR_tmp      udata   0x0001f5       data   0x000001
+          .idata___init.o      idata   0x0001f6       data   0x000000
+          .udata___init.o      udata   0x0001f6       data   0x000000
+      .idata_interrupts.o      idata   0x0001f6       data   0x000000
+      .udata_interrupts.o      udata   0x0001f6       data   0x000000
+          .idata_timers.o      idata   0x0001f6       data   0x000000
+          .udata_timers.o      udata   0x0001f6       data   0x000000
+            .idata_uart.o      idata   0x0001f6       data   0x000000
+             .idata_lcd.o      idata   0x0001f6       data   0x000000
+             .idata_cpu.o      idata   0x0001f6       data   0x000000
+             .idata_spi.o      idata   0x0001f6       data   0x000000
+             .udata_spi.o      udata   0x0001f6       data   0x000000
+         .idata_FHSSapi.o      idata   0x0001f6       data   0x000000
+         .idata_c018i_e.o      idata   0x0001f6       data   0x000000
+         .udata_FHSSapi.o      udata   0x000200       data   0x000048
+                   .stack      udata   0x000e00       data   0x000100
+              SFR_BANKED0      udata   0x000f5a       data   0x000006
+            SFR_UNBANKED0      udata   0x000f60       data   0x0000a0
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000015      
+                            0x000018    0x002640      
+                            0x01fff8    0x01fffa      
+                            0x01fffc    0x01fffc      
+            9795 out of 131072 program addresses used, program memory utilization is 7%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 ClearLCD   0x000dcc    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                     Each   0x002532    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+              EnableClock   0x002294    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\timers.c
+        EnableClock_HiRes   0x00226e    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\timers.c
+                 Fhss_Hop   0x0013e0    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    First   0x00253a    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+                   Fourth   0x002540    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+            HardwareSetup   0x00091e    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+                  HighISR   0x002062    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\interrupts.c
+               HighVector   0x000008    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\interrupts.c
+               InitRFChip   0x0012d0    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                InitWrite   0x000b5a    program     static C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                LCDLine_1   0x000cb4    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                LCDLine_2   0x000d40    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+          LCDLine_2_clear   0x000f28    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                LCD_DELAY   0x000006    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                 LCD_adds   0x000f64    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+               LCD_dwrite   0x000e58    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                 LCD_puts   0x000eba    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+        LCD_puts_from_rom   0x000fa8    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                   LowISR   0x001f62    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\interrupts.c
+                LowVector   0x000018    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\interrupts.c
+   Master_Sync_Rate_HiRes   0x00000e    program     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+                 OnMaster   0x000070    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+                  OnSlave   0x00056a    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+                  OneByte   0x001f50    program     static C:\MCC18\src\extended\stdclib\ltobcd.asm
+                ProcLower   0x001ee8    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                ProcUpper   0x001ede    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+        RX_TIMEOUT_MASTER   0x002546    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+         RX_TIMEOUT_SLAVE   0x002544    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+        RadioReadRegister   0x0011f8    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+      RadioSetNodeAddress   0x0014b0    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+       RadioWriteRegister   0x0011cc    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+           ReceiveRfFrame   0x0015fa    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+               SLAVE_WAIT   0x002542    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+                  SPIInit   0x0024e6    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\spi.c
+                   Second   0x00253c    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+              SendRfFrame   0x001538    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                SetRFMode   0x00122a    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+            Slave_CycleRX   0x002534    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+    Slave_CycleRX_Timeout   0x002536    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+               Sleep_Sync   0x002538    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+                 SpiInOut   0x0024fa    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\spi.c
+         Sync_Time_Master   0x000012    program     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+          Sync_Time_Slave   0x000010    program     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+                Sync_fhss   0x0016e6    program     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+                    Third   0x00253e    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+                 TstLower   0x001ed2    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                 TstUpper   0x001ecc    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+               USART_send   0x001cbe    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+      USART_send_from_rom   0x001c36    program     static C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+           USART_send_str   0x001d60    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+  USART_send_str_from_rom   0x001d1c    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+                     Wait   0x0022ba    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\timers.c
+               WritePortA   0x000b02    program     static C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+               WritePortB   0x000b26    program     static C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                   _2jEnd   0x00217e    program     static C:\MCC18\src\extended\stdclib\slenpgm.asm
+              _3jContinue   0x0020bc    program     static C:\MCC18\src\extended\stdclib\mcpyp2r.asm
+                   _3jEnd   0x001dfc    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                   _4jEnd   0x0020c6    program     static C:\MCC18\src\extended\stdclib\mcpyp2r.asm
+       ___case_0_lbl00076   0x00108a    program     static                          
+       ___case_1_lbl00081   0x0011ac    program     static                          
+       ___case_2_lbl00077   0x001110    program     static                          
+       ___case_3_lbl00079   0x001170    program     static                          
+           ___do_lbl00006   0x0022fc    program     static                          
+           ___do_lbl00007   0x002300    program     static                          
+           ___do_lbl00008   0x0022f6    program     static                          
+         ___else_lbl00074   0x0010f4    program     static                          
+          ___for_lbl00006   0x000cf6    program     static                          
+          ___for_lbl00007   0x000cf8    program     static                          
+          ___for_lbl00008   0x000cf4    program     static                          
+          ___for_lbl00011   0x000d3c    program     static                          
+          ___for_lbl00012   0x000d3e    program     static                          
+          ___for_lbl00013   0x000d3a    program     static                          
+          ___for_lbl00017   0x000d82    program     static                          
+          ___for_lbl00018   0x000d84    program     static                          
+          ___for_lbl00019   0x000d80    program     static                          
+          ___for_lbl00022   0x000dc8    program     static                          
+          ___for_lbl00023   0x000dca    program     static                          
+          ___for_lbl00024   0x000dc6    program     static                          
+          ___for_lbl00028   0x000e0e    program     static                          
+          ___for_lbl00029   0x000e10    program     static                          
+          ___for_lbl00030   0x000e0c    program     static                          
+          ___for_lbl00033   0x000e54    program     static                          
+          ___for_lbl00034   0x000e56    program     static                          
+          ___for_lbl00035   0x000e52    program     static                          
+          ___for_lbl00040   0x000eb0    program     static                          
+          ___for_lbl00041   0x000eb2    program     static                          
+          ___for_lbl00042   0x000eae    program     static                          
+           ___if_lbl00005   0x000ce0    program     static                          
+           ___if_lbl00009   0x000cf8    program     static                          
+           ___if_lbl00010   0x000d26    program     static                          
+           ___if_lbl00014   0x000d3e    program     static                          
+           ___if_lbl00016   0x000d6c    program     static                          
+           ___if_lbl00020   0x000d84    program     static                          
+           ___if_lbl00021   0x000db2    program     static                          
+           ___if_lbl00025   0x000dca    program     static                          
+           ___if_lbl00027   0x000df8    program     static                          
+           ___if_lbl00031   0x000e10    program     static                          
+           ___if_lbl00032   0x000e3e    program     static                          
+           ___if_lbl00036   0x000e56    program     static                          
+           ___if_lbl00038   0x000e6c    program     static                          
+           ___if_lbl00039   0x000e9a    program     static                          
+           ___if_lbl00043   0x000eb2    program     static                          
+           ___if_lbl00072   0x0010cc    program     static                          
+           ___if_lbl00073   0x00110e    program     static                          
+           ___if_lbl00075   0x00110e    program     static                          
+           ___if_lbl00078   0x00113e    program     static                          
+           ___if_lbl00080   0x0011c2    program     static                          
+       ___return_lbl00000   0x000004    program     static                          
+       ___return_lbl00001   0x002530    program     static                          
+       ___return_lbl00002   0x0023da    program     static                          
+       ___return_lbl00002   0x000b9a    program     static                          
+       ___return_lbl00004   0x000d3e    program     static                          
+       ___return_lbl00005   0x002300    program     static                          
+       ___return_lbl00007   0x00000c    program     static                          
+       ___return_lbl00008   0x00001c    program     static                          
+       ___return_lbl00015   0x000dca    program     static                          
+       ___return_lbl00026   0x000e56    program     static                          
+       ___return_lbl00037   0x000eb2    program     static                          
+       ___return_lbl00070   0x0011c4    program     static                          
+   ___switchexit_lbl00071   0x0011c4    program     static                          
+               __config_0   0x01fff8    program     static C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+               __config_1   0x01fff9    program     static C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+               __config_2   0x01fffa    program     static C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+               __config_3   0x01fffc    program     static C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+                   __init   0x000014    program     extern C:\MCC18\src\extended\stdclib\__init.c
+               __string_0   0x002204    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_0   0x002268    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+               __string_1   0x002202    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_1   0x002262    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+              __string_10   0x0021d7    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_10   0x002220    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+              __string_11   0x00221c    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+              __string_11   0x0021d4    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_12   0x002218    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+              __string_12   0x0021d1    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_13   0x00220c    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+              __string_13   0x0021ca    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_14   0x0021bc    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_15   0x0021b5    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_16   0x0021ae    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_17   0x0021a7    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_18   0x0021a0    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_19   0x002199    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_2   0x002255    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+               __string_2   0x002200    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_20   0x002194    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_3   0x00224f    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+               __string_3   0x0021fe    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_4   0x0021f2    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_4   0x00224b    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+               __string_5   0x0021f0    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_5   0x00223e    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+               __string_6   0x0021e4    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_6   0x002238    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+               __string_7   0x0021e1    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_7   0x002234    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+               __string_8   0x0021db    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_8   0x002230    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+               __string_9   0x0021da    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_9   0x002226    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+            __zero_memory   0x002548    program     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                _do_cinit   0x00233e    program     extern C:\MCC18\src\extended\startup\c018i_e.c
+                   _entry   0x000000    program     extern C:\MCC18\src\extended\startup\c018i_e.c
+                 _startup   0x002518    program     extern C:\MCC18\src\extended\startup\c018i_e.c
+              _usart_putc   0x001c08    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+                     ch_0   0x0023dc    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                     ch_1   0x0023df    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_10   0x0023fa    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_11   0x0023fd    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_12   0x002400    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_13   0x002403    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_14   0x002406    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_15   0x002409    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_16   0x00240c    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_17   0x00240f    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_18   0x002412    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_19   0x002415    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                     ch_2   0x0023e2    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_20   0x002418    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_21   0x00241b    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_22   0x00241e    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_23   0x002421    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_24   0x002424    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_25   0x002427    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_26   0x00242a    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_27   0x00242d    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_28   0x002430    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_29   0x002433    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                     ch_3   0x0023e5    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_30   0x002436    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_31   0x002439    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_32   0x00243c    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_33   0x00243f    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_34   0x002442    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_35   0x002445    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_36   0x002448    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_37   0x00244b    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_38   0x00244e    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_39   0x002451    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                     ch_4   0x0023e8    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_40   0x002454    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_41   0x002457    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_42   0x00245a    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_43   0x00245d    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_44   0x002460    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_45   0x002463    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_46   0x002466    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_47   0x002469    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_48   0x00246c    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_49   0x00246f    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                     ch_5   0x0023eb    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                     ch_6   0x0023ee    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                     ch_7   0x0023f1    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                     ch_8   0x0023f4    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                     ch_9   0x0023f7    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+               clear_loop   0x00254e    program     static C:\MCC18\src\extended\proc\p18F87J11.asm
+                copy_loop   0x0023b0    program     static                          
+            copy_one_byte   0x0023b6    program     static                          
+                 cpu_init   0x0024c8    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+                     done   0x0023da    program     static                          
+             done_copying   0x0023c4    program     static                          
+                 go_sleep   0x0022e8    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\timers.c
+                     jDo1   0x001e98    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                    jDo10   0x001e74    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                     jDo2   0x001e94    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                     jDo3   0x001e90    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                     jDo4   0x001e8c    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                     jDo5   0x001e88    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                     jDo6   0x001e84    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                     jDo7   0x001e80    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                     jDo8   0x001e7c    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                     jDo9   0x001e78    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                     jEnd   0x001f4c    program     static C:\MCC18\src\extended\stdclib\ltobcd.asm
+                     jEnd   0x002180    program     static C:\MCC18\src\extended\stdclib\slenpgm.asm
+                     jEnd   0x002148    program     static C:\MCC18\src\extended\stdclib\strlen.asm
+                     jEnd   0x0020ce    program     static C:\MCC18\src\extended\stdclib\mcpyp2r.asm
+                     jEnd   0x0020fa    program     static C:\MCC18\src\extended\stdclib\scmpp2r.asm
+                     jEnd   0x00212c    program     static C:\MCC18\src\extended\stdclib\scpyp2r.asm
+                    jLoop   0x002168    program     static C:\MCC18\src\extended\stdclib\slenpgm.asm
+                    jLoop   0x00213e    program     static C:\MCC18\src\extended\stdclib\strlen.asm
+                    jLoop   0x002122    program     static C:\MCC18\src\extended\stdclib\scpyp2r.asm
+                    jLoop   0x0020ee    program     static C:\MCC18\src\extended\stdclib\scmpp2r.asm
+                    jLoop   0x001f0e    program     static C:\MCC18\src\extended\stdclib\ltobcd.asm
+                    jLoop   0x0020b0    program     static C:\MCC18\src\extended\stdclib\mcpyp2r.asm
+                jTstLowZ1   0x001edc    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                jTstSign1   0x001dfc    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                 lcd_init   0x000ba2    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                 lcd_task   0x001064    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                     loop   0x002526    program     static                          
+                   ltoBCD   0x001ef2    program     extern C:\MCC18\src\extended\stdclib\ltobcd.asm
+                     ltoa   0x001db8    program     extern C:\MCC18\src\extended\stdclib\ltoa.asm
+                     main   0x000ae8    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+master_increment_slave_ID   0x000038    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+            memcpypgm2ram   0x00208a    program     extern C:\MCC18\src\extended\stdclib\mcpyp2r.asm
+           new_hw_address   0x000970    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+    poll_hardware_address   0x002472    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+              start_rf_rx   0x0014e0    program     static C:\src\wsn_port\transceivers\sx1231\sx1231.c
+            strcmppgm2ram   0x0020d0    program     extern C:\MCC18\src\extended\stdclib\scmpp2r.asm
+            strcpypgm2ram   0x0020fc    program     extern C:\MCC18\src\extended\stdclib\scpyp2r.asm
+                   strlen   0x00212e    program     extern C:\MCC18\src\extended\stdclib\strlen.asm
+                strlenpgm   0x00214a    program     extern C:\MCC18\src\extended\stdclib\slenpgm.asm
+                     test   0x002358    program     static                          
+              timers_init   0x002302    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\timers.c
+                uart_init   0x001d90    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+                 uart_isr   0x001b9c    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+                   ADCON0   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ANCON0   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ANCON0bits   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ANCON1   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ANCON1bits   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  BAUDCON   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 BAUDCON1   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             BAUDCON1bits   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 BAUDCON2   0x000f7c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             BAUDCON2bits   0x000f7c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              BAUDCONbits   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CCP1CON   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP1CONbits   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CCP2CON   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP2CONbits   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CCP3CON   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP3CONbits   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CCP4CON   0x000f73       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP4CONbits   0x000f73       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CCP5CON   0x000f70       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP5CONbits   0x000f70       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR1   0x000fbc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR1H   0x000fbd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR1L   0x000fbc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR2   0x000fb7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR2H   0x000fb8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR2L   0x000fb7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR3   0x000fb2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR3H   0x000fb3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR3L   0x000fb2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR4   0x000f74       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR4H   0x000f75       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR4L   0x000f74       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR5   0x000f71       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR5H   0x000f72       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR5L   0x000f71       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CM1CON   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CM1CON1   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CM1CON1bits   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               CM1CONbits   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CM2CON   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CM2CON1   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CM2CON1bits   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               CM2CONbits   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CMSTAT   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 CMSTATUS   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             CMSTATUSbits   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               CMSTATbits   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CVRCON   0x000f77       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               CVRCONbits   0x000f77       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRA   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRD   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRDbits   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRE   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDREbits   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRF   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRFbits   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRG   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRGbits   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRH   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRHbits   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRJ   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRJbits   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  ECCP1AS   0x000fbf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              ECCP1ASbits   0x000fbf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP1CON   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP1CONbits   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP1DEL   0x000fbe       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP1DELbits   0x000fbe       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  ECCP2AS   0x000fba       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              ECCP2ASbits   0x000fba       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP2CON   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP2CONbits   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP2DEL   0x000fb9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP2DELbits   0x000fb9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  ECCP3AS   0x000fb5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              ECCP3ASbits   0x000fb5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP3CON   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP3CONbits   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP3DEL   0x000fb4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP3DELbits   0x000fb4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    Error   0x0001f3       data     extern C:\src\wsn_port\wsn_fhss\wsn.c
+              Error_cycle   0x0001f4       data     static C:\src\wsn_port\wsn_fhss\wsn.c
+                     FSR0   0x000fe9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     IPR3   0x000fa5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 IPR3bits   0x000fa5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATA   0x000f89       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATD   0x000f8c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATDbits   0x000f8c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATE   0x000f8d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATEbits   0x000f8d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATF   0x000f8e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATFbits   0x000f8e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATG   0x000f8f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATGbits   0x000f8f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATH   0x000f90       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATHbits   0x000f90       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATJ   0x000f91       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATJbits   0x000f91       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   MEMCON   0x000fcb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               MEMCONbits   0x000fcb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                MainClock   0x000056       data     extern C:\src\wsn_port\wsn_fhss\wsn.c
+                     Mode   0x0001f2       data     static C:\src\wsn_port\wsn_fhss\wsn.c
+                Node_adrs   0x000243       data     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+                   ODCON1   0x000fcf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ODCON1bits   0x000fcf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ODCON2   0x000fce       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ODCON2bits   0x000fce       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ODCON3   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ODCON3bits   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PADCFG1   0x000fcc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PADCFG1bits   0x000fcc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                       PC   0x000ff9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIE3   0x000fa3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIE3bits   0x000fa3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIR3   0x000fa4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIR3bits   0x000fa4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMADDR   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMADDRH   0x000f69       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PMADDRHbits   0x000f69       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMADDRL   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PMCON   0x000f64       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMCONH   0x000f65       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               PMCONHbits   0x000f65       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMCONL   0x000f64       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               PMCONLbits   0x000f64       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMDIN1   0x000f66       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDIN1H   0x000f67       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDIN1L   0x000f66       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMDIN2   0x000f5e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDIN2H   0x000f5f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDIN2L   0x000f5e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDOUT1   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMDOUT1H   0x000f69       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMDOUT1L   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDOUT2   0x000f60       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMDOUT2H   0x000f61       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMDOUT2L   0x000f60       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PMEH   0x000f5d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMEHbits   0x000f5d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PMEL   0x000f5c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMELbits   0x000f5c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PMEN   0x000f5c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMMODE   0x000f62       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMMODEH   0x000f63       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PMMODEHbits   0x000f63       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMMODEL   0x000f62       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PMMODELbits   0x000f62       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMSTAT   0x000f5a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMSTATH   0x000f5b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PMSTATHbits   0x000f5b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMSTATL   0x000f5a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PMSTATLbits   0x000f5a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTD   0x000f83       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTDbits   0x000f83       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTF   0x000f85       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTFbits   0x000f85       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTG   0x000f86       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTGbits   0x000f86       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTH   0x000f87       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTHbits   0x000f87       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTJ   0x000f88       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTJbits   0x000f88       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      PR4   0x000f77       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PreMode   0x0001e6       data     static C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                     RCON   0x000fd0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    RCREG   0x000faf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   RCREG1   0x000faf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   RCREG2   0x000faa       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    RCSTA   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   RCSTA1   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               RCSTA1bits   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   RCSTA2   0x000f9c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               RCSTA2bits   0x000f9c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                RCSTAbits   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  REFOCON   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              REFOCONbits   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  RFState   0x0001e7       data     static C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                 RFbuffer   0x000202       data     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+             RFbufferSize   0x000242       data     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+             RegistersCfg   0x000196       data     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+               S2_pressed   0x0001e9       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+                    SPBRG   0x000fb0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   SPBRG1   0x000fb0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   SPBRG2   0x000fab       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SPBRGH1   0x000f7f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SPBRGH2   0x000f7d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP1ADD   0x000fc8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP1BUF   0x000fc9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP1CON1   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP1CON1bits   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP1CON2   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP1CON2bits   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP1MSK   0x000fc8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP1STAT   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP1STATbits   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP2ADD   0x000f6e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP2BUF   0x000f6f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP2CON1   0x000f6c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP2CON1bits   0x000f6c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP2CON2   0x000f6b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP2CON2bits   0x000f6b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP2MSK   0x000f6e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              SSP2MSKbits   0x000f6e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP2STAT   0x000f6d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP2STATbits   0x000f6d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 Slave_ID   0x000059       data     static C:\src\wsn_port\wsn_fhss\wsn.c
+          Slave_Needs_Hop   0x000054       data     extern C:\src\wsn_port\wsn_fhss\wsn.c
+          Slave_Sync_Step   0x000247       data     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+                SyncState   0x000244       data     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+                    T0CON   0x000fd5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    T3CON   0x000f79       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T3CONbits   0x000f79       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    T4CON   0x000f76       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T4CONbits   0x000f76       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR3H   0x000f7b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR3L   0x000f7a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TMR4   0x000f78       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISD   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISDbits   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISE   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISEbits   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISF   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISFbits   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISG   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISGbits   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISH   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISHbits   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISJ   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISJbits   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TXREG   0x000fae       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TXREG1   0x000fae       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TXREG2   0x000fa9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TXSTA   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TXSTA1   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               TXSTA1bits   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TXSTA2   0x000fa8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               TXSTA2bits   0x000fa8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TXSTAbits   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   WDTCON   0x000fc0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               WDTCONbits   0x000fc0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                __RETVAL0   0x00005c       data     extern C:\MCC18\src\extended\math\cmath18.asm
+                __RETVAL1   0x00005d       data     extern C:\MCC18\src\extended\math\cmath18.asm
+                __RETVAL2   0x00005e       data     extern C:\MCC18\src\extended\math\cmath18.asm
+                __RETVAL3   0x00005f       data     extern C:\MCC18\src\extended\math\cmath18.asm
+                  __tmp_0   0x0001ef       data     static C:\src\wsn_port\wsn_fhss\wsn.c
+                  __tmp_0   0x0001ef       data     static C:\src\wsn_port\processors\microchip\pic18f87j11\timers.c
+                  __tmp_0   0x0001ef       data     static C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+                  __tmp_0   0x0001ef       data     static C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                  __tmp_0   0x0001ef       data     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+                  __tmp_1   0x0001f5       data     static C:\src\wsn_port\processors\microchip\pic18f87j11\interrupts.c
+              char_to_put   0x000049       data     static C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                curr_byte   0x00004d       data     static C:\MCC18\src\extended\startup\c018i_e.c
+               curr_entry   0x00004f       data     static C:\MCC18\src\extended\startup\c018i_e.c
+    current_radio_channel   0x000201       data     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+                 data_ptr   0x000051       data     static C:\MCC18\src\extended\startup\c018i_e.c
+           debounce_count   0x0001eb       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+                dummy_led   0x0001e8       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+                  freqs_P   0x000100       data     static C:\src\wsn_port\transceivers\sx1231\sx1231.c
+           g_USART_RX_buf   0x000064       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+        g_USART_RX_buf_in   0x000060       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+       g_USART_RX_buf_out   0x000061       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+           g_USART_TX_buf   0x000084       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+        g_USART_TX_buf_in   0x000062       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+       g_USART_TX_buf_out   0x000063       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+               hw_address   0x000055       data     extern C:\src\wsn_port\wsn_fhss\wsn.c
+              lcd_cmd_buf   0x000001       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+           lcd_cmd_buf_in   0x000041       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+          lcd_cmd_buf_out   0x000043       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+          lcd_delay_count   0x000047       data     static C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                lcd_state   0x000045       data     static C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+    lcd_state_after_delay   0x000046       data     static C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                    lcd_u   0x000000       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                      lsb   0x0001ee       data     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+      master_dialog_state   0x000058       data     static C:\src\wsn_port\wsn_fhss\wsn.c
+             master_flags   0x00005a       data     static C:\src\wsn_port\wsn_fhss\wsn.c
+        master_sync_count   0x000246       data     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+                      mid   0x0001ed       data     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                      msb   0x0001ec       data     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                 prev_RA5   0x0001ea       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+                     prom   0x00004a       data     static C:\MCC18\src\extended\startup\c018i_e.c
+     radio_channel_dialog   0x000200       data     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+       radio_channel_sync   0x000245       data     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+               rx_timeout   0x00005b       data     static C:\src\wsn_port\wsn_fhss\wsn.c
+                     text   0x0000a4       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   _entry   0x000000    program     extern C:\MCC18\src\extended\startup\c018i_e.c
+       ___return_lbl00000   0x000004    program     static                          
+                LCD_DELAY   0x000006    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+               HighVector   0x000008    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\interrupts.c
+       ___return_lbl00007   0x00000c    program     static                          
+   Master_Sync_Rate_HiRes   0x00000e    program     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+          Sync_Time_Slave   0x000010    program     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+         Sync_Time_Master   0x000012    program     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+                   __init   0x000014    program     extern C:\MCC18\src\extended\stdclib\__init.c
+                LowVector   0x000018    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\interrupts.c
+       ___return_lbl00008   0x00001c    program     static                          
+master_increment_slave_ID   0x000038    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+                 OnMaster   0x000070    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+                  OnSlave   0x00056a    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+            HardwareSetup   0x00091e    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+           new_hw_address   0x000970    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+                     main   0x000ae8    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+               WritePortA   0x000b02    program     static C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+               WritePortB   0x000b26    program     static C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                InitWrite   0x000b5a    program     static C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+       ___return_lbl00002   0x000b9a    program     static                          
+                 lcd_init   0x000ba2    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                LCDLine_1   0x000cb4    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+           ___if_lbl00005   0x000ce0    program     static                          
+          ___for_lbl00008   0x000cf4    program     static                          
+          ___for_lbl00006   0x000cf6    program     static                          
+           ___if_lbl00009   0x000cf8    program     static                          
+          ___for_lbl00007   0x000cf8    program     static                          
+           ___if_lbl00010   0x000d26    program     static                          
+          ___for_lbl00013   0x000d3a    program     static                          
+          ___for_lbl00011   0x000d3c    program     static                          
+          ___for_lbl00012   0x000d3e    program     static                          
+       ___return_lbl00004   0x000d3e    program     static                          
+           ___if_lbl00014   0x000d3e    program     static                          
+                LCDLine_2   0x000d40    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+           ___if_lbl00016   0x000d6c    program     static                          
+          ___for_lbl00019   0x000d80    program     static                          
+          ___for_lbl00017   0x000d82    program     static                          
+           ___if_lbl00020   0x000d84    program     static                          
+          ___for_lbl00018   0x000d84    program     static                          
+           ___if_lbl00021   0x000db2    program     static                          
+          ___for_lbl00024   0x000dc6    program     static                          
+          ___for_lbl00022   0x000dc8    program     static                          
+           ___if_lbl00025   0x000dca    program     static                          
+       ___return_lbl00015   0x000dca    program     static                          
+          ___for_lbl00023   0x000dca    program     static                          
+                 ClearLCD   0x000dcc    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+           ___if_lbl00027   0x000df8    program     static                          
+          ___for_lbl00030   0x000e0c    program     static                          
+          ___for_lbl00028   0x000e0e    program     static                          
+           ___if_lbl00031   0x000e10    program     static                          
+          ___for_lbl00029   0x000e10    program     static                          
+           ___if_lbl00032   0x000e3e    program     static                          
+          ___for_lbl00035   0x000e52    program     static                          
+          ___for_lbl00033   0x000e54    program     static                          
+          ___for_lbl00034   0x000e56    program     static                          
+           ___if_lbl00036   0x000e56    program     static                          
+       ___return_lbl00026   0x000e56    program     static                          
+               LCD_dwrite   0x000e58    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+           ___if_lbl00038   0x000e6c    program     static                          
+           ___if_lbl00039   0x000e9a    program     static                          
+          ___for_lbl00042   0x000eae    program     static                          
+          ___for_lbl00040   0x000eb0    program     static                          
+       ___return_lbl00037   0x000eb2    program     static                          
+          ___for_lbl00041   0x000eb2    program     static                          
+           ___if_lbl00043   0x000eb2    program     static                          
+                 LCD_puts   0x000eba    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+          LCDLine_2_clear   0x000f28    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                 LCD_adds   0x000f64    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+        LCD_puts_from_rom   0x000fa8    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                 lcd_task   0x001064    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+       ___case_0_lbl00076   0x00108a    program     static                          
+           ___if_lbl00072   0x0010cc    program     static                          
+         ___else_lbl00074   0x0010f4    program     static                          
+           ___if_lbl00075   0x00110e    program     static                          
+           ___if_lbl00073   0x00110e    program     static                          
+       ___case_2_lbl00077   0x001110    program     static                          
+           ___if_lbl00078   0x00113e    program     static                          
+       ___case_3_lbl00079   0x001170    program     static                          
+       ___case_1_lbl00081   0x0011ac    program     static                          
+           ___if_lbl00080   0x0011c2    program     static                          
+   ___switchexit_lbl00071   0x0011c4    program     static                          
+       ___return_lbl00070   0x0011c4    program     static                          
+       RadioWriteRegister   0x0011cc    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+        RadioReadRegister   0x0011f8    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                SetRFMode   0x00122a    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+               InitRFChip   0x0012d0    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                 Fhss_Hop   0x0013e0    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+      RadioSetNodeAddress   0x0014b0    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+              start_rf_rx   0x0014e0    program     static C:\src\wsn_port\transceivers\sx1231\sx1231.c
+              SendRfFrame   0x001538    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+           ReceiveRfFrame   0x0015fa    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                Sync_fhss   0x0016e6    program     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+                 uart_isr   0x001b9c    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+              _usart_putc   0x001c08    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+      USART_send_from_rom   0x001c36    program     static C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+               USART_send   0x001cbe    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+  USART_send_str_from_rom   0x001d1c    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+           USART_send_str   0x001d60    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+                uart_init   0x001d90    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+                     ltoa   0x001db8    program     extern C:\MCC18\src\extended\stdclib\ltoa.asm
+                   _3jEnd   0x001dfc    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                jTstSign1   0x001dfc    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                    jDo10   0x001e74    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                     jDo9   0x001e78    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                     jDo8   0x001e7c    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                     jDo7   0x001e80    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                     jDo6   0x001e84    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                     jDo5   0x001e88    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                     jDo4   0x001e8c    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                     jDo3   0x001e90    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                     jDo2   0x001e94    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                     jDo1   0x001e98    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                 TstUpper   0x001ecc    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                 TstLower   0x001ed2    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                jTstLowZ1   0x001edc    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                ProcUpper   0x001ede    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                ProcLower   0x001ee8    program     static C:\MCC18\src\extended\stdclib\ltoa.asm
+                   ltoBCD   0x001ef2    program     extern C:\MCC18\src\extended\stdclib\ltobcd.asm
+                    jLoop   0x001f0e    program     static C:\MCC18\src\extended\stdclib\ltobcd.asm
+                     jEnd   0x001f4c    program     static C:\MCC18\src\extended\stdclib\ltobcd.asm
+                  OneByte   0x001f50    program     static C:\MCC18\src\extended\stdclib\ltobcd.asm
+                   LowISR   0x001f62    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\interrupts.c
+                  HighISR   0x002062    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\interrupts.c
+            memcpypgm2ram   0x00208a    program     extern C:\MCC18\src\extended\stdclib\mcpyp2r.asm
+                    jLoop   0x0020b0    program     static C:\MCC18\src\extended\stdclib\mcpyp2r.asm
+              _3jContinue   0x0020bc    program     static C:\MCC18\src\extended\stdclib\mcpyp2r.asm
+                   _4jEnd   0x0020c6    program     static C:\MCC18\src\extended\stdclib\mcpyp2r.asm
+                     jEnd   0x0020ce    program     static C:\MCC18\src\extended\stdclib\mcpyp2r.asm
+            strcmppgm2ram   0x0020d0    program     extern C:\MCC18\src\extended\stdclib\scmpp2r.asm
+                    jLoop   0x0020ee    program     static C:\MCC18\src\extended\stdclib\scmpp2r.asm
+                     jEnd   0x0020fa    program     static C:\MCC18\src\extended\stdclib\scmpp2r.asm
+            strcpypgm2ram   0x0020fc    program     extern C:\MCC18\src\extended\stdclib\scpyp2r.asm
+                    jLoop   0x002122    program     static C:\MCC18\src\extended\stdclib\scpyp2r.asm
+                     jEnd   0x00212c    program     static C:\MCC18\src\extended\stdclib\scpyp2r.asm
+                   strlen   0x00212e    program     extern C:\MCC18\src\extended\stdclib\strlen.asm
+                    jLoop   0x00213e    program     static C:\MCC18\src\extended\stdclib\strlen.asm
+                     jEnd   0x002148    program     static C:\MCC18\src\extended\stdclib\strlen.asm
+                strlenpgm   0x00214a    program     extern C:\MCC18\src\extended\stdclib\slenpgm.asm
+                    jLoop   0x002168    program     static C:\MCC18\src\extended\stdclib\slenpgm.asm
+                   _2jEnd   0x00217e    program     static C:\MCC18\src\extended\stdclib\slenpgm.asm
+                     jEnd   0x002180    program     static C:\MCC18\src\extended\stdclib\slenpgm.asm
+              __string_20   0x002194    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_19   0x002199    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_18   0x0021a0    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_17   0x0021a7    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_16   0x0021ae    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_15   0x0021b5    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_14   0x0021bc    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_13   0x0021ca    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_12   0x0021d1    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_11   0x0021d4    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_10   0x0021d7    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_9   0x0021da    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_8   0x0021db    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_7   0x0021e1    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_6   0x0021e4    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_5   0x0021f0    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_4   0x0021f2    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_3   0x0021fe    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_2   0x002200    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_1   0x002202    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+               __string_0   0x002204    program     static C:\src\wsn_port\wsn_fhss\wsn.c
+              __string_13   0x00220c    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+              __string_12   0x002218    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+              __string_11   0x00221c    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+              __string_10   0x002220    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+               __string_9   0x002226    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+               __string_8   0x002230    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+               __string_7   0x002234    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+               __string_6   0x002238    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+               __string_5   0x00223e    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+               __string_4   0x00224b    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+               __string_3   0x00224f    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+               __string_2   0x002255    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+               __string_1   0x002262    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+               __string_0   0x002268    program     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+        EnableClock_HiRes   0x00226e    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\timers.c
+              EnableClock   0x002294    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\timers.c
+                     Wait   0x0022ba    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\timers.c
+                 go_sleep   0x0022e8    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\timers.c
+           ___do_lbl00008   0x0022f6    program     static                          
+           ___do_lbl00006   0x0022fc    program     static                          
+           ___do_lbl00007   0x002300    program     static                          
+       ___return_lbl00005   0x002300    program     static                          
+              timers_init   0x002302    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\timers.c
+                _do_cinit   0x00233e    program     extern C:\MCC18\src\extended\startup\c018i_e.c
+                     test   0x002358    program     static                          
+                copy_loop   0x0023b0    program     static                          
+            copy_one_byte   0x0023b6    program     static                          
+             done_copying   0x0023c4    program     static                          
+                     done   0x0023da    program     static                          
+       ___return_lbl00002   0x0023da    program     static                          
+                     ch_0   0x0023dc    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                     ch_1   0x0023df    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                     ch_2   0x0023e2    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                     ch_3   0x0023e5    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                     ch_4   0x0023e8    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                     ch_5   0x0023eb    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                     ch_6   0x0023ee    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                     ch_7   0x0023f1    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                     ch_8   0x0023f4    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                     ch_9   0x0023f7    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_10   0x0023fa    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_11   0x0023fd    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_12   0x002400    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_13   0x002403    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_14   0x002406    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_15   0x002409    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_16   0x00240c    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_17   0x00240f    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_18   0x002412    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_19   0x002415    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_20   0x002418    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_21   0x00241b    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_22   0x00241e    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_23   0x002421    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_24   0x002424    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_25   0x002427    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_26   0x00242a    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_27   0x00242d    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_28   0x002430    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_29   0x002433    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_30   0x002436    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_31   0x002439    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_32   0x00243c    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_33   0x00243f    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_34   0x002442    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_35   0x002445    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_36   0x002448    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_37   0x00244b    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_38   0x00244e    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_39   0x002451    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_40   0x002454    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_41   0x002457    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_42   0x00245a    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_43   0x00245d    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_44   0x002460    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_45   0x002463    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_46   0x002466    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_47   0x002469    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_48   0x00246c    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                    ch_49   0x00246f    program     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+    poll_hardware_address   0x002472    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+                 cpu_init   0x0024c8    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+                  SPIInit   0x0024e6    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\spi.c
+                 SpiInOut   0x0024fa    program     extern C:\src\wsn_port\processors\microchip\pic18f87j11\spi.c
+                 _startup   0x002518    program     extern C:\MCC18\src\extended\startup\c018i_e.c
+                     loop   0x002526    program     static                          
+       ___return_lbl00001   0x002530    program     static                          
+                     Each   0x002532    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+            Slave_CycleRX   0x002534    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+    Slave_CycleRX_Timeout   0x002536    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+               Sleep_Sync   0x002538    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+                    First   0x00253a    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+                   Second   0x00253c    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+                    Third   0x00253e    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+                   Fourth   0x002540    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+               SLAVE_WAIT   0x002542    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+         RX_TIMEOUT_SLAVE   0x002544    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+        RX_TIMEOUT_MASTER   0x002546    program     extern C:\src\wsn_port\wsn_fhss\wsn.c
+            __zero_memory   0x002548    program     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               clear_loop   0x00254e    program     static C:\MCC18\src\extended\proc\p18F87J11.asm
+               __config_0   0x01fff8    program     static C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+               __config_1   0x01fff9    program     static C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+               __config_2   0x01fffa    program     static C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+               __config_3   0x01fffc    program     static C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+                    lcd_u   0x000000       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+              lcd_cmd_buf   0x000001       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+           lcd_cmd_buf_in   0x000041       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+          lcd_cmd_buf_out   0x000043       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                lcd_state   0x000045       data     static C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+    lcd_state_after_delay   0x000046       data     static C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+          lcd_delay_count   0x000047       data     static C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+              char_to_put   0x000049       data     static C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                     prom   0x00004a       data     static C:\MCC18\src\extended\startup\c018i_e.c
+                curr_byte   0x00004d       data     static C:\MCC18\src\extended\startup\c018i_e.c
+               curr_entry   0x00004f       data     static C:\MCC18\src\extended\startup\c018i_e.c
+                 data_ptr   0x000051       data     static C:\MCC18\src\extended\startup\c018i_e.c
+          Slave_Needs_Hop   0x000054       data     extern C:\src\wsn_port\wsn_fhss\wsn.c
+               hw_address   0x000055       data     extern C:\src\wsn_port\wsn_fhss\wsn.c
+                MainClock   0x000056       data     extern C:\src\wsn_port\wsn_fhss\wsn.c
+      master_dialog_state   0x000058       data     static C:\src\wsn_port\wsn_fhss\wsn.c
+                 Slave_ID   0x000059       data     static C:\src\wsn_port\wsn_fhss\wsn.c
+             master_flags   0x00005a       data     static C:\src\wsn_port\wsn_fhss\wsn.c
+               rx_timeout   0x00005b       data     static C:\src\wsn_port\wsn_fhss\wsn.c
+                __RETVAL0   0x00005c       data     extern C:\MCC18\src\extended\math\cmath18.asm
+                __RETVAL1   0x00005d       data     extern C:\MCC18\src\extended\math\cmath18.asm
+                __RETVAL2   0x00005e       data     extern C:\MCC18\src\extended\math\cmath18.asm
+                __RETVAL3   0x00005f       data     extern C:\MCC18\src\extended\math\cmath18.asm
+        g_USART_RX_buf_in   0x000060       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+       g_USART_RX_buf_out   0x000061       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+        g_USART_TX_buf_in   0x000062       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+       g_USART_TX_buf_out   0x000063       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+           g_USART_RX_buf   0x000064       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+           g_USART_TX_buf   0x000084       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+                     text   0x0000a4       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+                  freqs_P   0x000100       data     static C:\src\wsn_port\transceivers\sx1231\sx1231.c
+             RegistersCfg   0x000196       data     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                  PreMode   0x0001e6       data     static C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                  RFState   0x0001e7       data     static C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                dummy_led   0x0001e8       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+               S2_pressed   0x0001e9       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+                 prev_RA5   0x0001ea       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+           debounce_count   0x0001eb       data     extern C:\src\wsn_port\processors\microchip\pic18f87j11\cpu.c
+                      msb   0x0001ec       data     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                      mid   0x0001ed       data     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                      lsb   0x0001ee       data     extern C:\src\wsn_port\transceivers\sx1231\sx1231.c
+                  __tmp_0   0x0001ef       data     static C:\src\wsn_port\wsn_fhss\wsn.c
+                  __tmp_0   0x0001ef       data     static C:\src\wsn_port\processors\microchip\pic18f87j11\timers.c
+                  __tmp_0   0x0001ef       data     static C:\src\wsn_port\processors\microchip\pic18f87j11\uart.c
+                  __tmp_0   0x0001ef       data     static C:\src\wsn_port\processors\microchip\pic18f87j11\lcd.c
+                  __tmp_0   0x0001ef       data     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+                     Mode   0x0001f2       data     static C:\src\wsn_port\wsn_fhss\wsn.c
+                    Error   0x0001f3       data     extern C:\src\wsn_port\wsn_fhss\wsn.c
+              Error_cycle   0x0001f4       data     static C:\src\wsn_port\wsn_fhss\wsn.c
+                  __tmp_1   0x0001f5       data     static C:\src\wsn_port\processors\microchip\pic18f87j11\interrupts.c
+     radio_channel_dialog   0x000200       data     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+    current_radio_channel   0x000201       data     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+                 RFbuffer   0x000202       data     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+             RFbufferSize   0x000242       data     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+                Node_adrs   0x000243       data     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+                SyncState   0x000244       data     extern C:\src\wsn_port\wsn_fhss\FHSSapi.c
+       radio_channel_sync   0x000245       data     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+        master_sync_count   0x000246       data     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+          Slave_Sync_Step   0x000247       data     static C:\src\wsn_port\wsn_fhss\FHSSapi.c
+              PMSTATLbits   0x000f5a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMSTAT   0x000f5a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMSTATL   0x000f5a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMSTATH   0x000f5b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PMSTATHbits   0x000f5b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PMEN   0x000f5c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMELbits   0x000f5c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PMEL   0x000f5c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMEHbits   0x000f5d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PMEH   0x000f5d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDIN2L   0x000f5e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMDIN2   0x000f5e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDIN2H   0x000f5f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMDOUT2L   0x000f60       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDOUT2   0x000f60       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMDOUT2H   0x000f61       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMMODE   0x000f62       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMMODEL   0x000f62       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PMMODELbits   0x000f62       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMMODEH   0x000f63       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PMMODEHbits   0x000f63       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               PMCONLbits   0x000f64       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PMCON   0x000f64       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMCONL   0x000f64       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMCONH   0x000f65       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               PMCONHbits   0x000f65       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMDIN1   0x000f66       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDIN1L   0x000f66       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDIN1H   0x000f67       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMDOUT1   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMDOUT1L   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PMADDR   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMADDRL   0x000f68       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PMDOUT1H   0x000f69       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PMADDRHbits   0x000f69       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PMADDRH   0x000f69       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             CMSTATUSbits   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               CMSTATbits   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 CMSTATUS   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CMSTAT   0x000f6a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP2CON2   0x000f6b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP2CON2bits   0x000f6b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP2CON1   0x000f6c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP2CON1bits   0x000f6c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP2STAT   0x000f6d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP2STATbits   0x000f6d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP2MSK   0x000f6e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              SSP2MSKbits   0x000f6e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP2ADD   0x000f6e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP2BUF   0x000f6f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP5CONbits   0x000f70       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CCP5CON   0x000f70       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR5L   0x000f71       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR5   0x000f71       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR5H   0x000f72       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP4CONbits   0x000f73       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CCP4CON   0x000f73       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR4L   0x000f74       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR4   0x000f74       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR4H   0x000f75       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T4CONbits   0x000f76       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    T4CON   0x000f76       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               CVRCONbits   0x000f77       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CVRCON   0x000f77       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      PR4   0x000f77       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TMR4   0x000f78       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T3CONbits   0x000f79       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    T3CON   0x000f79       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR3L   0x000f7a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR3H   0x000f7b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             BAUDCON2bits   0x000f7c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 BAUDCON2   0x000f7c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SPBRGH2   0x000f7d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  BAUDCON   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 BAUDCON1   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             BAUDCON1bits   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              BAUDCONbits   0x000f7e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SPBRGH1   0x000f7f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTA   0x000f80       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTAbits   0x000f80       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTB   0x000f81       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTBbits   0x000f81       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTC   0x000f82       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTCbits   0x000f82       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTD   0x000f83       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTDbits   0x000f83       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTEbits   0x000f84       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTE   0x000f84       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTFbits   0x000f85       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTF   0x000f85       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTGbits   0x000f86       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTG   0x000f86       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTHbits   0x000f87       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTH   0x000f87       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PORTJ   0x000f88       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                PORTJbits   0x000f88       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATAbits   0x000f89       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATA   0x000f89       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATBbits   0x000f8a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATB   0x000f8a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATC   0x000f8b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATCbits   0x000f8b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATD   0x000f8c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATDbits   0x000f8c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATE   0x000f8d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATEbits   0x000f8d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATFbits   0x000f8e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATF   0x000f8e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATGbits   0x000f8f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATG   0x000f8f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATHbits   0x000f90       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATH   0x000f90       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 LATJbits   0x000f91       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     LATJ   0x000f91       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISA   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISAbits   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRAbits   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRA   0x000f92       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRBbits   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRB   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISBbits   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISB   0x000f93       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISCbits   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISC   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRC   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRCbits   0x000f94       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISD   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISDbits   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRD   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRDbits   0x000f95       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRE   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDREbits   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISEbits   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISE   0x000f96       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISFbits   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRFbits   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRF   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISF   0x000f97       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISG   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRG   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRGbits   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISGbits   0x000f98       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISH   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRHbits   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRH   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISHbits   0x000f99       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TRISJ   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TRISJbits   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 DDRJbits   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     DDRJ   0x000f9a       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  OSCTUNE   0x000f9b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              OSCTUNEbits   0x000f9b       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   RCSTA2   0x000f9c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               RCSTA2bits   0x000f9c       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIE1   0x000f9d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIE1bits   0x000f9d       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIR1   0x000f9e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIR1bits   0x000f9e       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     IPR1   0x000f9f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 IPR1bits   0x000f9f       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIE2   0x000fa0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIE2bits   0x000fa0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIR2   0x000fa1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIR2bits   0x000fa1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     IPR2   0x000fa2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 IPR2bits   0x000fa2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIE3bits   0x000fa3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIE3   0x000fa3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PIR3   0x000fa4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 PIR3bits   0x000fa4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 IPR3bits   0x000fa5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     IPR3   0x000fa5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               EECON1bits   0x000fa6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   EECON1   0x000fa6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   EECON2   0x000fa7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               TXSTA2bits   0x000fa8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TXSTA2   0x000fa8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TXREG2   0x000fa9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   RCREG2   0x000faa       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   SPBRG2   0x000fab       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               RCSTA1bits   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                RCSTAbits   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   RCSTA1   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    RCSTA   0x000fac       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TXSTA   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TXSTA1   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               TXSTA1bits   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                TXSTAbits   0x000fad       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TXREG   0x000fae       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TXREG1   0x000fae       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    RCREG   0x000faf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   RCREG1   0x000faf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   SPBRG1   0x000fb0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    SPBRG   0x000fb0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP3CONbits   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CCP3CON   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP3CONbits   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP3CON   0x000fb1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR3L   0x000fb2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR3   0x000fb2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR3H   0x000fb3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP3DEL   0x000fb4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP3DELbits   0x000fb4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              ECCP3ASbits   0x000fb5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  ECCP3AS   0x000fb5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP2CONbits   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP2CON   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP2CONbits   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CCP2CON   0x000fb6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR2L   0x000fb7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR2   0x000fb7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR2H   0x000fb8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP2DELbits   0x000fb9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP2DEL   0x000fb9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  ECCP2AS   0x000fba       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              ECCP2ASbits   0x000fba       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP1CONbits   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP1CON   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CCP1CONbits   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CCP1CON   0x000fbb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    CCPR1   0x000fbc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR1L   0x000fbc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CCPR1H   0x000fbd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 ECCP1DEL   0x000fbe       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             ECCP1DELbits   0x000fbe       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  ECCP1AS   0x000fbf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              ECCP1ASbits   0x000fbf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               WDTCONbits   0x000fc0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   WDTCON   0x000fc0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ANCON0bits   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ANCON0   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ADCON1bits   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ADCON1   0x000fc1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ANCON1   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ANCON1bits   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ADCON0bits   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ADCON0   0x000fc2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ADRESL   0x000fc3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    ADRES   0x000fc3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ADRESH   0x000fc4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP1CON2bits   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP1CON2   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSPCON2   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              SSPCON2bits   0x000fc5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              SSPCON1bits   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP1CON1bits   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSPCON1   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP1CON1   0x000fc6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+             SSP1STATbits   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 SSP1STAT   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              SSPSTATbits   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSPSTAT   0x000fc7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP1MSK   0x000fc8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP1ADD   0x000fc8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   SSPADD   0x000fc8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  SSP1BUF   0x000fc9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   SSPBUF   0x000fc9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T2CONbits   0x000fca       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    T2CON   0x000fca       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               MEMCONbits   0x000fcb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      PR2   0x000fcb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   MEMCON   0x000fcb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PADCFG1   0x000fcc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TMR2   0x000fcc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              PADCFG1bits   0x000fcc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ODCON3   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T1CONbits   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    T1CON   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ODCON3bits   0x000fcd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR1L   0x000fce       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ODCON2   0x000fce       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ODCON2bits   0x000fce       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR1H   0x000fcf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   ODCON1   0x000fcf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               ODCON1bits   0x000fcf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     RCON   0x000fd0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 RCONbits   0x000fd0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CM2CON   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CM2CON1   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CM2CON1bits   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               CM2CONbits   0x000fd1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   CM1CON   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  CM1CON1   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              CM1CON1bits   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               CM1CONbits   0x000fd2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               OSCCONbits   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   OSCCON   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  REFOCON   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              REFOCONbits   0x000fd3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    T0CON   0x000fd5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                T0CONbits   0x000fd5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR0L   0x000fd6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    TMR0H   0x000fd7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               STATUSbits   0x000fd8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   STATUS   0x000fd8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     FSR2   0x000fd9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR2L   0x000fd9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR2H   0x000fda       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PLUSW2   0x000fdb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PREINC2   0x000fdc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTDEC2   0x000fdd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTINC2   0x000fde       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    INDF2   0x000fdf       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      BSR   0x000fe0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR1L   0x000fe1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     FSR1   0x000fe1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR1H   0x000fe2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PLUSW1   0x000fe3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PREINC1   0x000fe4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTDEC1   0x000fe5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTINC1   0x000fe6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    INDF1   0x000fe7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     WREG   0x000fe8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR0L   0x000fe9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     FSR0   0x000fe9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    FSR0H   0x000fea       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PLUSW0   0x000feb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  PREINC0   0x000fec       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTDEC0   0x000fed       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                 POSTINC0   0x000fee       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    INDF0   0x000fef       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  INTCON3   0x000ff0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              INTCON3bits   0x000ff0       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+              INTCON2bits   0x000ff1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  INTCON2   0x000ff1       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               INTCONbits   0x000ff2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   INTCON   0x000ff2       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     PROD   0x000ff3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PRODL   0x000ff3       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                    PRODH   0x000ff4       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TABLAT   0x000ff5       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   TBLPTR   0x000ff6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  TBLPTRL   0x000ff6       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  TBLPTRH   0x000ff7       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                  TBLPTRU   0x000ff8       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      PCL   0x000ff9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                       PC   0x000ff9       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PCLATH   0x000ffa       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   PCLATU   0x000ffb       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+               STKPTRbits   0x000ffc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                   STKPTR   0x000ffc       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                      TOS   0x000ffd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TOSL   0x000ffd       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TOSH   0x000ffe       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+                     TOSU   0x000fff       data     extern C:\MCC18\src\extended\proc\p18F87J11.asm
+
+

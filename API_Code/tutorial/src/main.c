@@ -86,23 +86,20 @@ void OnSlave(void)
 	// Receives the frame from the RF chip
 	ReceiveRfFrame(RFbuffer, (_U8*)&RFbufferSize, &ReturnCode);
 	// Tests if we have received a frame
-	if (ReturnCode == OK)
+	// Tests if the received buffer size is greater than 0
+	if (ReturnCode == OK && RFbufferSize > 0)
 	{
-		// Tests if the received buffer size is greater than 0
-		if (RFbufferSize > 0)
+		// Sets the last byte of received buffer to 0. Needed by strcmp function
+		RFbuffer[RFbufferSize] = '\0';
+		// Tests if the received buffer value is PING
+		if (strcmp(RFbuffer, "PING") == 0)
 		{
-			// Sets the last byte of received buffer to 0. Needed by strcmp function
-			RFbuffer[RFbufferSize] = '\0';
-			// Tests if the received buffer value is PING
-			if (strcmp(RFbuffer, "PING") == 0)
-			{
-				// Indicates on a LED that the received frame is a PING
-				toggle_bit(RegPBOut, 0x01);
-				// Copy the PONG string to the buffer used to send the frame
-				strcpy(RFbuffer, "PONG");
-				// Sends the frame to the RF chip
-				SendRfFrame(RFbuffer, strlen(RFbuffer), &ReturnCode);
-			}
+			// Indicates on a LED that the received frame is a PING
+			toggle_bit(RegPBOut, 0x01);
+			// Copy the PONG string to the buffer used to send the frame
+			strcpy(RFbuffer, "PONG");
+			// Sends the frame to the RF chip
+			SendRfFrame(RFbuffer, strlen(RFbuffer), &ReturnCode);
 		}
 	}
 }

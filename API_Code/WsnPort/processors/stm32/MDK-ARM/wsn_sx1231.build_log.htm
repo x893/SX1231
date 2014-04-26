@@ -1,0 +1,109 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\Micro\RF\HopeRF\RFM69HW\wsn_port\processors\stm32\arm\wsn_sx1231.uvproj
+Project File Date:  02/03/2014
+
+<h2>Output:</h2>
+Build target 'wan-sx1231'
+compiling wsn.c...
+..\..\..\wsn_fhss\wsn.c(95): error:  #20: identifier "PR1" is undefined
+                        SET_LOWRES_COUNTER(MainClock);          // Set Timer2   (100mS in this case)
+..\..\..\wsn_fhss\wsn.c(95): error:  #20: identifier "TMR1" is undefined
+                        SET_LOWRES_COUNTER(MainClock);          // Set Timer2   (100mS in this case)
+..\..\..\wsn_fhss\wsn.c(96): error:  #20: identifier "IFS0bits" is undefined
+                        CLEAR_LOWRES_TIMER_FLAG;
+..\..\..\wsn_fhss\wsn.c(110): error:  #20: identifier "IFS0bits" is undefined
+                if (LOWRES_TIMER_FLAG)
+..\..\..\wsn_fhss\wsn.c(113): error:  #20: identifier "PR1" is undefined
+                        SET_LOWRES_COUNTER(READ_ROM_BYTE(Each));// Reload timer value (101.5625mS)
+..\..\..\wsn_fhss\wsn.c(113): error:  #20: identifier "TMR1" is undefined
+                        SET_LOWRES_COUNTER(READ_ROM_BYTE(Each));// Reload timer value (101.5625mS)
+..\..\..\wsn_fhss\wsn.c(306): error:  #20: identifier "IFS0bits" is undefined
+                        CLEAR_LOWRES_TIMER_FLAG;
+..\..\..\wsn_fhss\wsn.c(372): error:  #20: identifier "PR1" is undefined
+                                        SET_LOWRES_COUNTER(READ_ROM_BYTE(Slave_CycleRX));
+..\..\..\wsn_fhss\wsn.c(372): error:  #20: identifier "TMR1" is undefined
+                                        SET_LOWRES_COUNTER(READ_ROM_BYTE(Slave_CycleRX));
+..\..\..\wsn_fhss\wsn.c(392): error:  #20: identifier "PR1" is undefined
+                                        SET_LOWRES_COUNTER(READ_ROM_BYTE(Sleep_Sync));
+..\..\..\wsn_fhss\wsn.c(392): error:  #20: identifier "TMR1" is undefined
+                                        SET_LOWRES_COUNTER(READ_ROM_BYTE(Sleep_Sync));
+..\..\..\wsn_fhss\wsn.c(426): error:  #20: identifier "PR1" is undefined
+                                SET_LOWRES_COUNTER(READ_ROM_BYTE(Slave_CycleRX_Timeout));       /* XXX needs adjusting XXX */
+..\..\..\wsn_fhss\wsn.c(426): error:  #20: identifier "TMR1" is undefined
+                                SET_LOWRES_COUNTER(READ_ROM_BYTE(Slave_CycleRX_Timeout));       /* XXX needs adjusting XXX */
+..\..\..\wsn_fhss\wsn.c(610): warning:  #111-D: statement is unreachable
+        return MAIN_RETURN_VALUE;       // this statement is unreachable
+..\..\..\wsn_fhss\wsn.c(532): warning:  #177-D: function "new_hw_address" was declared but never referenced
+  new_hw_address(void)
+..\..\..\wsn_fhss\wsn.c: 2 warnings, 13 errors
+compiling FHSSapi.c...
+..\..\..\wsn_fhss\FHSSapi.c(65): error:  #20: identifier "IFS0bits" is undefined
+                        if (!HIRES_COMPARE_B_FLAG)
+..\..\..\wsn_fhss\FHSSapi.c(89): error:  #20: identifier "IFS0bits" is undefined
+                        if (!HIRES_COMPARE_B_FLAG)
+..\..\..\wsn_fhss\FHSSapi.c(93): error:  #20: identifier "LED_ON" is undefined
+                        SYNCING_DIALOG_CH = LED_ON;
+..\..\..\wsn_fhss\FHSSapi.c(95): error:  #20: identifier "LED_OFF" is undefined
+                        SYNCING_DIALOG_CH = LED_OFF;
+..\..\..\wsn_fhss\FHSSapi.c(179): error:  #20: identifier "LED_ON" is undefined
+                                SYNCING_DIALOG_CH = LED_ON;
+..\..\..\wsn_fhss\FHSSapi.c(184): error:  #20: identifier "LED_OFF" is undefined
+                                        SYNCING_DIALOG_CH = LED_OFF;
+..\..\..\wsn_fhss\FHSSapi.c(214): error:  #20: identifier "LED_OFF" is undefined
+                                        SYNCING_DIALOG_CH = LED_OFF;
+..\..\..\wsn_fhss\FHSSapi.c(218): error:  #20: identifier "LED_OFF" is undefined
+                                        SYNCING_DIALOG_CH = LED_OFF;
+..\..\..\wsn_fhss\FHSSapi.c: 0 warnings, 8 errors
+compiling sx1231.c...
+..\..\..\transceivers\sx1231\sx1231.c(292): error:  #20: identifier "NSS" is undefined
+        NSS = 0;
+..\..\..\transceivers\sx1231\sx1231.c(313): error:  #20: identifier "NSS" is undefined
+        NSS = 0;
+..\..\..\transceivers\sx1231\sx1231.c(365): error:  #20: identifier "LED_ON" is undefined
+                RF_TRANSMIT_LED = LED_ON;
+..\..\..\transceivers\sx1231\sx1231.c(367): error:  #20: identifier "LED_OFF" is undefined
+                RF_TRANSMIT_LED = LED_OFF;
+..\..\..\transceivers\sx1231\sx1231.c(412): error:  #20: identifier "NSS" is undefined
+        NSS = 0;
+..\..\..\transceivers\sx1231\sx1231.c(493): error:  #20: identifier "NSS" is undefined
+        NSS = 0;
+..\..\..\transceivers\sx1231\sx1231.c(506): error:  #20: identifier "OC3RS" is undefined
+        UPDATE_PWMDAC_COMPARE(current_radio_channel);   // update DAC output
+..\..\..\transceivers\sx1231\sx1231.c(569): error:  #20: identifier "NSS" is undefined
+        NSS = 0;
+..\..\..\transceivers\sx1231\sx1231.c(583): error:  #20: identifier "GPIO_Pin_1" is undefined
+        while (IN_RF_DIO0 == 0)
+..\..\..\transceivers\sx1231\sx1231.c(583): warning:  #174-D: expression has no effect
+        while (IN_RF_DIO0 == 0)
+..\..\..\transceivers\sx1231\sx1231.c(616): error:  #20: identifier "GPIO_Pin_1" is undefined
+                        if (IN_RF_DIO0)
+..\..\..\transceivers\sx1231\sx1231.c(616): warning:  #174-D: expression has no effect
+                        if (IN_RF_DIO0)
+..\..\..\transceivers\sx1231\sx1231.c(621): error:  #20: identifier "IFS0bits" is undefined
+                        else if (HIRES_COMPARE_B_FLAG)
+..\..\..\transceivers\sx1231\sx1231.c(642): error:  #20: identifier "NSS" is undefined
+                        NSS = 0;
+..\..\..\transceivers\sx1231\sx1231.c: 2 warnings, 12 errors
+".\build\wsn_sx1231.axf" - 33 Error(s), 4 Warning(s).
+Target not created
+r "NSS" is undefined
+        NSS = 0;
+..\..\..\transceivers\sx1231\sx1231.c(583): error:  #20: identifier "GPIO_Pin_1" is undefined
+        while (IN_RF_DIO0 == 0)
+..\..\..\transceivers\sx1231\sx1231.c(583): warning:  #174-D: expression has no effect
+        while (IN_RF_DIO0 == 0)
+..\..\..\transceivers\sx1231\sx1231.c(616): error:  #20: identifier "GPIO_Pin_1" is undefined
+                        if (IN_RF_DIO0)
+..\..\..\transceivers\sx1231\sx1231.c(616): warning:  #174-D: expression has no effect
+                        if (IN_RF_DIO0)
+..\..\..\transceivers\sx1231\sx1231.c(621): error:  #20: identifier "IFS0bits" is undefined
+                        else if (HIRES_COMPARE_B_FLAG)
+..\..\..\transceivers\sx1231\sx1231.c(642): error:  #20: identifier "NSS" is undefined
+                        NSS = 0;
+..\..\..\transceivers\sx1231\sx1231.c: 4 warnings, 12 errors
+".\build\wsn_sx1231.axf" - 33 Error(s), 11 Warning(s).
+Target not created
