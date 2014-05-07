@@ -475,793 +475,1048 @@ namespace SemtechLib.Devices.SX1231.Controls
 		#region InitializeComponent()
 		private void InitializeComponent()
         {
-            tabControl1 = new TabControl();
-            tabCommon = new TabPage();
-            commonViewControl1 = new CommonViewControl();
-            tabTransmitter = new TabPage();
-            transmitterViewControl1 = new TransmitterViewControl();
-            tabReceiver = new TabPage();
-            receiverViewControl1 = new ReceiverViewControl();
-            tabIrqMap = new TabPage();
-            irqMapViewControl1 = new IrqMapViewControl();
-            tabPacketHandler = new TabPage();
-            packetHandlerView1 = new PacketHandlerView();
-            tabTemperature = new TabPage();
-            temperatureViewControl1 = new TemperatureViewControl();
-            gBoxOperatingMode = new GroupBoxEx();
-            rBtnTransmitter = new RadioButton();
-            rBtnReceiver = new RadioButton();
-            rBtnSynthesizer = new RadioButton();
-            rBtnStandby = new RadioButton();
-            rBtnSleep = new RadioButton();
-            lbModeReady = new Label();
-            label19 = new Label();
-            label18 = new Label();
-            label17 = new Label();
-            label23 = new Label();
-            label22 = new Label();
-            label21 = new Label();
-            label20 = new Label();
-            label27 = new Label();
-            label26 = new Label();
-            label25 = new Label();
-            label24 = new Label();
-            label31 = new Label();
-            label30 = new Label();
-            label29 = new Label();
-            label28 = new Label();
-            gBoxIrqFlags = new GroupBoxEx();
-            ledLowBat = new Led();
-            ledCrcOk = new Led();
-            ledRxReady = new Led();
-            ledPayloadReady = new Led();
-            ledTxReady = new Led();
-            ledPacketSent = new Led();
-            ledPllLock = new Led();
-            ledModeReady = new Led();
-            ledFifoOverrun = new Led();
-            ledRssi = new Led();
-            ledFifoLevel = new Led();
-            ledTimeout = new Led();
-            ledFifoNotEmpty = new Led();
-            ledAutoMode = new Led();
-            ledFifoFull = new Led();
-            ledSyncAddressMatch = new Led();
-            tabControl1.SuspendLayout();
-            tabCommon.SuspendLayout();
-            tabTransmitter.SuspendLayout();
-            tabReceiver.SuspendLayout();
-            tabIrqMap.SuspendLayout();
-            tabPacketHandler.SuspendLayout();
-            tabTemperature.SuspendLayout();
-            gBoxOperatingMode.SuspendLayout();
-            gBoxIrqFlags.SuspendLayout();
-            base.SuspendLayout();
-            tabControl1.Controls.Add(tabCommon);
-            tabControl1.Controls.Add(tabTransmitter);
-            tabControl1.Controls.Add(tabReceiver);
-            tabControl1.Controls.Add(tabIrqMap);
-            tabControl1.Controls.Add(tabPacketHandler);
-            tabControl1.Controls.Add(tabTemperature);
-            tabControl1.Location = new Point(3, 3);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(0x327, 0x207);
-            tabControl1.TabIndex = 0;
-            tabCommon.Controls.Add(commonViewControl1);
-            tabCommon.Location = new Point(4, 0x16);
-            tabCommon.Name = "tabCommon";
-            tabCommon.Padding = new Padding(3);
-            tabCommon.Size = new Size(799, 493);
-            tabCommon.TabIndex = 0;
-            tabCommon.Text = "Common";
-            tabCommon.UseVisualStyleBackColor = true;
-            int[] bits = new int[4];
-            bits[0] = 0x12c0;
-            commonViewControl1.BitRate = new decimal(bits);
-            commonViewControl1.DataMode = DataModeEnum.Packet;
-            int[] numArray2 = new int[4];
-            numArray2[0] = 0x138a;
-            commonViewControl1.Fdev = new decimal(numArray2);
-            int[] numArray3 = new int[4];
-            numArray3[0] = 0x3689cac0;
-            commonViewControl1.FrequencyRf = new decimal(numArray3);
-            int[] numArray4 = new int[4];
-            numArray4[0] = 0x3d;
-            commonViewControl1.FrequencyStep = new decimal(numArray4);
-            int[] numArray5 = new int[4];
-            numArray5[0] = 0x1e84800;
-            commonViewControl1.FrequencyXo = new decimal(numArray5);
-            int[] numArray6 = new int[4];
-            numArray6[0] = 0x273d;
-            numArray6[3] = 0x10000;
-            commonViewControl1.ListenCoefIdle = new decimal(numArray6);
-            int[] numArray7 = new int[4];
-            numArray7[0] = 0x83;
-            commonViewControl1.ListenCoefRx = new decimal(numArray7);
-            commonViewControl1.ListenCriteria = ListenCriteriaEnum.RssiThresh;
-            commonViewControl1.ListenMode = false;
-            commonViewControl1.ListenResolIdle = ListenResolEnum.Res004100;
-            commonViewControl1.ListenResolRx = ListenResolEnum.Res004100;
-            commonViewControl1.Location = new Point(0, 0);
-            commonViewControl1.LowBatMonitor = true;
-            commonViewControl1.LowBatOn = true;
-            commonViewControl1.ModulationShaping = 0;
-            commonViewControl1.ModulationType = ModulationTypeEnum.FSK;
-            commonViewControl1.Name = "commonViewControl1";
-            commonViewControl1.RcCalDone = false;
-            commonViewControl1.Sequencer = false;
-            commonViewControl1.Size = new Size(0x31f, 0x1ed);
-            commonViewControl1.TabIndex = 0;
-            commonViewControl1.Version = "2.3";
-            commonViewControl1.FrequencyXoChanged += new DecimalEventHandler(commonViewControl1_FrequencyXoChanged);
-            commonViewControl1.SequencerChanged += new BooleanEventHandler(commonViewControl1_SequencerChanged);
-            commonViewControl1.ListenModeChanged += new BooleanEventHandler(commonViewControl1_ListenModeChanged);
-            commonViewControl1.ListenModeAbortChanged += new EventHandler(commonViewControl1_ListenModeAbortChanged);
-            commonViewControl1.DataModeChanged += new DataModeEventHandler(commonViewControl1_DataModeChanged);
-            commonViewControl1.ModulationTypeChanged += new ModulationTypeEventHandler(commonViewControl1_ModulationTypeChanged);
-            commonViewControl1.ModulationShapingChanged += new ByteEventHandler(commonViewControl1_ModulationShapingChanged);
-            commonViewControl1.BitRateChanged += new DecimalEventHandler(commonViewControl1_BitRateChanged);
-            commonViewControl1.FdevChanged += new DecimalEventHandler(commonViewControl1_FdevChanged);
-            commonViewControl1.FrequencyRfChanged += new DecimalEventHandler(commonViewControl1_FrequencyRfChanged);
-            commonViewControl1.RcCalibrationChanged += new EventHandler(commonViewControl1_RcCalibrationChanged);
-            commonViewControl1.LowBatOnChanged += new BooleanEventHandler(commonViewControl1_LowBatOnChanged);
-            commonViewControl1.LowBatTrimChanged += new LowBatTrimEventHandler(commonViewControl1_LowBatTrimChanged);
-            commonViewControl1.ListenResolIdleChanged += new ListenResolEventHandler(commonViewControl1_ListenResolIdleChanged);
-            commonViewControl1.ListenResolRxChanged += new ListenResolEventHandler(commonViewControl1_ListenResolRxChanged);
-            commonViewControl1.ListenCriteriaChanged += new ListenCriteriaEventHandler(commonViewControl1_ListenCriteriaChanged);
-            commonViewControl1.ListenEndChanged += new ListenEndEventHandler(commonViewControl1_ListenEndChanged);
-            commonViewControl1.ListenCoefIdleChanged += new DecimalEventHandler(commonViewControl1_ListenCoefIdleChanged);
-            commonViewControl1.ListenCoefRxChanged += new DecimalEventHandler(commonViewControl1_ListenCoefRxChanged);
-            commonViewControl1.DocumentationChanged += new DocumentationChangedEventHandler(commonViewControl1_DocumentationChanged);
-            tabTransmitter.Controls.Add(transmitterViewControl1);
-            tabTransmitter.Location = new Point(4, 0x16);
-            tabTransmitter.Name = "tabTransmitter";
-            tabTransmitter.Padding = new Padding(3);
-            tabTransmitter.Size = new Size(0x31f, 0x1ed);
-            tabTransmitter.TabIndex = 1;
-            tabTransmitter.Text = "Transmitter";
-            tabTransmitter.UseVisualStyleBackColor = true;
-            transmitterViewControl1.Location = new Point(0, 0);
-            transmitterViewControl1.Name = "transmitterViewControl1";
-            transmitterViewControl1.OcpOn = true;
-            int[] numArray8 = new int[4];
-            numArray8[0] = 0x3e8;
-            numArray8[3] = 0x10000;
-            transmitterViewControl1.OcpTrim = new decimal(numArray8);
-            int[] numArray9 = new int[4];
-            numArray9[0] = 13;
-            transmitterViewControl1.OutputPower = new decimal(numArray9);
-            transmitterViewControl1.PaMode = PaModeEnum.PA0;
-            transmitterViewControl1.Size = new Size(0x31f, 0x1ed);
-            transmitterViewControl1.TabIndex = 0;
-            transmitterViewControl1.PaModeChanged += new PaModeEventHandler(transmitterViewControl1_PaModeChanged);
-            transmitterViewControl1.OutputPowerChanged += new DecimalEventHandler(transmitterViewControl1_OutputPowerChanged);
-            transmitterViewControl1.PaRampChanged += new PaRampEventHandler(transmitterViewControl1_PaRampChanged);
-            transmitterViewControl1.OcpOnChanged += new BooleanEventHandler(transmitterViewControl1_OcpOnChanged);
-            transmitterViewControl1.OcpTrimChanged += new DecimalEventHandler(transmitterViewControl1_OcpTrimChanged);
-            transmitterViewControl1.DocumentationChanged += new DocumentationChangedEventHandler(transmitterViewControl1_DocumentationChanged);
-            tabReceiver.Controls.Add(receiverViewControl1);
-            tabReceiver.Location = new Point(4, 0x16);
-            tabReceiver.Name = "tabReceiver";
-            tabReceiver.Padding = new Padding(3);
-            tabReceiver.Size = new Size(0x31f, 0x1ed);
-            tabReceiver.TabIndex = 2;
-            tabReceiver.Text = "Receiver";
-            tabReceiver.UseVisualStyleBackColor = true;
-            receiverViewControl1.AfcAutoClearOn = true;
-            receiverViewControl1.AfcAutoOn = true;
-            receiverViewControl1.AfcDccFreq = new decimal(new int[] { -905921831, 0x11a1c6ed, 0x20241e22, 0x190000 });
-            int[] numArray10 = new int[4];
-            numArray10[0] = 0x679;
-            receiverViewControl1.AfcDccFreqMax = new decimal(numArray10);
-            int[] numArray11 = new int[4];
-            numArray11[0] = 12;
-            receiverViewControl1.AfcDccFreqMin = new decimal(numArray11);
-            receiverViewControl1.AfcDone = false;
-            receiverViewControl1.AfcLowBetaOn = true;
-            int[] numArray12 = new int[4];
-            numArray12[0] = 0xc350;
-            receiverViewControl1.AfcRxBw = new decimal(numArray12);
-            int[] numArray13 = new int[4];
-            numArray13[0] = 0x61a80;
-            receiverViewControl1.AfcRxBwMax = new decimal(numArray13);
-            int[] numArray14 = new int[4];
-            numArray14[0] = 0xc35;
-            receiverViewControl1.AfcRxBwMin = new decimal(numArray14);
-            int[] numArray15 = new int[4];
-            numArray15[3] = 0x10000;
-            receiverViewControl1.AfcValue = new decimal(numArray15);
-            receiverViewControl1.AgcAutoRefOn = true;
-            receiverViewControl1.AgcReference = -80;
-            receiverViewControl1.AgcRefLevel = -80;
-            receiverViewControl1.AgcSnrMargin = 5;
-            receiverViewControl1.AgcStep1 = 0x10;
-            receiverViewControl1.AgcStep2 = 7;
-            receiverViewControl1.AgcStep3 = 11;
-            receiverViewControl1.AgcStep4 = 9;
-            receiverViewControl1.AgcStep5 = 11;
-            receiverViewControl1.AgcThresh1 = 0;
-            receiverViewControl1.AgcThresh2 = 0;
-            receiverViewControl1.AgcThresh3 = 0;
-            receiverViewControl1.AgcThresh4 = 0;
-            receiverViewControl1.AgcThresh5 = 0;
-            receiverViewControl1.AutoRxRestartOn = true;
-            int[] numArray16 = new int[4];
-            numArray16[0] = 0x12c0;
-            receiverViewControl1.BitRate = new decimal(numArray16);
-            receiverViewControl1.DagcOn = true;
-            receiverViewControl1.DataMode = DataModeEnum.Packet;
-            receiverViewControl1.DccFreq = new decimal(new int[] { -163586584, -1389046539, -2048070723, 0x1a0000 });
-            int[] numArray17 = new int[4];
-            numArray17[0] = 0x679;
-            receiverViewControl1.DccFreqMax = new decimal(numArray17);
-            int[] numArray18 = new int[4];
-            numArray18[0] = 12;
-            receiverViewControl1.DccFreqMin = new decimal(numArray18);
-            receiverViewControl1.FastRx = true;
-            receiverViewControl1.FeiDone = false;
-            int[] numArray19 = new int[4];
-            numArray19[3] = 0x10000;
-            receiverViewControl1.FeiValue = new decimal(numArray19);
-            int[] numArray20 = new int[4];
-            numArray20[0] = 0x1e84800;
-            receiverViewControl1.FrequencyXo = new decimal(numArray20);
-            receiverViewControl1.LnaLowPowerOn = true;
-            receiverViewControl1.LnaZin = LnaZinEnum.ZIN_200;
-            receiverViewControl1.Location = new Point(0, 0);
-            int[] numArray21 = new int[4];
-            numArray21[3] = 0x10000;
-            receiverViewControl1.LowBetaAfcOffset = new decimal(numArray21);
-            receiverViewControl1.ModulationType = ModulationTypeEnum.FSK;
-            receiverViewControl1.Name = "receiverViewControl1";
-            receiverViewControl1.OokAverageThreshFilt = OokAverageThreshFiltEnum.COEF_2;
-            receiverViewControl1.OokFixedThresh = 6;
-            receiverViewControl1.OokPeakThreshDec = OokPeakThreshDecEnum.EVERY_1_CHIPS_1_TIMES;
-            int[] numArray22 = new int[4];
-            numArray22[0] = 5;
-            numArray22[3] = 0x10000;
-            receiverViewControl1.OokPeakThreshStep = new decimal(numArray22);
-            receiverViewControl1.OokThreshType = OokThreshTypeEnum.Peak;
-            receiverViewControl1.RssiAutoThresh = true;
-            receiverViewControl1.RssiDone = false;
-            int[] numArray23 = new int[4];
-            numArray23[0] = 0x55;
-            numArray23[3] = -2147483648;
-            receiverViewControl1.RssiThresh = new decimal(numArray23);
-            int[] numArray24 = new int[4];
-            numArray24[0] = 0x4fb;
-            numArray24[3] = -2147418112;
-            receiverViewControl1.RssiValue = new decimal(numArray24);
-            receiverViewControl1.RxBw = new decimal(new int[] { 0x70aaaaab, -2135170438, 0x21a876f7, 0x180000 });
-            int[] numArray25 = new int[4];
-            numArray25[0] = 0x7a120;
-            receiverViewControl1.RxBwMax = new decimal(numArray25);
-            int[] numArray26 = new int[4];
-            numArray26[0] = 0xf42;
-            receiverViewControl1.RxBwMin = new decimal(numArray26);
-            receiverViewControl1.SensitivityBoostOn = true;
-            receiverViewControl1.Size = new Size(0x31f, 0x1ed);
-            receiverViewControl1.TabIndex = 0;
-            int[] numArray27 = new int[4];
-            receiverViewControl1.TimeoutRssiThresh = new decimal(numArray27);
-            int[] numArray28 = new int[4];
-            receiverViewControl1.TimeoutRxStart = new decimal(numArray28);
-            receiverViewControl1.Version = "2.3";
-            receiverViewControl1.AfcLowBetaOnChanged += new BooleanEventHandler(receiverViewControl1_AfcLowBetaOnChanged);
-            receiverViewControl1.LowBetaAfcOffsetChanged += new DecimalEventHandler(receiverViewControl1_LowBetaAfcOffsetChanged);
-            receiverViewControl1.SensitivityBoostOnChanged += new BooleanEventHandler(receiverViewControl1_SensitivityBoostOnChanged);
-            receiverViewControl1.RssiAutoThreshChanged += new BooleanEventHandler(receiverViewControl1_RssiAutoThreshChanged);
-            receiverViewControl1.DagcOnChanged += new BooleanEventHandler(receiverViewControl1_DagcOnChanged);
-            receiverViewControl1.AgcAutoRefChanged += new BooleanEventHandler(receiverViewControl1_AgcAutoRefChanged);
-            receiverViewControl1.AgcSnrMarginChanged += new ByteEventHandler(receiverViewControl1_AgcSnrMarginChanged);
-            receiverViewControl1.AgcRefLevelChanged += new Int32EventHandler(receiverViewControl1_AgcRefLevelChanged);
-            receiverViewControl1.AgcStepChanged += new AgcStepEventHandler(receiverViewControl1_AgcStepChanged);
-            receiverViewControl1.LnaZinChanged += new LnaZinEventHandler(receiverViewControl1_LnaZinChanged);
-            receiverViewControl1.LnaLowPowerOnChanged += new BooleanEventHandler(receiverViewControl1_LnaLowPowerOnChanged);
-            receiverViewControl1.LnaGainChanged += new LnaGainEventHandler(receiverViewControl1_LnaGainChanged);
-            receiverViewControl1.DccFreqChanged += new DecimalEventHandler(receiverViewControl1_DccFreqChanged);
-            receiverViewControl1.RxBwChanged += new DecimalEventHandler(receiverViewControl1_RxBwChanged);
-            receiverViewControl1.AfcDccFreqChanged += new DecimalEventHandler(receiverViewControl1_AfcDccFreqChanged);
-            receiverViewControl1.AfcRxBwChanged += new DecimalEventHandler(receiverViewControl1_AfcRxBwChanged);
-            receiverViewControl1.OokThreshTypeChanged += new OokThreshTypeEventHandler(receiverViewControl1_OokThreshTypeChanged);
-            receiverViewControl1.OokPeakThreshStepChanged += new DecimalEventHandler(receiverViewControl1_OokPeakThreshStepChanged);
-            receiverViewControl1.OokPeakThreshDecChanged += new OokPeakThreshDecEventHandler(receiverViewControl1_OokPeakThreshDecChanged);
-            receiverViewControl1.OokAverageThreshFiltChanged += new OokAverageThreshFiltEventHandler(receiverViewControl1_OokAverageThreshFiltChanged);
-            receiverViewControl1.OokFixedThreshChanged += new ByteEventHandler(receiverViewControl1_OokFixedThreshChanged);
-            receiverViewControl1.FeiStartChanged += new EventHandler(receiverViewControl1_FeiStartChanged);
-            receiverViewControl1.AfcAutoClearOnChanged += new BooleanEventHandler(receiverViewControl1_AfcAutoClearOnChanged);
-            receiverViewControl1.AfcAutoOnChanged += new BooleanEventHandler(receiverViewControl1_AfcAutoOnChanged);
-            receiverViewControl1.AfcClearChanged += new EventHandler(receiverViewControl1_AfcClearChanged);
-            receiverViewControl1.AfcStartChanged += new EventHandler(receiverViewControl1_AfcStartChanged);
-            receiverViewControl1.FastRxChanged += new BooleanEventHandler(receiverViewControl1_FastRxChanged);
-            receiverViewControl1.RssiThreshChanged += new DecimalEventHandler(receiverViewControl1_RssiThreshChanged);
-            receiverViewControl1.RssiStartChanged += new EventHandler(receiverViewControl1_RssiStartChanged);
-            receiverViewControl1.TimeoutRxStartChanged += new DecimalEventHandler(receiverViewControl1_TimeoutRxStartChanged);
-            receiverViewControl1.TimeoutRssiThreshChanged += new DecimalEventHandler(receiverViewControl1_TimeoutRssiThreshChanged);
-            receiverViewControl1.RestartRxChanged += new EventHandler(receiverViewControl1_RestartRxChanged);
-            receiverViewControl1.AutoRxRestartOnChanged += new BooleanEventHandler(receiverViewControl1_AutoRxRestartOnChanged);
-            receiverViewControl1.DocumentationChanged += new DocumentationChangedEventHandler(receiverViewControl1_DocumentationChanged);
-            tabIrqMap.Controls.Add(irqMapViewControl1);
-            tabIrqMap.Location = new Point(4, 0x16);
-            tabIrqMap.Name = "tabIrqMap";
-            tabIrqMap.Padding = new Padding(3);
-            tabIrqMap.Size = new Size(0x31f, 0x1ed);
-            tabIrqMap.TabIndex = 3;
-            tabIrqMap.Text = "IRQ & Map";
-            tabIrqMap.UseVisualStyleBackColor = true;
-            irqMapViewControl1.AutoMode = false;
-            irqMapViewControl1.CrcOk = false;
-            irqMapViewControl1.DataMode = DataModeEnum.Packet;
-            irqMapViewControl1.FifoFull = false;
-            irqMapViewControl1.FifoLevel = false;
-            irqMapViewControl1.FifoNotEmpty = false;
-            irqMapViewControl1.FifoOverrun = false;
-            int[] numArray29 = new int[4];
-            numArray29[0] = 0x1e84800;
-            irqMapViewControl1.FrequencyXo = new decimal(numArray29);
-            irqMapViewControl1.Location = new Point(0, 0);
-            irqMapViewControl1.LowBat = false;
-            irqMapViewControl1.Mode = OperatingModeEnum.Stdby;
-            irqMapViewControl1.ModeReady = false;
-            irqMapViewControl1.Name = "irqMapViewControl1";
-            irqMapViewControl1.PacketSent = false;
-            irqMapViewControl1.PayloadReady = false;
-            irqMapViewControl1.PllLock = false;
-            irqMapViewControl1.Rssi = false;
-            irqMapViewControl1.RxReady = false;
-            irqMapViewControl1.Size = new Size(0x31f, 0x1ed);
-            irqMapViewControl1.SyncAddressMatch = false;
-            irqMapViewControl1.TabIndex = 0;
-            irqMapViewControl1.Timeout = false;
-            irqMapViewControl1.TxReady = false;
-            irqMapViewControl1.DioMappingChanged += new DioMappingEventHandler(irqMapViewControl1_DioMappingChanged);
-            irqMapViewControl1.ClockOutChanged += new ClockOutEventHandler(irqMapViewControl1_ClockOutChanged);
-            irqMapViewControl1.DocumentationChanged += new DocumentationChangedEventHandler(irqMapViewControl1_DocumentationChanged);
-            tabPacketHandler.Controls.Add(packetHandlerView1);
-            tabPacketHandler.Location = new Point(4, 0x16);
-            tabPacketHandler.Name = "tabPacketHandler";
-            tabPacketHandler.Padding = new Padding(3);
-            tabPacketHandler.Size = new Size(0x31f, 0x1ed);
-            tabPacketHandler.TabIndex = 4;
-            tabPacketHandler.Text = "Packet Handler";
-            tabPacketHandler.UseVisualStyleBackColor = true;
-            packetHandlerView1.AddressFiltering = AddressFilteringEnum.OFF;
-            packetHandlerView1.AesKey = new byte[0x10];
-            packetHandlerView1.AesOn = true;
-            int[] numArray30 = new int[4];
-            packetHandlerView1.BitRate = new decimal(numArray30);
-            packetHandlerView1.BroadcastAddress = 0;
-            packetHandlerView1.Crc = 0;
-            packetHandlerView1.CrcAutoClearOff = false;
-            packetHandlerView1.CrcOn = true;
-            packetHandlerView1.DataMode = DataModeEnum.Packet;
-            packetHandlerView1.DcFree = DcFreeEnum.OFF;
-            packetHandlerView1.EnterCondition = EnterConditionEnum.OFF;
-            packetHandlerView1.ExitCondition = ExitConditionEnum.OFF;
-            packetHandlerView1.FifoFillCondition = FifoFillConditionEnum.OnSyncAddressIrq;
-            packetHandlerView1.FifoThreshold = 15;
-            packetHandlerView1.IntermediateMode = IntermediateModeEnum.Sleep;
-            packetHandlerView1.InterPacketRxDelay = 0;
-            packetHandlerView1.Location = new Point(0, 0);
-            packetHandlerView1.MaxPacketNumber = 0;
-            packetHandlerView1.Message = new byte[0];
-            packetHandlerView1.MessageLength = 0;
-            packetHandlerView1.Mode = OperatingModeEnum.Stdby;
-            packetHandlerView1.Name = "packetHandlerView1";
-            packetHandlerView1.NodeAddress = 0;
-            packetHandlerView1.NodeAddressRx = 0;
-            packetHandlerView1.PacketFormat = PacketFormatEnum.Fixed;
-            packetHandlerView1.PacketNumber = 0;
-            packetHandlerView1.PayloadLength = 0x42;
-            packetHandlerView1.PreambleSize = 3;
-            packetHandlerView1.Size = new Size(0x31f, 0x1ed);
-            packetHandlerView1.StartStop = false;
-            packetHandlerView1.SyncOn = true;
-            packetHandlerView1.SyncSize = 4;
-            packetHandlerView1.SyncTol = 0;
-            packetHandlerView1.SyncValue = new byte[] { 170, 170, 170, 170 };
-            packetHandlerView1.TabIndex = 0;
-            packetHandlerView1.TxStartCondition = true;
-            packetHandlerView1.Error += new SemtechLib.General.Events.ErrorEventHandler(packetHandlerView1_Error);
-            packetHandlerView1.PreambleSizeChanged += new Int32EventHandler(packetHandlerView1_PreambleSizeChanged);
-            packetHandlerView1.SyncOnChanged += new BooleanEventHandler(packetHandlerView1_SyncOnChanged);
-            packetHandlerView1.FifoFillConditionChanged += new FifoFillConditionEventHandler(packetHandlerView1_FifoFillConditionChanged);
-            packetHandlerView1.SyncSizeChanged += new ByteEventHandler(packetHandlerView1_SyncSizeChanged);
-            packetHandlerView1.SyncTolChanged += new ByteEventHandler(packetHandlerView1_SyncTolChanged);
-            packetHandlerView1.SyncValueChanged += new ByteArrayEventHandler(packetHandlerView1_SyncValueChanged);
-            packetHandlerView1.PacketFormatChanged += new PacketFormatEventHandler(packetHandlerView1_PacketFormatChanged);
-            packetHandlerView1.DcFreeChanged += new DcFreeEventHandler(packetHandlerView1_DcFreeChanged);
-            packetHandlerView1.CrcOnChanged += new BooleanEventHandler(packetHandlerView1_CrcOnChanged);
-            packetHandlerView1.CrcAutoClearOffChanged += new BooleanEventHandler(packetHandlerView1_CrcAutoClearOffChanged);
-            packetHandlerView1.AddressFilteringChanged += new AddressFilteringEventHandler(packetHandlerView1_AddressFilteringChanged);
-            packetHandlerView1.PayloadLengthChanged += new ByteEventHandler(packetHandlerView1_PayloadLengthChanged);
-            packetHandlerView1.NodeAddressChanged += new ByteEventHandler(packetHandlerView1_NodeAddressChanged);
-            packetHandlerView1.BroadcastAddressChanged += new ByteEventHandler(packetHandlerView1_BroadcastAddressChanged);
-            packetHandlerView1.EnterConditionChanged += new EnterConditionEventHandler(packetHandlerView1_EnterConditionChanged);
-            packetHandlerView1.ExitConditionChanged += new ExitConditionEventHandler(packetHandlerView1_ExitConditionChanged);
-            packetHandlerView1.IntermediateModeChanged += new IntermediateModeEventHandler(packetHandlerView1_IntermediateModeChanged);
-            packetHandlerView1.TxStartConditionChanged += new BooleanEventHandler(packetHandlerView1_TxStartConditionChanged);
-            packetHandlerView1.FifoThresholdChanged += new ByteEventHandler(packetHandlerView1_FifoThresholdChanged);
-            packetHandlerView1.InterPacketRxDelayChanged += new Int32EventHandler(packetHandlerView1_InterPacketRxDelayChanged);
-            packetHandlerView1.AesOnChanged += new BooleanEventHandler(packetHandlerView1_AesOnChanged);
-            packetHandlerView1.AesKeyChanged += new ByteArrayEventHandler(packetHandlerView1_AesKeyChanged);
-            packetHandlerView1.MessageLengthChanged += new Int32EventHandler(packetHandlerView1_MessageLengthChanged);
-            packetHandlerView1.MessageChanged += new ByteArrayEventHandler(packetHandlerView1_MessageChanged);
-            packetHandlerView1.StartStopChanged += new BooleanEventHandler(packetHandlerView1_StartStopChanged);
-            packetHandlerView1.MaxPacketNumberChanged += new Int32EventHandler(packetHandlerView1_MaxPacketNumberChanged);
-            packetHandlerView1.PacketHandlerLogEnableChanged += new BooleanEventHandler(packetHandlerView1_PacketHandlerLogEnableChanged);
-            packetHandlerView1.DocumentationChanged += new DocumentationChangedEventHandler(packetHandlerView1_DocumentationChanged);
-            tabTemperature.Controls.Add(temperatureViewControl1);
-            tabTemperature.Location = new Point(4, 0x16);
-            tabTemperature.Name = "tabTemperature";
-            tabTemperature.Padding = new Padding(3);
-            tabTemperature.Size = new Size(0x31f, 0x1ed);
-            tabTemperature.TabIndex = 5;
-            tabTemperature.Text = "Temperature";
-            tabTemperature.UseVisualStyleBackColor = true;
-            temperatureViewControl1.AdcLowPowerOn = true;
-            temperatureViewControl1.Location = new Point(0, 0);
-            temperatureViewControl1.Mode = OperatingModeEnum.Stdby;
-            temperatureViewControl1.Name = "temperatureViewControl1";
-            temperatureViewControl1.Size = new Size(0x31f, 0x1ed);
-            temperatureViewControl1.TabIndex = 0;
-            temperatureViewControl1.TempCalDone = false;
-            temperatureViewControl1.TempMeasRunning = false;
-            int[] numArray31 = new int[4];
-            numArray31[0] = 0x19;
-            temperatureViewControl1.TempValue = new decimal(numArray31);
-            int[] numArray32 = new int[4];
-            numArray32[0] = 250;
-            numArray32[3] = 0x10000;
-            temperatureViewControl1.TempValueRoom = new decimal(numArray32);
-            temperatureViewControl1.AdcLowPowerOnChanged += new BooleanEventHandler(temperatureViewControl1_AdcLowPowerOnChanged);
-            temperatureViewControl1.TempCalibrateChanged += new DecimalEventHandler(temperatureViewControl1_TempCalibrateChanged);
-            temperatureViewControl1.DocumentationChanged += new DocumentationChangedEventHandler(temperatureViewControl1_DocumentationChanged);
-            gBoxOperatingMode.Controls.Add(rBtnTransmitter);
-            gBoxOperatingMode.Controls.Add(rBtnReceiver);
-            gBoxOperatingMode.Controls.Add(rBtnSynthesizer);
-            gBoxOperatingMode.Controls.Add(rBtnStandby);
-            gBoxOperatingMode.Controls.Add(rBtnSleep);
-            gBoxOperatingMode.Location = new Point(0x330, 0x19b);
-            gBoxOperatingMode.Name = "gBoxOperatingMode";
-            gBoxOperatingMode.Size = new Size(0xbd, 0x6b);
-            gBoxOperatingMode.TabIndex = 2;
-            gBoxOperatingMode.TabStop = false;
-            gBoxOperatingMode.Text = "Operating mode";
-            gBoxOperatingMode.MouseEnter += new EventHandler(control_MouseEnter);
-            gBoxOperatingMode.MouseLeave += new EventHandler(control_MouseLeave);
-            rBtnTransmitter.AutoSize = true;
-            rBtnTransmitter.Location = new Point(0x5e, 80);
-            rBtnTransmitter.Name = "rBtnTransmitter";
-            rBtnTransmitter.Size = new Size(0x4d, 0x11);
-            rBtnTransmitter.TabIndex = 4;
-            rBtnTransmitter.Text = "Transmitter";
-            rBtnTransmitter.UseVisualStyleBackColor = true;
-            rBtnTransmitter.CheckedChanged += new EventHandler(rBtnOperatingMode_CheckedChanged);
-            rBtnReceiver.AutoSize = true;
-            rBtnReceiver.Location = new Point(0x10, 80);
-            rBtnReceiver.Name = "rBtnReceiver";
-            rBtnReceiver.Size = new Size(0x44, 0x11);
-            rBtnReceiver.TabIndex = 3;
-            rBtnReceiver.Text = "Receiver";
-            rBtnReceiver.UseVisualStyleBackColor = true;
-            rBtnReceiver.CheckedChanged += new EventHandler(rBtnOperatingMode_CheckedChanged);
-            rBtnSynthesizer.AutoSize = true;
-            rBtnSynthesizer.Location = new Point(0x5e, 0x33);
-            rBtnSynthesizer.Name = "rBtnSynthesizer";
-            rBtnSynthesizer.Size = new Size(0x4f, 0x11);
-            rBtnSynthesizer.TabIndex = 2;
-            rBtnSynthesizer.Text = "Synthesizer";
-            rBtnSynthesizer.UseVisualStyleBackColor = true;
-            rBtnSynthesizer.CheckedChanged += new EventHandler(rBtnOperatingMode_CheckedChanged);
-            rBtnStandby.AutoSize = true;
-            rBtnStandby.Checked = true;
-            rBtnStandby.Location = new Point(0x10, 0x33);
-            rBtnStandby.Name = "rBtnStandby";
-            rBtnStandby.Size = new Size(0x40, 0x11);
-            rBtnStandby.TabIndex = 1;
-            rBtnStandby.TabStop = true;
-            rBtnStandby.Text = "Standby";
-            rBtnStandby.UseVisualStyleBackColor = true;
-            rBtnStandby.CheckedChanged += new EventHandler(rBtnOperatingMode_CheckedChanged);
-            rBtnSleep.AutoSize = true;
-            rBtnSleep.Location = new Point(0x10, 20);
-            rBtnSleep.Name = "rBtnSleep";
-            rBtnSleep.Size = new Size(0x34, 0x11);
-            rBtnSleep.TabIndex = 0;
-            rBtnSleep.Text = "Sleep";
-            rBtnSleep.UseVisualStyleBackColor = true;
-            rBtnSleep.CheckedChanged += new EventHandler(rBtnOperatingMode_CheckedChanged);
-            lbModeReady.AutoSize = true;
-            lbModeReady.Location = new Point(0x37, 20);
-            lbModeReady.Name = "lbModeReady";
-            lbModeReady.Size = new Size(0x41, 13);
-            lbModeReady.TabIndex = 1;
-            lbModeReady.Text = "ModeReady";
-            label19.AutoSize = true;
-            label19.Location = new Point(0x37, 0x29);
-            label19.Name = "label19";
-            label19.Size = new Size(0x33, 13);
-            label19.TabIndex = 3;
-            label19.Text = "RxReady";
-            label18.AutoSize = true;
-            label18.Location = new Point(0x37, 0x3e);
-            label18.Name = "label18";
-            label18.Size = new Size(50, 13);
-            label18.TabIndex = 5;
-            label18.Text = "TxReady";
-            label17.AutoSize = true;
-            label17.Location = new Point(0x37, 0x53);
-            label17.Name = "label17";
-            label17.Size = new Size(0x2a, 13);
-            label17.TabIndex = 7;
-            label17.Text = "PllLock";
-            label23.AutoSize = true;
-            label23.Location = new Point(0x37, 110);
-            label23.Name = "label23";
-            label23.Size = new Size(0x1b, 13);
-            label23.TabIndex = 9;
-            label23.Text = "Rssi";
-            label22.AutoSize = true;
-            label22.Location = new Point(0x37, 0x83);
-            label22.Name = "label22";
-            label22.Size = new Size(0x2d, 13);
-            label22.TabIndex = 11;
-            label22.Text = "Timeout";
-            label21.AutoSize = true;
-            label21.Location = new Point(0x37, 0x98);
-            label21.Name = "label21";
-            label21.Size = new Size(0x38, 13);
-            label21.TabIndex = 13;
-            label21.Text = "AutoMode";
-            label20.AutoSize = true;
-            label20.Location = new Point(0x37, 0xad);
-            label20.Name = "label20";
-            label20.Size = new Size(0x63, 13);
-            label20.TabIndex = 15;
-            label20.Text = "SyncAddressMatch";
-            label27.AutoSize = true;
-            label27.Location = new Point(0x37, 200);
-            label27.Name = "label27";
-            label27.Size = new Size(40, 13);
-            label27.TabIndex = 0x11;
-            label27.Text = "FifoFull";
-            label26.AutoSize = true;
-            label26.Location = new Point(0x37, 0xdd);
-            label26.Name = "label26";
-            label26.Size = new Size(70, 13);
-            label26.TabIndex = 0x13;
-            label26.Text = "FifoNotEmpty";
-            label25.AutoSize = true;
-            label25.Location = new Point(0x37, 0xf2);
-            label25.Name = "label25";
-            label25.Size = new Size(50, 13);
-            label25.TabIndex = 0x15;
-            label25.Text = "FifoLevel";
-            label24.AutoSize = true;
-            label24.Location = new Point(0x37, 0x107);
-            label24.Name = "label24";
-            label24.Size = new Size(0x3e, 13);
-            label24.TabIndex = 0x17;
-            label24.Text = "FifoOverrun";
-            label31.AutoSize = true;
-            label31.Location = new Point(0x37, 290);
-            label31.Name = "label31";
-            label31.Size = new Size(0x3f, 13);
-            label31.TabIndex = 0x19;
-            label31.Text = "PacketSent";
-            label30.AutoSize = true;
-            label30.Location = new Point(0x37, 0x137);
-            label30.Name = "label30";
-            label30.Size = new Size(0x4c, 13);
-            label30.TabIndex = 0x1b;
-            label30.Text = "PayloadReady";
-            label29.AutoSize = true;
-            label29.Location = new Point(0x37, 0x14c);
-            label29.Name = "label29";
-            label29.Size = new Size(0x25, 13);
-            label29.TabIndex = 0x1d;
-            label29.Text = "CrcOk";
-            label28.AutoSize = true;
-            label28.Location = new Point(0x37, 0x161);
-            label28.Name = "label28";
-            label28.Size = new Size(0x2b, 13);
-            label28.TabIndex = 0x1f;
-            label28.Text = "LowBat";
-            gBoxIrqFlags.Controls.Add(ledLowBat);
-            gBoxIrqFlags.Controls.Add(lbModeReady);
-            gBoxIrqFlags.Controls.Add(ledCrcOk);
-            gBoxIrqFlags.Controls.Add(ledRxReady);
-            gBoxIrqFlags.Controls.Add(ledPayloadReady);
-            gBoxIrqFlags.Controls.Add(ledTxReady);
-            gBoxIrqFlags.Controls.Add(ledPacketSent);
-            gBoxIrqFlags.Controls.Add(label17);
-            gBoxIrqFlags.Controls.Add(label31);
-            gBoxIrqFlags.Controls.Add(ledPllLock);
-            gBoxIrqFlags.Controls.Add(label30);
-            gBoxIrqFlags.Controls.Add(label18);
-            gBoxIrqFlags.Controls.Add(label29);
-            gBoxIrqFlags.Controls.Add(label19);
-            gBoxIrqFlags.Controls.Add(label28);
-            gBoxIrqFlags.Controls.Add(ledModeReady);
-            gBoxIrqFlags.Controls.Add(ledFifoOverrun);
-            gBoxIrqFlags.Controls.Add(ledRssi);
-            gBoxIrqFlags.Controls.Add(ledFifoLevel);
-            gBoxIrqFlags.Controls.Add(ledTimeout);
-            gBoxIrqFlags.Controls.Add(label27);
-            gBoxIrqFlags.Controls.Add(label20);
-            gBoxIrqFlags.Controls.Add(ledFifoNotEmpty);
-            gBoxIrqFlags.Controls.Add(label21);
-            gBoxIrqFlags.Controls.Add(label26);
-            gBoxIrqFlags.Controls.Add(ledAutoMode);
-            gBoxIrqFlags.Controls.Add(label25);
-            gBoxIrqFlags.Controls.Add(label22);
-            gBoxIrqFlags.Controls.Add(label24);
-            gBoxIrqFlags.Controls.Add(label23);
-            gBoxIrqFlags.Controls.Add(ledFifoFull);
-            gBoxIrqFlags.Controls.Add(ledSyncAddressMatch);
-            gBoxIrqFlags.Location = new Point(0x330, 0x19);
-            gBoxIrqFlags.Name = "gBoxIrqFlags";
-            gBoxIrqFlags.Size = new Size(0xbd, 380);
-            gBoxIrqFlags.TabIndex = 1;
-            gBoxIrqFlags.TabStop = false;
-            gBoxIrqFlags.Text = "Irq flags";
-            gBoxIrqFlags.MouseEnter += new EventHandler(control_MouseEnter);
-            gBoxIrqFlags.MouseLeave += new EventHandler(control_MouseLeave);
-            ledLowBat.BackColor = Color.Transparent;
-            ledLowBat.LedColor = Color.Green;
-            ledLowBat.LedSize = new Size(11, 11);
-            ledLowBat.Location = new Point(0x22, 0x160);
-            ledLowBat.Name = "ledLowBat";
-            ledLowBat.Size = new Size(15, 15);
-            ledLowBat.TabIndex = 30;
-            ledLowBat.Text = "led1";
-            ledCrcOk.BackColor = Color.Transparent;
-            ledCrcOk.LedColor = Color.Green;
-            ledCrcOk.LedSize = new Size(11, 11);
-            ledCrcOk.Location = new Point(0x22, 0x14b);
-            ledCrcOk.Name = "ledCrcOk";
-            ledCrcOk.Size = new Size(15, 15);
-            ledCrcOk.TabIndex = 0x1c;
-            ledCrcOk.Text = "led1";
-            ledRxReady.BackColor = Color.Transparent;
-            ledRxReady.LedColor = Color.Green;
-            ledRxReady.LedSize = new Size(11, 11);
-            ledRxReady.Location = new Point(0x22, 40);
-            ledRxReady.Name = "ledRxReady";
-            ledRxReady.Size = new Size(15, 15);
-            ledRxReady.TabIndex = 2;
-            ledRxReady.Text = "led1";
-            ledPayloadReady.BackColor = Color.Transparent;
-            ledPayloadReady.LedColor = Color.Green;
-            ledPayloadReady.LedSize = new Size(11, 11);
-            ledPayloadReady.Location = new Point(0x22, 310);
-            ledPayloadReady.Name = "ledPayloadReady";
-            ledPayloadReady.Size = new Size(15, 15);
-            ledPayloadReady.TabIndex = 0x1a;
-            ledPayloadReady.Text = "led1";
-            ledTxReady.BackColor = Color.Transparent;
-            ledTxReady.LedColor = Color.Green;
-            ledTxReady.LedSize = new Size(11, 11);
-            ledTxReady.Location = new Point(0x22, 0x3d);
-            ledTxReady.Name = "ledTxReady";
-            ledTxReady.Size = new Size(15, 15);
-            ledTxReady.TabIndex = 4;
-            ledTxReady.Text = "led1";
-            ledPacketSent.BackColor = Color.Transparent;
-            ledPacketSent.LedColor = Color.Green;
-            ledPacketSent.LedSize = new Size(11, 11);
-            ledPacketSent.Location = new Point(0x22, 0x121);
-            ledPacketSent.Margin = new Padding(3, 6, 3, 3);
-            ledPacketSent.Name = "ledPacketSent";
-            ledPacketSent.Size = new Size(15, 15);
-            ledPacketSent.TabIndex = 0x18;
-            ledPacketSent.Text = "led1";
-            ledPllLock.BackColor = Color.Transparent;
-            ledPllLock.LedColor = Color.Green;
-            ledPllLock.LedSize = new Size(11, 11);
-            ledPllLock.Location = new Point(0x22, 0x52);
-            ledPllLock.Margin = new Padding(3, 3, 3, 6);
-            ledPllLock.Name = "ledPllLock";
-            ledPllLock.Size = new Size(15, 15);
-            ledPllLock.TabIndex = 6;
-            ledPllLock.Text = "led1";
-            ledModeReady.BackColor = Color.Transparent;
-            ledModeReady.LedColor = Color.Green;
-            ledModeReady.LedSize = new Size(11, 11);
-            ledModeReady.Location = new Point(0x22, 0x13);
-            ledModeReady.Name = "ledModeReady";
-            ledModeReady.Size = new Size(15, 15);
-            ledModeReady.TabIndex = 0;
-            ledModeReady.Text = "Mode Ready";
-            ledFifoOverrun.BackColor = Color.Transparent;
-            ledFifoOverrun.LedColor = Color.Green;
-            ledFifoOverrun.LedSize = new Size(11, 11);
-            ledFifoOverrun.Location = new Point(0x22, 0x106);
-            ledFifoOverrun.Margin = new Padding(3, 3, 3, 6);
-            ledFifoOverrun.Name = "ledFifoOverrun";
-            ledFifoOverrun.Size = new Size(15, 15);
-            ledFifoOverrun.TabIndex = 0x16;
-            ledFifoOverrun.Text = "led1";
-            ledRssi.BackColor = Color.Transparent;
-            ledRssi.LedColor = Color.Green;
-            ledRssi.LedSize = new Size(11, 11);
-            ledRssi.Location = new Point(0x22, 0x6d);
-            ledRssi.Margin = new Padding(3, 6, 3, 3);
-            ledRssi.Name = "ledRssi";
-            ledRssi.Size = new Size(15, 15);
-            ledRssi.TabIndex = 8;
-            ledRssi.Text = "led1";
-            ledFifoLevel.BackColor = Color.Transparent;
-            ledFifoLevel.LedColor = Color.Green;
-            ledFifoLevel.LedSize = new Size(11, 11);
-            ledFifoLevel.Location = new Point(0x22, 0xf1);
-            ledFifoLevel.Name = "ledFifoLevel";
-            ledFifoLevel.Size = new Size(15, 15);
-            ledFifoLevel.TabIndex = 20;
-            ledFifoLevel.Text = "led1";
-            ledTimeout.BackColor = Color.Transparent;
-            ledTimeout.LedColor = Color.Green;
-            ledTimeout.LedSize = new Size(11, 11);
-            ledTimeout.Location = new Point(0x22, 130);
-            ledTimeout.Name = "ledTimeout";
-            ledTimeout.Size = new Size(15, 15);
-            ledTimeout.TabIndex = 10;
-            ledTimeout.Text = "led1";
-            ledFifoNotEmpty.BackColor = Color.Transparent;
-            ledFifoNotEmpty.LedColor = Color.Green;
-            ledFifoNotEmpty.LedSize = new Size(11, 11);
-            ledFifoNotEmpty.Location = new Point(0x22, 220);
-            ledFifoNotEmpty.Name = "ledFifoNotEmpty";
-            ledFifoNotEmpty.Size = new Size(15, 15);
-            ledFifoNotEmpty.TabIndex = 0x12;
-            ledFifoNotEmpty.Text = "led1";
-            ledAutoMode.BackColor = Color.Transparent;
-            ledAutoMode.LedColor = Color.Green;
-            ledAutoMode.LedSize = new Size(11, 11);
-            ledAutoMode.Location = new Point(0x22, 0x97);
-            ledAutoMode.Name = "ledAutoMode";
-            ledAutoMode.Size = new Size(15, 15);
-            ledAutoMode.TabIndex = 12;
-            ledAutoMode.Text = "led1";
-            ledFifoFull.BackColor = Color.Transparent;
-            ledFifoFull.LedColor = Color.Green;
-            ledFifoFull.LedSize = new Size(11, 11);
-            ledFifoFull.Location = new Point(0x22, 0xc7);
-            ledFifoFull.Margin = new Padding(3, 6, 3, 3);
-            ledFifoFull.Name = "ledFifoFull";
-            ledFifoFull.Size = new Size(15, 15);
-            ledFifoFull.TabIndex = 0x10;
-            ledFifoFull.Text = "led1";
-            ledSyncAddressMatch.BackColor = Color.Transparent;
-            ledSyncAddressMatch.LedColor = Color.Green;
-            ledSyncAddressMatch.LedSize = new Size(11, 11);
-            ledSyncAddressMatch.Location = new Point(0x22, 0xac);
-            ledSyncAddressMatch.Margin = new Padding(3, 3, 3, 6);
-            ledSyncAddressMatch.Name = "ledSyncAddressMatch";
-            ledSyncAddressMatch.Size = new Size(15, 15);
-            ledSyncAddressMatch.TabIndex = 14;
-            ledSyncAddressMatch.Text = "led1";
-            base.AutoScaleDimensions = new SizeF(6f, 13f);
-            base.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            base.Controls.Add(gBoxOperatingMode);
-            base.Controls.Add(tabControl1);
-            base.Controls.Add(gBoxIrqFlags);
-            base.Name = "DeviceViewControl";
-            base.Size = new Size(0x3f0, 0x20d);
-            tabControl1.ResumeLayout(false);
-            tabCommon.ResumeLayout(false);
-            tabTransmitter.ResumeLayout(false);
-            tabReceiver.ResumeLayout(false);
-            tabIrqMap.ResumeLayout(false);
-            tabPacketHandler.ResumeLayout(false);
-            tabTemperature.ResumeLayout(false);
-            gBoxOperatingMode.ResumeLayout(false);
-            gBoxOperatingMode.PerformLayout();
-            gBoxIrqFlags.ResumeLayout(false);
-            gBoxIrqFlags.PerformLayout();
-            base.ResumeLayout(false);
+			this.tabControl1 = new System.Windows.Forms.TabControl();
+			this.tabCommon = new System.Windows.Forms.TabPage();
+			this.commonViewControl1 = new SemtechLib.Devices.SX1231.Controls.CommonViewControl();
+			this.tabTransmitter = new System.Windows.Forms.TabPage();
+			this.transmitterViewControl1 = new SemtechLib.Devices.SX1231.Controls.TransmitterViewControl();
+			this.tabReceiver = new System.Windows.Forms.TabPage();
+			this.receiverViewControl1 = new SemtechLib.Devices.SX1231.Controls.ReceiverViewControl();
+			this.tabIrqMap = new System.Windows.Forms.TabPage();
+			this.irqMapViewControl1 = new SemtechLib.Devices.SX1231.Controls.IrqMapViewControl();
+			this.tabPacketHandler = new System.Windows.Forms.TabPage();
+			this.packetHandlerView1 = new SemtechLib.Devices.SX1231.Controls.PacketHandlerView();
+			this.tabTemperature = new System.Windows.Forms.TabPage();
+			this.temperatureViewControl1 = new SemtechLib.Devices.SX1231.Controls.TemperatureViewControl();
+			this.gBoxOperatingMode = new SemtechLib.Controls.GroupBoxEx();
+			this.rBtnTransmitter = new System.Windows.Forms.RadioButton();
+			this.rBtnReceiver = new System.Windows.Forms.RadioButton();
+			this.rBtnSynthesizer = new System.Windows.Forms.RadioButton();
+			this.rBtnStandby = new System.Windows.Forms.RadioButton();
+			this.rBtnSleep = new System.Windows.Forms.RadioButton();
+			this.lbModeReady = new System.Windows.Forms.Label();
+			this.label19 = new System.Windows.Forms.Label();
+			this.label18 = new System.Windows.Forms.Label();
+			this.label17 = new System.Windows.Forms.Label();
+			this.label23 = new System.Windows.Forms.Label();
+			this.label22 = new System.Windows.Forms.Label();
+			this.label21 = new System.Windows.Forms.Label();
+			this.label20 = new System.Windows.Forms.Label();
+			this.label27 = new System.Windows.Forms.Label();
+			this.label26 = new System.Windows.Forms.Label();
+			this.label25 = new System.Windows.Forms.Label();
+			this.label24 = new System.Windows.Forms.Label();
+			this.label31 = new System.Windows.Forms.Label();
+			this.label30 = new System.Windows.Forms.Label();
+			this.label29 = new System.Windows.Forms.Label();
+			this.label28 = new System.Windows.Forms.Label();
+			this.gBoxIrqFlags = new SemtechLib.Controls.GroupBoxEx();
+			this.ledLowBat = new SemtechLib.Controls.Led();
+			this.ledCrcOk = new SemtechLib.Controls.Led();
+			this.ledRxReady = new SemtechLib.Controls.Led();
+			this.ledPayloadReady = new SemtechLib.Controls.Led();
+			this.ledTxReady = new SemtechLib.Controls.Led();
+			this.ledPacketSent = new SemtechLib.Controls.Led();
+			this.ledPllLock = new SemtechLib.Controls.Led();
+			this.ledModeReady = new SemtechLib.Controls.Led();
+			this.ledFifoOverrun = new SemtechLib.Controls.Led();
+			this.ledRssi = new SemtechLib.Controls.Led();
+			this.ledFifoLevel = new SemtechLib.Controls.Led();
+			this.ledTimeout = new SemtechLib.Controls.Led();
+			this.ledFifoNotEmpty = new SemtechLib.Controls.Led();
+			this.ledAutoMode = new SemtechLib.Controls.Led();
+			this.ledFifoFull = new SemtechLib.Controls.Led();
+			this.ledSyncAddressMatch = new SemtechLib.Controls.Led();
+			this.tabControl1.SuspendLayout();
+			this.tabCommon.SuspendLayout();
+			this.tabTransmitter.SuspendLayout();
+			this.tabReceiver.SuspendLayout();
+			this.tabIrqMap.SuspendLayout();
+			this.tabPacketHandler.SuspendLayout();
+			this.tabTemperature.SuspendLayout();
+			this.gBoxOperatingMode.SuspendLayout();
+			this.gBoxIrqFlags.SuspendLayout();
+			this.SuspendLayout();
+			// 
+			// tabControl1
+			// 
+			this.tabControl1.Controls.Add(this.tabCommon);
+			this.tabControl1.Controls.Add(this.tabTransmitter);
+			this.tabControl1.Controls.Add(this.tabReceiver);
+			this.tabControl1.Controls.Add(this.tabIrqMap);
+			this.tabControl1.Controls.Add(this.tabPacketHandler);
+			this.tabControl1.Controls.Add(this.tabTemperature);
+			this.tabControl1.Location = new System.Drawing.Point(3, 3);
+			this.tabControl1.Name = "tabControl1";
+			this.tabControl1.SelectedIndex = 0;
+			this.tabControl1.Size = new System.Drawing.Size(807, 519);
+			this.tabControl1.TabIndex = 0;
+			// 
+			// tabCommon
+			// 
+			this.tabCommon.Controls.Add(this.commonViewControl1);
+			this.tabCommon.Location = new System.Drawing.Point(4, 22);
+			this.tabCommon.Name = "tabCommon";
+			this.tabCommon.Padding = new System.Windows.Forms.Padding(3);
+			this.tabCommon.Size = new System.Drawing.Size(799, 493);
+			this.tabCommon.TabIndex = 0;
+			this.tabCommon.Text = "Common";
+			this.tabCommon.UseVisualStyleBackColor = true;
+			// 
+			// commonViewControl1
+			// 
+			this.commonViewControl1.BitRate = new decimal(new int[] {
+            4800,
+            0,
+            0,
+            0});
+			this.commonViewControl1.DataMode = SemtechLib.Devices.SX1231.Enumerations.DataModeEnum.Packet;
+			this.commonViewControl1.Fdev = new decimal(new int[] {
+            5002,
+            0,
+            0,
+            0});
+			this.commonViewControl1.FrequencyRf = new decimal(new int[] {
+            915000000,
+            0,
+            0,
+            0});
+			this.commonViewControl1.FrequencyStep = new decimal(new int[] {
+            61,
+            0,
+            0,
+            0});
+			this.commonViewControl1.FrequencyXo = new decimal(new int[] {
+            32000000,
+            0,
+            0,
+            0});
+			this.commonViewControl1.ListenCoefIdle = new decimal(new int[] {
+            10045,
+            0,
+            0,
+            65536});
+			this.commonViewControl1.ListenCoefRx = new decimal(new int[] {
+            131,
+            0,
+            0,
+            0});
+			this.commonViewControl1.ListenCriteria = SemtechLib.Devices.SX1231.Enumerations.ListenCriteriaEnum.RssiThresh;
+			this.commonViewControl1.ListenMode = false;
+			this.commonViewControl1.ListenResolIdle = SemtechLib.Devices.SX1231.Enumerations.ListenResolEnum.Res004100;
+			this.commonViewControl1.ListenResolRx = SemtechLib.Devices.SX1231.Enumerations.ListenResolEnum.Res004100;
+			this.commonViewControl1.Location = new System.Drawing.Point(0, 0);
+			this.commonViewControl1.LowBatMonitor = true;
+			this.commonViewControl1.LowBatOn = true;
+			this.commonViewControl1.ModulationShaping = ((byte)(0));
+			this.commonViewControl1.ModulationType = SemtechLib.Devices.SX1231.Enumerations.ModulationTypeEnum.FSK;
+			this.commonViewControl1.Name = "commonViewControl1";
+			this.commonViewControl1.RcCalDone = false;
+			this.commonViewControl1.Sequencer = false;
+			this.commonViewControl1.Size = new System.Drawing.Size(799, 493);
+			this.commonViewControl1.TabIndex = 0;
+			this.commonViewControl1.Version = "2.3";
+			this.commonViewControl1.BitRateChanged += new SemtechLib.General.Events.DecimalEventHandler(this.commonViewControl1_BitRateChanged);
+			this.commonViewControl1.DataModeChanged += new SemtechLib.Devices.SX1231.Events.DataModeEventHandler(this.commonViewControl1_DataModeChanged);
+			this.commonViewControl1.DocumentationChanged += new SemtechLib.General.Interfaces.DocumentationChangedEventHandler(this.commonViewControl1_DocumentationChanged);
+			this.commonViewControl1.FdevChanged += new SemtechLib.General.Events.DecimalEventHandler(this.commonViewControl1_FdevChanged);
+			this.commonViewControl1.FrequencyRfChanged += new SemtechLib.General.Events.DecimalEventHandler(this.commonViewControl1_FrequencyRfChanged);
+			this.commonViewControl1.FrequencyXoChanged += new SemtechLib.General.Events.DecimalEventHandler(this.commonViewControl1_FrequencyXoChanged);
+			this.commonViewControl1.ListenCoefIdleChanged += new SemtechLib.General.Events.DecimalEventHandler(this.commonViewControl1_ListenCoefIdleChanged);
+			this.commonViewControl1.ListenCoefRxChanged += new SemtechLib.General.Events.DecimalEventHandler(this.commonViewControl1_ListenCoefRxChanged);
+			this.commonViewControl1.ListenCriteriaChanged += new SemtechLib.Devices.SX1231.Events.ListenCriteriaEventHandler(this.commonViewControl1_ListenCriteriaChanged);
+			this.commonViewControl1.ListenEndChanged += new SemtechLib.Devices.SX1231.Events.ListenEndEventHandler(this.commonViewControl1_ListenEndChanged);
+			this.commonViewControl1.ListenModeAbortChanged += new System.EventHandler(this.commonViewControl1_ListenModeAbortChanged);
+			this.commonViewControl1.ListenModeChanged += new SemtechLib.General.Events.BooleanEventHandler(this.commonViewControl1_ListenModeChanged);
+			this.commonViewControl1.ListenResolIdleChanged += new SemtechLib.Devices.SX1231.Events.ListenResolEventHandler(this.commonViewControl1_ListenResolIdleChanged);
+			this.commonViewControl1.ListenResolRxChanged += new SemtechLib.Devices.SX1231.Events.ListenResolEventHandler(this.commonViewControl1_ListenResolRxChanged);
+			this.commonViewControl1.LowBatOnChanged += new SemtechLib.General.Events.BooleanEventHandler(this.commonViewControl1_LowBatOnChanged);
+			this.commonViewControl1.LowBatTrimChanged += new SemtechLib.Devices.SX1231.Events.LowBatTrimEventHandler(this.commonViewControl1_LowBatTrimChanged);
+			this.commonViewControl1.ModulationShapingChanged += new SemtechLib.General.Events.ByteEventHandler(this.commonViewControl1_ModulationShapingChanged);
+			this.commonViewControl1.ModulationTypeChanged += new SemtechLib.Devices.SX1231.Events.ModulationTypeEventHandler(this.commonViewControl1_ModulationTypeChanged);
+			this.commonViewControl1.RcCalibrationChanged += new System.EventHandler(this.commonViewControl1_RcCalibrationChanged);
+			this.commonViewControl1.SequencerChanged += new SemtechLib.General.Events.BooleanEventHandler(this.commonViewControl1_SequencerChanged);
+			// 
+			// tabTransmitter
+			// 
+			this.tabTransmitter.Controls.Add(this.transmitterViewControl1);
+			this.tabTransmitter.Location = new System.Drawing.Point(4, 22);
+			this.tabTransmitter.Name = "tabTransmitter";
+			this.tabTransmitter.Padding = new System.Windows.Forms.Padding(3);
+			this.tabTransmitter.Size = new System.Drawing.Size(799, 493);
+			this.tabTransmitter.TabIndex = 1;
+			this.tabTransmitter.Text = "Transmitter";
+			this.tabTransmitter.UseVisualStyleBackColor = true;
+			// 
+			// transmitterViewControl1
+			// 
+			this.transmitterViewControl1.Location = new System.Drawing.Point(0, 0);
+			this.transmitterViewControl1.Name = "transmitterViewControl1";
+			this.transmitterViewControl1.OcpOn = true;
+			this.transmitterViewControl1.OcpTrim = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            65536});
+			this.transmitterViewControl1.OutputPower = new decimal(new int[] {
+            13,
+            0,
+            0,
+            0});
+			this.transmitterViewControl1.PaMode = SemtechLib.Devices.SX1231.Enumerations.PaModeEnum.PA0;
+			this.transmitterViewControl1.Size = new System.Drawing.Size(799, 493);
+			this.transmitterViewControl1.TabIndex = 0;
+			this.transmitterViewControl1.DocumentationChanged += new SemtechLib.General.Interfaces.DocumentationChangedEventHandler(this.transmitterViewControl1_DocumentationChanged);
+			this.transmitterViewControl1.OcpOnChanged += new SemtechLib.General.Events.BooleanEventHandler(this.transmitterViewControl1_OcpOnChanged);
+			this.transmitterViewControl1.OcpTrimChanged += new SemtechLib.General.Events.DecimalEventHandler(this.transmitterViewControl1_OcpTrimChanged);
+			this.transmitterViewControl1.OutputPowerChanged += new SemtechLib.General.Events.DecimalEventHandler(this.transmitterViewControl1_OutputPowerChanged);
+			this.transmitterViewControl1.PaModeChanged += new SemtechLib.Devices.SX1231.Events.PaModeEventHandler(this.transmitterViewControl1_PaModeChanged);
+			this.transmitterViewControl1.PaRampChanged += new SemtechLib.Devices.SX1231.Events.PaRampEventHandler(this.transmitterViewControl1_PaRampChanged);
+			// 
+			// tabReceiver
+			// 
+			this.tabReceiver.Controls.Add(this.receiverViewControl1);
+			this.tabReceiver.Location = new System.Drawing.Point(4, 22);
+			this.tabReceiver.Name = "tabReceiver";
+			this.tabReceiver.Padding = new System.Windows.Forms.Padding(3);
+			this.tabReceiver.Size = new System.Drawing.Size(799, 493);
+			this.tabReceiver.TabIndex = 2;
+			this.tabReceiver.Text = "Receiver";
+			this.tabReceiver.UseVisualStyleBackColor = true;
+			// 
+			// receiverViewControl1
+			// 
+			this.receiverViewControl1.AfcAutoClearOn = true;
+			this.receiverViewControl1.AfcAutoOn = true;
+			this.receiverViewControl1.AfcDccFreq = new decimal(new int[] {
+            -905921831,
+            295814893,
+            539237922,
+            1638400});
+			this.receiverViewControl1.AfcDccFreqMax = new decimal(new int[] {
+            1657,
+            0,
+            0,
+            0});
+			this.receiverViewControl1.AfcDccFreqMin = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+			this.receiverViewControl1.AfcDone = false;
+			this.receiverViewControl1.AfcLowBetaOn = true;
+			this.receiverViewControl1.AfcRxBw = new decimal(new int[] {
+            50000,
+            0,
+            0,
+            0});
+			this.receiverViewControl1.AfcRxBwMax = new decimal(new int[] {
+            400000,
+            0,
+            0,
+            0});
+			this.receiverViewControl1.AfcRxBwMin = new decimal(new int[] {
+            3125,
+            0,
+            0,
+            0});
+			this.receiverViewControl1.AfcValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            65536});
+			this.receiverViewControl1.AgcAutoRefOn = true;
+			this.receiverViewControl1.AgcReference = -80;
+			this.receiverViewControl1.AgcRefLevel = -80;
+			this.receiverViewControl1.AgcSnrMargin = ((byte)(5));
+			this.receiverViewControl1.AgcStep1 = ((byte)(16));
+			this.receiverViewControl1.AgcStep2 = ((byte)(7));
+			this.receiverViewControl1.AgcStep3 = ((byte)(11));
+			this.receiverViewControl1.AgcStep4 = ((byte)(9));
+			this.receiverViewControl1.AgcStep5 = ((byte)(11));
+			this.receiverViewControl1.AgcThresh1 = 0;
+			this.receiverViewControl1.AgcThresh2 = 0;
+			this.receiverViewControl1.AgcThresh3 = 0;
+			this.receiverViewControl1.AgcThresh4 = 0;
+			this.receiverViewControl1.AgcThresh5 = 0;
+			this.receiverViewControl1.AutoRxRestartOn = true;
+			this.receiverViewControl1.BitRate = new decimal(new int[] {
+            4800,
+            0,
+            0,
+            0});
+			this.receiverViewControl1.DagcOn = true;
+			this.receiverViewControl1.DataMode = SemtechLib.Devices.SX1231.Enumerations.DataModeEnum.Packet;
+			this.receiverViewControl1.DccFreq = new decimal(new int[] {
+            -163586584,
+            -1389046539,
+            -2048070723,
+            1703936});
+			this.receiverViewControl1.DccFreqMax = new decimal(new int[] {
+            1657,
+            0,
+            0,
+            0});
+			this.receiverViewControl1.DccFreqMin = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+			this.receiverViewControl1.FastRx = true;
+			this.receiverViewControl1.FeiDone = false;
+			this.receiverViewControl1.FeiValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            65536});
+			this.receiverViewControl1.FrequencyXo = new decimal(new int[] {
+            32000000,
+            0,
+            0,
+            0});
+			this.receiverViewControl1.LnaLowPowerOn = true;
+			this.receiverViewControl1.LnaZin = SemtechLib.Devices.SX1231.Enumerations.LnaZinEnum.ZIN_200;
+			this.receiverViewControl1.Location = new System.Drawing.Point(0, 0);
+			this.receiverViewControl1.LowBetaAfcOffset = new decimal(new int[] {
+            0,
+            0,
+            0,
+            65536});
+			this.receiverViewControl1.ModulationType = SemtechLib.Devices.SX1231.Enumerations.ModulationTypeEnum.FSK;
+			this.receiverViewControl1.Name = "receiverViewControl1";
+			this.receiverViewControl1.OokAverageThreshFilt = SemtechLib.Devices.SX1231.Enumerations.OokAverageThreshFiltEnum.COEF_2;
+			this.receiverViewControl1.OokFixedThresh = ((byte)(6));
+			this.receiverViewControl1.OokPeakThreshDec = SemtechLib.Devices.SX1231.Enumerations.OokPeakThreshDecEnum.EVERY_1_CHIPS_1_TIMES;
+			this.receiverViewControl1.OokPeakThreshStep = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+			this.receiverViewControl1.OokThreshType = SemtechLib.Devices.SX1231.Enumerations.OokThreshTypeEnum.Peak;
+			this.receiverViewControl1.RssiAutoThresh = true;
+			this.receiverViewControl1.RssiDone = false;
+			this.receiverViewControl1.RssiThresh = new decimal(new int[] {
+            85,
+            0,
+            0,
+            -2147483648});
+			this.receiverViewControl1.RssiValue = new decimal(new int[] {
+            1275,
+            0,
+            0,
+            -2147418112});
+			this.receiverViewControl1.RxBw = new decimal(new int[] {
+            1890233003,
+            -2135170438,
+            564688631,
+            1572864});
+			this.receiverViewControl1.RxBwMax = new decimal(new int[] {
+            500000,
+            0,
+            0,
+            0});
+			this.receiverViewControl1.RxBwMin = new decimal(new int[] {
+            3906,
+            0,
+            0,
+            0});
+			this.receiverViewControl1.SensitivityBoostOn = true;
+			this.receiverViewControl1.Size = new System.Drawing.Size(799, 493);
+			this.receiverViewControl1.TabIndex = 0;
+			this.receiverViewControl1.TimeoutRssiThresh = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+			this.receiverViewControl1.TimeoutRxStart = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+			this.receiverViewControl1.Version = "2.3";
+			this.receiverViewControl1.AfcAutoClearOnChanged += new SemtechLib.General.Events.BooleanEventHandler(this.receiverViewControl1_AfcAutoClearOnChanged);
+			this.receiverViewControl1.AfcAutoOnChanged += new SemtechLib.General.Events.BooleanEventHandler(this.receiverViewControl1_AfcAutoOnChanged);
+			this.receiverViewControl1.AfcClearChanged += new System.EventHandler(this.receiverViewControl1_AfcClearChanged);
+			this.receiverViewControl1.AfcDccFreqChanged += new SemtechLib.General.Events.DecimalEventHandler(this.receiverViewControl1_AfcDccFreqChanged);
+			this.receiverViewControl1.AfcLowBetaOnChanged += new SemtechLib.General.Events.BooleanEventHandler(this.receiverViewControl1_AfcLowBetaOnChanged);
+			this.receiverViewControl1.AfcRxBwChanged += new SemtechLib.General.Events.DecimalEventHandler(this.receiverViewControl1_AfcRxBwChanged);
+			this.receiverViewControl1.AfcStartChanged += new System.EventHandler(this.receiverViewControl1_AfcStartChanged);
+			this.receiverViewControl1.AgcAutoRefChanged += new SemtechLib.General.Events.BooleanEventHandler(this.receiverViewControl1_AgcAutoRefChanged);
+			this.receiverViewControl1.AgcRefLevelChanged += new SemtechLib.General.Events.Int32EventHandler(this.receiverViewControl1_AgcRefLevelChanged);
+			this.receiverViewControl1.AgcSnrMarginChanged += new SemtechLib.General.Events.ByteEventHandler(this.receiverViewControl1_AgcSnrMarginChanged);
+			this.receiverViewControl1.AgcStepChanged += new SemtechLib.Devices.SX1231.Events.AgcStepEventHandler(this.receiverViewControl1_AgcStepChanged);
+			this.receiverViewControl1.AutoRxRestartOnChanged += new SemtechLib.General.Events.BooleanEventHandler(this.receiverViewControl1_AutoRxRestartOnChanged);
+			this.receiverViewControl1.DagcOnChanged += new SemtechLib.General.Events.BooleanEventHandler(this.receiverViewControl1_DagcOnChanged);
+			this.receiverViewControl1.DccFreqChanged += new SemtechLib.General.Events.DecimalEventHandler(this.receiverViewControl1_DccFreqChanged);
+			this.receiverViewControl1.DocumentationChanged += new SemtechLib.General.Interfaces.DocumentationChangedEventHandler(this.receiverViewControl1_DocumentationChanged);
+			this.receiverViewControl1.FastRxChanged += new SemtechLib.General.Events.BooleanEventHandler(this.receiverViewControl1_FastRxChanged);
+			this.receiverViewControl1.FeiStartChanged += new System.EventHandler(this.receiverViewControl1_FeiStartChanged);
+			this.receiverViewControl1.LnaGainChanged += new SemtechLib.Devices.SX1231.Events.LnaGainEventHandler(this.receiverViewControl1_LnaGainChanged);
+			this.receiverViewControl1.LnaLowPowerOnChanged += new SemtechLib.General.Events.BooleanEventHandler(this.receiverViewControl1_LnaLowPowerOnChanged);
+			this.receiverViewControl1.LnaZinChanged += new SemtechLib.Devices.SX1231.Events.LnaZinEventHandler(this.receiverViewControl1_LnaZinChanged);
+			this.receiverViewControl1.LowBetaAfcOffsetChanged += new SemtechLib.General.Events.DecimalEventHandler(this.receiverViewControl1_LowBetaAfcOffsetChanged);
+			this.receiverViewControl1.OokAverageThreshFiltChanged += new SemtechLib.Devices.SX1231.Events.OokAverageThreshFiltEventHandler(this.receiverViewControl1_OokAverageThreshFiltChanged);
+			this.receiverViewControl1.OokFixedThreshChanged += new SemtechLib.General.Events.ByteEventHandler(this.receiverViewControl1_OokFixedThreshChanged);
+			this.receiverViewControl1.OokPeakThreshDecChanged += new SemtechLib.Devices.SX1231.Events.OokPeakThreshDecEventHandler(this.receiverViewControl1_OokPeakThreshDecChanged);
+			this.receiverViewControl1.OokPeakThreshStepChanged += new SemtechLib.General.Events.DecimalEventHandler(this.receiverViewControl1_OokPeakThreshStepChanged);
+			this.receiverViewControl1.OokThreshTypeChanged += new SemtechLib.Devices.SX1231.Events.OokThreshTypeEventHandler(this.receiverViewControl1_OokThreshTypeChanged);
+			this.receiverViewControl1.RestartRxChanged += new System.EventHandler(this.receiverViewControl1_RestartRxChanged);
+			this.receiverViewControl1.RssiAutoThreshChanged += new SemtechLib.General.Events.BooleanEventHandler(this.receiverViewControl1_RssiAutoThreshChanged);
+			this.receiverViewControl1.RssiStartChanged += new System.EventHandler(this.receiverViewControl1_RssiStartChanged);
+			this.receiverViewControl1.RssiThreshChanged += new SemtechLib.General.Events.DecimalEventHandler(this.receiverViewControl1_RssiThreshChanged);
+			this.receiverViewControl1.RxBwChanged += new SemtechLib.General.Events.DecimalEventHandler(this.receiverViewControl1_RxBwChanged);
+			this.receiverViewControl1.SensitivityBoostOnChanged += new SemtechLib.General.Events.BooleanEventHandler(this.receiverViewControl1_SensitivityBoostOnChanged);
+			this.receiverViewControl1.TimeoutRssiThreshChanged += new SemtechLib.General.Events.DecimalEventHandler(this.receiverViewControl1_TimeoutRssiThreshChanged);
+			this.receiverViewControl1.TimeoutRxStartChanged += new SemtechLib.General.Events.DecimalEventHandler(this.receiverViewControl1_TimeoutRxStartChanged);
+			// 
+			// tabIrqMap
+			// 
+			this.tabIrqMap.Controls.Add(this.irqMapViewControl1);
+			this.tabIrqMap.Location = new System.Drawing.Point(4, 22);
+			this.tabIrqMap.Name = "tabIrqMap";
+			this.tabIrqMap.Padding = new System.Windows.Forms.Padding(3);
+			this.tabIrqMap.Size = new System.Drawing.Size(799, 493);
+			this.tabIrqMap.TabIndex = 3;
+			this.tabIrqMap.Text = "IRQ & Map";
+			this.tabIrqMap.UseVisualStyleBackColor = true;
+			// 
+			// irqMapViewControl1
+			// 
+			this.irqMapViewControl1.AutoMode = false;
+			this.irqMapViewControl1.CrcOk = false;
+			this.irqMapViewControl1.DataMode = SemtechLib.Devices.SX1231.Enumerations.DataModeEnum.Packet;
+			this.irqMapViewControl1.FifoFull = false;
+			this.irqMapViewControl1.FifoLevel = false;
+			this.irqMapViewControl1.FifoNotEmpty = false;
+			this.irqMapViewControl1.FifoOverrun = false;
+			this.irqMapViewControl1.FrequencyXo = new decimal(new int[] {
+            32000000,
+            0,
+            0,
+            0});
+			this.irqMapViewControl1.Location = new System.Drawing.Point(0, 0);
+			this.irqMapViewControl1.LowBat = false;
+			this.irqMapViewControl1.Mode = SemtechLib.Devices.SX1231.Enumerations.OperatingModeEnum.Stdby;
+			this.irqMapViewControl1.ModeReady = false;
+			this.irqMapViewControl1.Name = "irqMapViewControl1";
+			this.irqMapViewControl1.PacketSent = false;
+			this.irqMapViewControl1.PayloadReady = false;
+			this.irqMapViewControl1.PllLock = false;
+			this.irqMapViewControl1.Rssi = false;
+			this.irqMapViewControl1.RxReady = false;
+			this.irqMapViewControl1.Size = new System.Drawing.Size(799, 493);
+			this.irqMapViewControl1.SyncAddressMatch = false;
+			this.irqMapViewControl1.TabIndex = 0;
+			this.irqMapViewControl1.Timeout = false;
+			this.irqMapViewControl1.TxReady = false;
+			this.irqMapViewControl1.ClockOutChanged += new SemtechLib.Devices.SX1231.Events.ClockOutEventHandler(this.irqMapViewControl1_ClockOutChanged);
+			this.irqMapViewControl1.DioMappingChanged += new SemtechLib.Devices.SX1231.Events.DioMappingEventHandler(this.irqMapViewControl1_DioMappingChanged);
+			this.irqMapViewControl1.DocumentationChanged += new SemtechLib.General.Interfaces.DocumentationChangedEventHandler(this.irqMapViewControl1_DocumentationChanged);
+			this.irqMapViewControl1.Load += new System.EventHandler(this.irqMapViewControl1_Load);
+			// 
+			// tabPacketHandler
+			// 
+			this.tabPacketHandler.Controls.Add(this.packetHandlerView1);
+			this.tabPacketHandler.Location = new System.Drawing.Point(4, 22);
+			this.tabPacketHandler.Name = "tabPacketHandler";
+			this.tabPacketHandler.Padding = new System.Windows.Forms.Padding(3);
+			this.tabPacketHandler.Size = new System.Drawing.Size(799, 493);
+			this.tabPacketHandler.TabIndex = 4;
+			this.tabPacketHandler.Text = "Packet Handler";
+			this.tabPacketHandler.UseVisualStyleBackColor = true;
+			// 
+			// packetHandlerView1
+			// 
+			this.packetHandlerView1.AddressFiltering = SemtechLib.Devices.SX1231.Enumerations.AddressFilteringEnum.OFF;
+			this.packetHandlerView1.AesKey = new byte[] {
+        ((byte)(0)),
+        ((byte)(0)),
+        ((byte)(0)),
+        ((byte)(0)),
+        ((byte)(0)),
+        ((byte)(0)),
+        ((byte)(0)),
+        ((byte)(0)),
+        ((byte)(0)),
+        ((byte)(0)),
+        ((byte)(0)),
+        ((byte)(0)),
+        ((byte)(0)),
+        ((byte)(0)),
+        ((byte)(0)),
+        ((byte)(0))};
+			this.packetHandlerView1.AesOn = true;
+			this.packetHandlerView1.BitRate = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+			this.packetHandlerView1.BroadcastAddress = ((byte)(0));
+			this.packetHandlerView1.Crc = ((ushort)(0));
+			this.packetHandlerView1.CrcAutoClearOff = false;
+			this.packetHandlerView1.CrcOn = true;
+			this.packetHandlerView1.DataMode = SemtechLib.Devices.SX1231.Enumerations.DataModeEnum.Packet;
+			this.packetHandlerView1.DcFree = SemtechLib.Devices.SX1231.Enumerations.DcFreeEnum.OFF;
+			this.packetHandlerView1.EnterCondition = SemtechLib.Devices.SX1231.Enumerations.EnterConditionEnum.OFF;
+			this.packetHandlerView1.ExitCondition = SemtechLib.Devices.SX1231.Enumerations.ExitConditionEnum.OFF;
+			this.packetHandlerView1.FifoFillCondition = SemtechLib.Devices.SX1231.Enumerations.FifoFillConditionEnum.OnSyncAddressIrq;
+			this.packetHandlerView1.FifoThreshold = ((byte)(15));
+			this.packetHandlerView1.IntermediateMode = SemtechLib.Devices.SX1231.Enumerations.IntermediateModeEnum.Sleep;
+			this.packetHandlerView1.InterPacketRxDelay = 0;
+			this.packetHandlerView1.Location = new System.Drawing.Point(0, 0);
+			this.packetHandlerView1.LogEnabled = false;
+			this.packetHandlerView1.MaxPacketNumber = 0;
+			this.packetHandlerView1.Message = new byte[0];
+			this.packetHandlerView1.MessageLength = 0;
+			this.packetHandlerView1.Mode = SemtechLib.Devices.SX1231.Enumerations.OperatingModeEnum.Stdby;
+			this.packetHandlerView1.Name = "packetHandlerView1";
+			this.packetHandlerView1.NodeAddress = ((byte)(0));
+			this.packetHandlerView1.NodeAddressRx = ((byte)(0));
+			this.packetHandlerView1.PacketFormat = SemtechLib.Devices.SX1231.Enumerations.PacketFormatEnum.Fixed;
+			this.packetHandlerView1.PacketNumber = 0;
+			this.packetHandlerView1.PayloadLength = ((byte)(66));
+			this.packetHandlerView1.PreambleSize = 3;
+			this.packetHandlerView1.Size = new System.Drawing.Size(799, 493);
+			this.packetHandlerView1.StartStop = false;
+			this.packetHandlerView1.SyncOn = true;
+			this.packetHandlerView1.SyncSize = ((byte)(4));
+			this.packetHandlerView1.SyncTol = ((byte)(0));
+			this.packetHandlerView1.SyncValue = new byte[] {
+        ((byte)(170)),
+        ((byte)(170)),
+        ((byte)(170)),
+        ((byte)(170))};
+			this.packetHandlerView1.TabIndex = 0;
+			this.packetHandlerView1.TxStartCondition = true;
+			this.packetHandlerView1.AddressFilteringChanged += new SemtechLib.Devices.SX1231.Events.AddressFilteringEventHandler(this.packetHandlerView1_AddressFilteringChanged);
+			this.packetHandlerView1.AesKeyChanged += new SemtechLib.General.Events.ByteArrayEventHandler(this.packetHandlerView1_AesKeyChanged);
+			this.packetHandlerView1.AesOnChanged += new SemtechLib.General.Events.BooleanEventHandler(this.packetHandlerView1_AesOnChanged);
+			this.packetHandlerView1.BroadcastAddressChanged += new SemtechLib.General.Events.ByteEventHandler(this.packetHandlerView1_BroadcastAddressChanged);
+			this.packetHandlerView1.CrcAutoClearOffChanged += new SemtechLib.General.Events.BooleanEventHandler(this.packetHandlerView1_CrcAutoClearOffChanged);
+			this.packetHandlerView1.CrcOnChanged += new SemtechLib.General.Events.BooleanEventHandler(this.packetHandlerView1_CrcOnChanged);
+			this.packetHandlerView1.DcFreeChanged += new SemtechLib.Devices.SX1231.Events.DcFreeEventHandler(this.packetHandlerView1_DcFreeChanged);
+			this.packetHandlerView1.DocumentationChanged += new SemtechLib.General.Interfaces.DocumentationChangedEventHandler(this.packetHandlerView1_DocumentationChanged);
+			this.packetHandlerView1.EnterConditionChanged += new SemtechLib.Devices.SX1231.Events.EnterConditionEventHandler(this.packetHandlerView1_EnterConditionChanged);
+			this.packetHandlerView1.Error += new SemtechLib.General.Events.ErrorEventHandler(this.packetHandlerView1_Error);
+			this.packetHandlerView1.ExitConditionChanged += new SemtechLib.Devices.SX1231.Events.ExitConditionEventHandler(this.packetHandlerView1_ExitConditionChanged);
+			this.packetHandlerView1.FifoFillConditionChanged += new SemtechLib.Devices.SX1231.Events.FifoFillConditionEventHandler(this.packetHandlerView1_FifoFillConditionChanged);
+			this.packetHandlerView1.FifoThresholdChanged += new SemtechLib.General.Events.ByteEventHandler(this.packetHandlerView1_FifoThresholdChanged);
+			this.packetHandlerView1.IntermediateModeChanged += new SemtechLib.Devices.SX1231.Events.IntermediateModeEventHandler(this.packetHandlerView1_IntermediateModeChanged);
+			this.packetHandlerView1.InterPacketRxDelayChanged += new SemtechLib.General.Events.Int32EventHandler(this.packetHandlerView1_InterPacketRxDelayChanged);
+			this.packetHandlerView1.MaxPacketNumberChanged += new SemtechLib.General.Events.Int32EventHandler(this.packetHandlerView1_MaxPacketNumberChanged);
+			this.packetHandlerView1.MessageChanged += new SemtechLib.General.Events.ByteArrayEventHandler(this.packetHandlerView1_MessageChanged);
+			this.packetHandlerView1.MessageLengthChanged += new SemtechLib.General.Events.Int32EventHandler(this.packetHandlerView1_MessageLengthChanged);
+			this.packetHandlerView1.NodeAddressChanged += new SemtechLib.General.Events.ByteEventHandler(this.packetHandlerView1_NodeAddressChanged);
+			this.packetHandlerView1.PacketFormatChanged += new SemtechLib.Devices.SX1231.Events.PacketFormatEventHandler(this.packetHandlerView1_PacketFormatChanged);
+			this.packetHandlerView1.PacketHandlerLogEnableChanged += new SemtechLib.General.Events.BooleanEventHandler(this.packetHandlerView1_PacketHandlerLogEnableChanged);
+			this.packetHandlerView1.PayloadLengthChanged += new SemtechLib.General.Events.ByteEventHandler(this.packetHandlerView1_PayloadLengthChanged);
+			this.packetHandlerView1.PreambleSizeChanged += new SemtechLib.General.Events.Int32EventHandler(this.packetHandlerView1_PreambleSizeChanged);
+			this.packetHandlerView1.StartStopChanged += new SemtechLib.General.Events.BooleanEventHandler(this.packetHandlerView1_StartStopChanged);
+			this.packetHandlerView1.SyncOnChanged += new SemtechLib.General.Events.BooleanEventHandler(this.packetHandlerView1_SyncOnChanged);
+			this.packetHandlerView1.SyncSizeChanged += new SemtechLib.General.Events.ByteEventHandler(this.packetHandlerView1_SyncSizeChanged);
+			this.packetHandlerView1.SyncTolChanged += new SemtechLib.General.Events.ByteEventHandler(this.packetHandlerView1_SyncTolChanged);
+			this.packetHandlerView1.SyncValueChanged += new SemtechLib.General.Events.ByteArrayEventHandler(this.packetHandlerView1_SyncValueChanged);
+			this.packetHandlerView1.TxStartConditionChanged += new SemtechLib.General.Events.BooleanEventHandler(this.packetHandlerView1_TxStartConditionChanged);
+			// 
+			// tabTemperature
+			// 
+			this.tabTemperature.Controls.Add(this.temperatureViewControl1);
+			this.tabTemperature.Location = new System.Drawing.Point(4, 22);
+			this.tabTemperature.Name = "tabTemperature";
+			this.tabTemperature.Padding = new System.Windows.Forms.Padding(3);
+			this.tabTemperature.Size = new System.Drawing.Size(799, 493);
+			this.tabTemperature.TabIndex = 5;
+			this.tabTemperature.Text = "Temperature";
+			this.tabTemperature.UseVisualStyleBackColor = true;
+			// 
+			// temperatureViewControl1
+			// 
+			this.temperatureViewControl1.AdcLowPowerOn = true;
+			this.temperatureViewControl1.Location = new System.Drawing.Point(0, 0);
+			this.temperatureViewControl1.Mode = SemtechLib.Devices.SX1231.Enumerations.OperatingModeEnum.Stdby;
+			this.temperatureViewControl1.Name = "temperatureViewControl1";
+			this.temperatureViewControl1.Size = new System.Drawing.Size(799, 493);
+			this.temperatureViewControl1.TabIndex = 0;
+			this.temperatureViewControl1.TempCalDone = false;
+			this.temperatureViewControl1.TempMeasRunning = false;
+			this.temperatureViewControl1.TempValue = new decimal(new int[] {
+            25,
+            0,
+            0,
+            0});
+			this.temperatureViewControl1.TempValueRoom = new decimal(new int[] {
+            250,
+            0,
+            0,
+            65536});
+			this.temperatureViewControl1.AdcLowPowerOnChanged += new SemtechLib.General.Events.BooleanEventHandler(this.temperatureViewControl1_AdcLowPowerOnChanged);
+			this.temperatureViewControl1.DocumentationChanged += new SemtechLib.General.Interfaces.DocumentationChangedEventHandler(this.temperatureViewControl1_DocumentationChanged);
+			this.temperatureViewControl1.TempCalibrateChanged += new SemtechLib.General.Events.DecimalEventHandler(this.temperatureViewControl1_TempCalibrateChanged);
+			// 
+			// gBoxOperatingMode
+			// 
+			this.gBoxOperatingMode.Controls.Add(this.rBtnTransmitter);
+			this.gBoxOperatingMode.Controls.Add(this.rBtnReceiver);
+			this.gBoxOperatingMode.Controls.Add(this.rBtnSynthesizer);
+			this.gBoxOperatingMode.Controls.Add(this.rBtnStandby);
+			this.gBoxOperatingMode.Controls.Add(this.rBtnSleep);
+			this.gBoxOperatingMode.Location = new System.Drawing.Point(816, 411);
+			this.gBoxOperatingMode.Name = "gBoxOperatingMode";
+			this.gBoxOperatingMode.Size = new System.Drawing.Size(189, 107);
+			this.gBoxOperatingMode.TabIndex = 2;
+			this.gBoxOperatingMode.TabStop = false;
+			this.gBoxOperatingMode.Text = "Operating mode";
+			this.gBoxOperatingMode.MouseEnter += new System.EventHandler(this.control_MouseEnter);
+			this.gBoxOperatingMode.MouseLeave += new System.EventHandler(this.control_MouseLeave);
+			// 
+			// rBtnTransmitter
+			// 
+			this.rBtnTransmitter.AutoSize = true;
+			this.rBtnTransmitter.Location = new System.Drawing.Point(94, 80);
+			this.rBtnTransmitter.Name = "rBtnTransmitter";
+			this.rBtnTransmitter.Size = new System.Drawing.Size(77, 17);
+			this.rBtnTransmitter.TabIndex = 4;
+			this.rBtnTransmitter.Text = "Transmitter";
+			this.rBtnTransmitter.UseVisualStyleBackColor = true;
+			this.rBtnTransmitter.CheckedChanged += new System.EventHandler(this.rBtnOperatingMode_CheckedChanged);
+			// 
+			// rBtnReceiver
+			// 
+			this.rBtnReceiver.AutoSize = true;
+			this.rBtnReceiver.Location = new System.Drawing.Point(16, 80);
+			this.rBtnReceiver.Name = "rBtnReceiver";
+			this.rBtnReceiver.Size = new System.Drawing.Size(68, 17);
+			this.rBtnReceiver.TabIndex = 3;
+			this.rBtnReceiver.Text = "Receiver";
+			this.rBtnReceiver.UseVisualStyleBackColor = true;
+			this.rBtnReceiver.CheckedChanged += new System.EventHandler(this.rBtnOperatingMode_CheckedChanged);
+			// 
+			// rBtnSynthesizer
+			// 
+			this.rBtnSynthesizer.AutoSize = true;
+			this.rBtnSynthesizer.Location = new System.Drawing.Point(94, 51);
+			this.rBtnSynthesizer.Name = "rBtnSynthesizer";
+			this.rBtnSynthesizer.Size = new System.Drawing.Size(79, 17);
+			this.rBtnSynthesizer.TabIndex = 2;
+			this.rBtnSynthesizer.Text = "Synthesizer";
+			this.rBtnSynthesizer.UseVisualStyleBackColor = true;
+			this.rBtnSynthesizer.CheckedChanged += new System.EventHandler(this.rBtnOperatingMode_CheckedChanged);
+			// 
+			// rBtnStandby
+			// 
+			this.rBtnStandby.AutoSize = true;
+			this.rBtnStandby.Checked = true;
+			this.rBtnStandby.Location = new System.Drawing.Point(16, 51);
+			this.rBtnStandby.Name = "rBtnStandby";
+			this.rBtnStandby.Size = new System.Drawing.Size(64, 17);
+			this.rBtnStandby.TabIndex = 1;
+			this.rBtnStandby.TabStop = true;
+			this.rBtnStandby.Text = "Standby";
+			this.rBtnStandby.UseVisualStyleBackColor = true;
+			this.rBtnStandby.CheckedChanged += new System.EventHandler(this.rBtnOperatingMode_CheckedChanged);
+			// 
+			// rBtnSleep
+			// 
+			this.rBtnSleep.AutoSize = true;
+			this.rBtnSleep.Location = new System.Drawing.Point(16, 20);
+			this.rBtnSleep.Name = "rBtnSleep";
+			this.rBtnSleep.Size = new System.Drawing.Size(52, 17);
+			this.rBtnSleep.TabIndex = 0;
+			this.rBtnSleep.Text = "Sleep";
+			this.rBtnSleep.UseVisualStyleBackColor = true;
+			this.rBtnSleep.CheckedChanged += new System.EventHandler(this.rBtnOperatingMode_CheckedChanged);
+			// 
+			// lbModeReady
+			// 
+			this.lbModeReady.AutoSize = true;
+			this.lbModeReady.Location = new System.Drawing.Point(55, 20);
+			this.lbModeReady.Name = "lbModeReady";
+			this.lbModeReady.Size = new System.Drawing.Size(65, 13);
+			this.lbModeReady.TabIndex = 1;
+			this.lbModeReady.Text = "ModeReady";
+			// 
+			// label19
+			// 
+			this.label19.AutoSize = true;
+			this.label19.Location = new System.Drawing.Point(55, 41);
+			this.label19.Name = "label19";
+			this.label19.Size = new System.Drawing.Size(51, 13);
+			this.label19.TabIndex = 3;
+			this.label19.Text = "RxReady";
+			// 
+			// label18
+			// 
+			this.label18.AutoSize = true;
+			this.label18.Location = new System.Drawing.Point(55, 62);
+			this.label18.Name = "label18";
+			this.label18.Size = new System.Drawing.Size(50, 13);
+			this.label18.TabIndex = 5;
+			this.label18.Text = "TxReady";
+			// 
+			// label17
+			// 
+			this.label17.AutoSize = true;
+			this.label17.Location = new System.Drawing.Point(55, 83);
+			this.label17.Name = "label17";
+			this.label17.Size = new System.Drawing.Size(42, 13);
+			this.label17.TabIndex = 7;
+			this.label17.Text = "PllLock";
+			// 
+			// label23
+			// 
+			this.label23.AutoSize = true;
+			this.label23.Location = new System.Drawing.Point(55, 110);
+			this.label23.Name = "label23";
+			this.label23.Size = new System.Drawing.Size(27, 13);
+			this.label23.TabIndex = 9;
+			this.label23.Text = "Rssi";
+			// 
+			// label22
+			// 
+			this.label22.AutoSize = true;
+			this.label22.Location = new System.Drawing.Point(55, 131);
+			this.label22.Name = "label22";
+			this.label22.Size = new System.Drawing.Size(45, 13);
+			this.label22.TabIndex = 11;
+			this.label22.Text = "Timeout";
+			// 
+			// label21
+			// 
+			this.label21.AutoSize = true;
+			this.label21.Location = new System.Drawing.Point(55, 152);
+			this.label21.Name = "label21";
+			this.label21.Size = new System.Drawing.Size(56, 13);
+			this.label21.TabIndex = 13;
+			this.label21.Text = "AutoMode";
+			// 
+			// label20
+			// 
+			this.label20.AutoSize = true;
+			this.label20.Location = new System.Drawing.Point(55, 173);
+			this.label20.Name = "label20";
+			this.label20.Size = new System.Drawing.Size(99, 13);
+			this.label20.TabIndex = 15;
+			this.label20.Text = "SyncAddressMatch";
+			// 
+			// label27
+			// 
+			this.label27.AutoSize = true;
+			this.label27.Location = new System.Drawing.Point(55, 200);
+			this.label27.Name = "label27";
+			this.label27.Size = new System.Drawing.Size(40, 13);
+			this.label27.TabIndex = 17;
+			this.label27.Text = "FifoFull";
+			// 
+			// label26
+			// 
+			this.label26.AutoSize = true;
+			this.label26.Location = new System.Drawing.Point(55, 221);
+			this.label26.Name = "label26";
+			this.label26.Size = new System.Drawing.Size(70, 13);
+			this.label26.TabIndex = 19;
+			this.label26.Text = "FifoNotEmpty";
+			// 
+			// label25
+			// 
+			this.label25.AutoSize = true;
+			this.label25.Location = new System.Drawing.Point(55, 242);
+			this.label25.Name = "label25";
+			this.label25.Size = new System.Drawing.Size(50, 13);
+			this.label25.TabIndex = 21;
+			this.label25.Text = "FifoLevel";
+			// 
+			// label24
+			// 
+			this.label24.AutoSize = true;
+			this.label24.Location = new System.Drawing.Point(55, 263);
+			this.label24.Name = "label24";
+			this.label24.Size = new System.Drawing.Size(62, 13);
+			this.label24.TabIndex = 23;
+			this.label24.Text = "FifoOverrun";
+			// 
+			// label31
+			// 
+			this.label31.AutoSize = true;
+			this.label31.Location = new System.Drawing.Point(55, 290);
+			this.label31.Name = "label31";
+			this.label31.Size = new System.Drawing.Size(63, 13);
+			this.label31.TabIndex = 25;
+			this.label31.Text = "PacketSent";
+			// 
+			// label30
+			// 
+			this.label30.AutoSize = true;
+			this.label30.Location = new System.Drawing.Point(55, 311);
+			this.label30.Name = "label30";
+			this.label30.Size = new System.Drawing.Size(76, 13);
+			this.label30.TabIndex = 27;
+			this.label30.Text = "PayloadReady";
+			// 
+			// label29
+			// 
+			this.label29.AutoSize = true;
+			this.label29.Location = new System.Drawing.Point(55, 332);
+			this.label29.Name = "label29";
+			this.label29.Size = new System.Drawing.Size(37, 13);
+			this.label29.TabIndex = 29;
+			this.label29.Text = "CrcOk";
+			// 
+			// label28
+			// 
+			this.label28.AutoSize = true;
+			this.label28.Location = new System.Drawing.Point(55, 353);
+			this.label28.Name = "label28";
+			this.label28.Size = new System.Drawing.Size(43, 13);
+			this.label28.TabIndex = 31;
+			this.label28.Text = "LowBat";
+			// 
+			// gBoxIrqFlags
+			// 
+			this.gBoxIrqFlags.Controls.Add(this.ledLowBat);
+			this.gBoxIrqFlags.Controls.Add(this.lbModeReady);
+			this.gBoxIrqFlags.Controls.Add(this.ledCrcOk);
+			this.gBoxIrqFlags.Controls.Add(this.ledRxReady);
+			this.gBoxIrqFlags.Controls.Add(this.ledPayloadReady);
+			this.gBoxIrqFlags.Controls.Add(this.ledTxReady);
+			this.gBoxIrqFlags.Controls.Add(this.ledPacketSent);
+			this.gBoxIrqFlags.Controls.Add(this.label17);
+			this.gBoxIrqFlags.Controls.Add(this.label31);
+			this.gBoxIrqFlags.Controls.Add(this.ledPllLock);
+			this.gBoxIrqFlags.Controls.Add(this.label30);
+			this.gBoxIrqFlags.Controls.Add(this.label18);
+			this.gBoxIrqFlags.Controls.Add(this.label29);
+			this.gBoxIrqFlags.Controls.Add(this.label19);
+			this.gBoxIrqFlags.Controls.Add(this.label28);
+			this.gBoxIrqFlags.Controls.Add(this.ledModeReady);
+			this.gBoxIrqFlags.Controls.Add(this.ledFifoOverrun);
+			this.gBoxIrqFlags.Controls.Add(this.ledRssi);
+			this.gBoxIrqFlags.Controls.Add(this.ledFifoLevel);
+			this.gBoxIrqFlags.Controls.Add(this.ledTimeout);
+			this.gBoxIrqFlags.Controls.Add(this.label27);
+			this.gBoxIrqFlags.Controls.Add(this.label20);
+			this.gBoxIrqFlags.Controls.Add(this.ledFifoNotEmpty);
+			this.gBoxIrqFlags.Controls.Add(this.label21);
+			this.gBoxIrqFlags.Controls.Add(this.label26);
+			this.gBoxIrqFlags.Controls.Add(this.ledAutoMode);
+			this.gBoxIrqFlags.Controls.Add(this.label25);
+			this.gBoxIrqFlags.Controls.Add(this.label22);
+			this.gBoxIrqFlags.Controls.Add(this.label24);
+			this.gBoxIrqFlags.Controls.Add(this.label23);
+			this.gBoxIrqFlags.Controls.Add(this.ledFifoFull);
+			this.gBoxIrqFlags.Controls.Add(this.ledSyncAddressMatch);
+			this.gBoxIrqFlags.Location = new System.Drawing.Point(816, 25);
+			this.gBoxIrqFlags.Name = "gBoxIrqFlags";
+			this.gBoxIrqFlags.Size = new System.Drawing.Size(189, 380);
+			this.gBoxIrqFlags.TabIndex = 1;
+			this.gBoxIrqFlags.TabStop = false;
+			this.gBoxIrqFlags.Text = "Irq flags";
+			this.gBoxIrqFlags.MouseEnter += new System.EventHandler(this.control_MouseEnter);
+			this.gBoxIrqFlags.MouseLeave += new System.EventHandler(this.control_MouseLeave);
+			// 
+			// ledLowBat
+			// 
+			this.ledLowBat.BackColor = System.Drawing.Color.Transparent;
+			this.ledLowBat.LedColor = System.Drawing.Color.Green;
+			this.ledLowBat.LedSize = new System.Drawing.Size(11, 11);
+			this.ledLowBat.Location = new System.Drawing.Point(34, 352);
+			this.ledLowBat.Name = "ledLowBat";
+			this.ledLowBat.Size = new System.Drawing.Size(15, 15);
+			this.ledLowBat.TabIndex = 30;
+			this.ledLowBat.Text = "led1";
+			// 
+			// ledCrcOk
+			// 
+			this.ledCrcOk.BackColor = System.Drawing.Color.Transparent;
+			this.ledCrcOk.LedColor = System.Drawing.Color.Green;
+			this.ledCrcOk.LedSize = new System.Drawing.Size(11, 11);
+			this.ledCrcOk.Location = new System.Drawing.Point(34, 331);
+			this.ledCrcOk.Name = "ledCrcOk";
+			this.ledCrcOk.Size = new System.Drawing.Size(15, 15);
+			this.ledCrcOk.TabIndex = 28;
+			this.ledCrcOk.Text = "led1";
+			// 
+			// ledRxReady
+			// 
+			this.ledRxReady.BackColor = System.Drawing.Color.Transparent;
+			this.ledRxReady.LedColor = System.Drawing.Color.Green;
+			this.ledRxReady.LedSize = new System.Drawing.Size(11, 11);
+			this.ledRxReady.Location = new System.Drawing.Point(34, 40);
+			this.ledRxReady.Name = "ledRxReady";
+			this.ledRxReady.Size = new System.Drawing.Size(15, 15);
+			this.ledRxReady.TabIndex = 2;
+			this.ledRxReady.Text = "led1";
+			// 
+			// ledPayloadReady
+			// 
+			this.ledPayloadReady.BackColor = System.Drawing.Color.Transparent;
+			this.ledPayloadReady.LedColor = System.Drawing.Color.Green;
+			this.ledPayloadReady.LedSize = new System.Drawing.Size(11, 11);
+			this.ledPayloadReady.Location = new System.Drawing.Point(34, 310);
+			this.ledPayloadReady.Name = "ledPayloadReady";
+			this.ledPayloadReady.Size = new System.Drawing.Size(15, 15);
+			this.ledPayloadReady.TabIndex = 26;
+			this.ledPayloadReady.Text = "led1";
+			// 
+			// ledTxReady
+			// 
+			this.ledTxReady.BackColor = System.Drawing.Color.Transparent;
+			this.ledTxReady.LedColor = System.Drawing.Color.Green;
+			this.ledTxReady.LedSize = new System.Drawing.Size(11, 11);
+			this.ledTxReady.Location = new System.Drawing.Point(34, 61);
+			this.ledTxReady.Name = "ledTxReady";
+			this.ledTxReady.Size = new System.Drawing.Size(15, 15);
+			this.ledTxReady.TabIndex = 4;
+			this.ledTxReady.Text = "led1";
+			// 
+			// ledPacketSent
+			// 
+			this.ledPacketSent.BackColor = System.Drawing.Color.Transparent;
+			this.ledPacketSent.LedColor = System.Drawing.Color.Green;
+			this.ledPacketSent.LedSize = new System.Drawing.Size(11, 11);
+			this.ledPacketSent.Location = new System.Drawing.Point(34, 289);
+			this.ledPacketSent.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
+			this.ledPacketSent.Name = "ledPacketSent";
+			this.ledPacketSent.Size = new System.Drawing.Size(15, 15);
+			this.ledPacketSent.TabIndex = 24;
+			this.ledPacketSent.Text = "led1";
+			// 
+			// ledPllLock
+			// 
+			this.ledPllLock.BackColor = System.Drawing.Color.Transparent;
+			this.ledPllLock.LedColor = System.Drawing.Color.Green;
+			this.ledPllLock.LedSize = new System.Drawing.Size(11, 11);
+			this.ledPllLock.Location = new System.Drawing.Point(34, 82);
+			this.ledPllLock.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);
+			this.ledPllLock.Name = "ledPllLock";
+			this.ledPllLock.Size = new System.Drawing.Size(15, 15);
+			this.ledPllLock.TabIndex = 6;
+			this.ledPllLock.Text = "led1";
+			// 
+			// ledModeReady
+			// 
+			this.ledModeReady.BackColor = System.Drawing.Color.Transparent;
+			this.ledModeReady.LedColor = System.Drawing.Color.Green;
+			this.ledModeReady.LedSize = new System.Drawing.Size(11, 11);
+			this.ledModeReady.Location = new System.Drawing.Point(34, 19);
+			this.ledModeReady.Name = "ledModeReady";
+			this.ledModeReady.Size = new System.Drawing.Size(15, 15);
+			this.ledModeReady.TabIndex = 0;
+			this.ledModeReady.Text = "Mode Ready";
+			// 
+			// ledFifoOverrun
+			// 
+			this.ledFifoOverrun.BackColor = System.Drawing.Color.Transparent;
+			this.ledFifoOverrun.LedColor = System.Drawing.Color.Green;
+			this.ledFifoOverrun.LedSize = new System.Drawing.Size(11, 11);
+			this.ledFifoOverrun.Location = new System.Drawing.Point(34, 262);
+			this.ledFifoOverrun.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);
+			this.ledFifoOverrun.Name = "ledFifoOverrun";
+			this.ledFifoOverrun.Size = new System.Drawing.Size(15, 15);
+			this.ledFifoOverrun.TabIndex = 22;
+			this.ledFifoOverrun.Text = "led1";
+			// 
+			// ledRssi
+			// 
+			this.ledRssi.BackColor = System.Drawing.Color.Transparent;
+			this.ledRssi.LedColor = System.Drawing.Color.Green;
+			this.ledRssi.LedSize = new System.Drawing.Size(11, 11);
+			this.ledRssi.Location = new System.Drawing.Point(34, 109);
+			this.ledRssi.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
+			this.ledRssi.Name = "ledRssi";
+			this.ledRssi.Size = new System.Drawing.Size(15, 15);
+			this.ledRssi.TabIndex = 8;
+			this.ledRssi.Text = "led1";
+			// 
+			// ledFifoLevel
+			// 
+			this.ledFifoLevel.BackColor = System.Drawing.Color.Transparent;
+			this.ledFifoLevel.LedColor = System.Drawing.Color.Green;
+			this.ledFifoLevel.LedSize = new System.Drawing.Size(11, 11);
+			this.ledFifoLevel.Location = new System.Drawing.Point(34, 241);
+			this.ledFifoLevel.Name = "ledFifoLevel";
+			this.ledFifoLevel.Size = new System.Drawing.Size(15, 15);
+			this.ledFifoLevel.TabIndex = 20;
+			this.ledFifoLevel.Text = "led1";
+			// 
+			// ledTimeout
+			// 
+			this.ledTimeout.BackColor = System.Drawing.Color.Transparent;
+			this.ledTimeout.LedColor = System.Drawing.Color.Green;
+			this.ledTimeout.LedSize = new System.Drawing.Size(11, 11);
+			this.ledTimeout.Location = new System.Drawing.Point(34, 130);
+			this.ledTimeout.Name = "ledTimeout";
+			this.ledTimeout.Size = new System.Drawing.Size(15, 15);
+			this.ledTimeout.TabIndex = 10;
+			this.ledTimeout.Text = "led1";
+			// 
+			// ledFifoNotEmpty
+			// 
+			this.ledFifoNotEmpty.BackColor = System.Drawing.Color.Transparent;
+			this.ledFifoNotEmpty.LedColor = System.Drawing.Color.Green;
+			this.ledFifoNotEmpty.LedSize = new System.Drawing.Size(11, 11);
+			this.ledFifoNotEmpty.Location = new System.Drawing.Point(34, 220);
+			this.ledFifoNotEmpty.Name = "ledFifoNotEmpty";
+			this.ledFifoNotEmpty.Size = new System.Drawing.Size(15, 15);
+			this.ledFifoNotEmpty.TabIndex = 18;
+			this.ledFifoNotEmpty.Text = "led1";
+			// 
+			// ledAutoMode
+			// 
+			this.ledAutoMode.BackColor = System.Drawing.Color.Transparent;
+			this.ledAutoMode.LedColor = System.Drawing.Color.Green;
+			this.ledAutoMode.LedSize = new System.Drawing.Size(11, 11);
+			this.ledAutoMode.Location = new System.Drawing.Point(34, 151);
+			this.ledAutoMode.Name = "ledAutoMode";
+			this.ledAutoMode.Size = new System.Drawing.Size(15, 15);
+			this.ledAutoMode.TabIndex = 12;
+			this.ledAutoMode.Text = "led1";
+			// 
+			// ledFifoFull
+			// 
+			this.ledFifoFull.BackColor = System.Drawing.Color.Transparent;
+			this.ledFifoFull.LedColor = System.Drawing.Color.Green;
+			this.ledFifoFull.LedSize = new System.Drawing.Size(11, 11);
+			this.ledFifoFull.Location = new System.Drawing.Point(34, 199);
+			this.ledFifoFull.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
+			this.ledFifoFull.Name = "ledFifoFull";
+			this.ledFifoFull.Size = new System.Drawing.Size(15, 15);
+			this.ledFifoFull.TabIndex = 16;
+			this.ledFifoFull.Text = "led1";
+			// 
+			// ledSyncAddressMatch
+			// 
+			this.ledSyncAddressMatch.BackColor = System.Drawing.Color.Transparent;
+			this.ledSyncAddressMatch.LedColor = System.Drawing.Color.Green;
+			this.ledSyncAddressMatch.LedSize = new System.Drawing.Size(11, 11);
+			this.ledSyncAddressMatch.Location = new System.Drawing.Point(34, 172);
+			this.ledSyncAddressMatch.Margin = new System.Windows.Forms.Padding(3, 3, 3, 6);
+			this.ledSyncAddressMatch.Name = "ledSyncAddressMatch";
+			this.ledSyncAddressMatch.Size = new System.Drawing.Size(15, 15);
+			this.ledSyncAddressMatch.TabIndex = 14;
+			this.ledSyncAddressMatch.Text = "led1";
+			// 
+			// DeviceViewControl
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.Controls.Add(this.gBoxOperatingMode);
+			this.Controls.Add(this.tabControl1);
+			this.Controls.Add(this.gBoxIrqFlags);
+			this.Name = "DeviceViewControl";
+			this.Size = new System.Drawing.Size(1008, 525);
+			this.tabControl1.ResumeLayout(false);
+			this.tabCommon.ResumeLayout(false);
+			this.tabTransmitter.ResumeLayout(false);
+			this.tabReceiver.ResumeLayout(false);
+			this.tabIrqMap.ResumeLayout(false);
+			this.tabPacketHandler.ResumeLayout(false);
+			this.tabTemperature.ResumeLayout(false);
+			this.gBoxOperatingMode.ResumeLayout(false);
+			this.gBoxOperatingMode.PerformLayout();
+			this.gBoxIrqFlags.ResumeLayout(false);
+			this.gBoxIrqFlags.PerformLayout();
+			this.ResumeLayout(false);
+
         }
 		#endregion
 
@@ -3361,6 +3616,11 @@ namespace SemtechLib.Devices.SX1231.Controls
                 }
             }
         }
+
+		private void irqMapViewControl1_Load(object sender, EventArgs e)
+		{
+
+		}
     }
 }
 
